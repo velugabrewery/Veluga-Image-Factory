@@ -1,0 +1,35 @@
+@mixin shadow {
+  box-shadow: 0 4px  4px  rgba(0, 23, 80, .02),
+              0 1px  6px  rgba(0, 23, 80, .03),
+              0 8px  8px  rgba(0, 23, 80, .024),
+              0 16px 16px rgba(0, 23, 80, .024),
+              8px 32px 32px rgba(0, 23, 80, .036),
+              8px 64px 64px rgba(0, 23, 80, .036);
+}
+
+@mixin shadow--light {
+  box-shadow: 0 4px  4px  rgba(0, 23, 80, .01),
+              0 1px  6px  rgba(0, 23, 80, .015),
+              0 8px  8px  rgba(0, 23, 80, .012),
+              0 16px 16px rgba(0, 23, 80, .012),
+              8px 32px 32px rgba(0, 23, 80, .018),
+              8px 64px 64px rgba(0, 23, 80, .018);
+}
+
+@mixin shadow__reverse--light {
+  box-shadow: 0 -4px  -4px  rgba(0, 23, 80, .01),
+              0 -1px  -6px  rgba(0, 23, 80, .015),
+              0 -8px  -8px  rgba(0, 23, 80, .012),
+              0 -16px -16px rgba(0, 23, 80, .012),
+              -8px -32px -32px rgba(0, 23, 80, .018),
+              -8px -64px -64px rgba(0, 23, 80, .018);
+}
+
+@mixin rotated-text($num-letters, $angle-span, $angle-offset) {
+  $angle-per-char: $angle-span / $num-letters;
+  @for $i from 1 through $num-letters {
+    .char#{$i} {
+      transform: rotate(($angle-offset + $angle-per-char * $i)+deg);
+    }
+  }
+}
