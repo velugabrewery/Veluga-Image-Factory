@@ -9,8 +9,7 @@
         };
     };
 
-    var circleA = document.querySelector('#circleText::after');
-    var circleB = document.querySelector('#circleText::before');
-    circleA.style.borderColor = swatches.Vibrant.getHex();
-    circleB.style.borderColor = swatches.Vibrant.getHex();
+    var circle = document.getElementById('circleText');
+    circle.style.borderColor = swatches.Vibrant.getHex();
+    circle.style.color = swatches.Vibrant.getHex();
 })()

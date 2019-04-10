@@ -1,4 +1,4 @@
-$beer-color: #b44460;
+$beer-color: #999;
 
 // SASS Import
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -36,6 +36,8 @@ $beer-color: #b44460;
             position: absolute;
             top: 0;
             right: 0;
+            color: red;
+            border-color: red;
             transform: translate(-25px, -95px);
             mix-blend-mode: multiply;
             @include rotated-text(33, 360, 0);
@@ -43,7 +45,8 @@ $beer-color: #b44460;
             &:after {
                 position: absolute;
                 display: block;
-                border: 4px solid $beer-color;
+                border: 4px solid;
+                border-color: inherit;
                 border-radius: 50%;
                 content: '';
             }
@@ -69,7 +72,7 @@ $beer-color: #b44460;
                 transform-origin: bottom center;
                 font-weight: 900;
                 font-size: 26px;
-                color: $beer-color;
+                color: inherit;
             }
         }
     }

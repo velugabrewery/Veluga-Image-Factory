@@ -249,6 +249,8 @@ p {
   position: absolute;
   top: 0;
   right: 0;
+  color: red;
+  border-color: red;
   transform: translate(-25px, -95px);
   mix-blend-mode: multiply;
 }
@@ -354,7 +356,8 @@ p {
 .template-style--1 .header .circle-text:before, .template-style--1 .header .circle-text:after {
   position: absolute;
   display: block;
-  border: 4px solid #b44460;
+  border: 4px solid;
+  border-color: inherit;
   border-radius: 50%;
   content: "";
 }
@@ -380,7 +383,7 @@ p {
   transform-origin: bottom center;
   font-weight: 900;
   font-size: 26px;
-  color: #b44460;
+  color: inherit;
 }
 .template-style--1 .content {
   overflow: hidden;
