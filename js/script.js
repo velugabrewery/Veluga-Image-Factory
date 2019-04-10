@@ -1,7 +1,7 @@
 (function() {
     var img = document.getElementById('BeerImg');
     img.setAttribute('crossOrigin', 'anonymous');
-    var vibrant = new Vibrant(img);
+    var vibrant = new window.Vibrant(img);
     var swatches = vibrant.swatches();
     for (var swatch in swatches) {
         if (swatches.hasOwnProperty(swatch) && swatches[swatch]) {
@@ -9,7 +9,7 @@
         };
     };
 
-    var circle = document.getElementById('circleText');
+    var circle = document.getElementById('CircleText');
     circle.style.borderColor = swatches.Vibrant.getHex();
     circle.style.color = swatches.Vibrant.getHex();
 })()
