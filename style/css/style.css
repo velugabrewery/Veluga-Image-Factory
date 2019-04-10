@@ -354,7 +354,7 @@ p {
 .template-style--1 .header .circle-text:before, .template-style--1 .header .circle-text:after {
   position: absolute;
   display: block;
-  border: 4px solid #999;
+  border: 4px solid #b44460;
   border-radius: 50%;
   content: "";
 }
@@ -380,7 +380,7 @@ p {
   transform-origin: bottom center;
   font-weight: 900;
   font-size: 26px;
-  color: #999;
+  color: #b44460;
 }
 .template-style--1 .content {
   overflow: hidden;
