@@ -127,7 +127,7 @@ button:focus {
 }
 
 *, body {
-  font-family: "Suisse Int'l", "Yoon Gothic 700", Sans-serif;
+  font-family: "Suisse Int'l", "Yoon Gothic Pro 700", Sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #212729;
@@ -299,10 +299,6 @@ p {
 }
 .form .btn__submit {
   margin-top: 30px;
-}
-
-.template-style--1.can .content .img-wrap .drink__img {
-  height: 470px;
 }
 
 .template-style--1 {
@@ -625,13 +621,14 @@ p {
 .template-style--1 .footer table tr td {
   padding: 0 15px;
   border-right: 2px solid #212729;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 36px;
   text-align: center;
   vertical-align: middle;
 }
 .template-style--1 .footer table tr td small {
   margin-right: 4px;
+  font-weight: 800;
   font-size: 23px;
   vertical-align: inherit;
 }
@@ -674,8 +671,8 @@ p {
   transform: skewX(-10deg);
 }
 .template-style--2 .header .beer-data .data__list small {
-  margin-right: 5px;
-  font-weight: 600;
+  margin-right: 6px;
+  font-weight: 700;
   font-size: 21px;
   vertical-align: inherit;
 }
@@ -737,6 +734,78 @@ p {
 }
 .template-style--2 .content .img-wrap .drink__img {
   height: 630px;
+}
+
+.opengraph {
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
+  width: 1200px;
+  height: 630px;
+  margin: 100px 0;
+  background-color: white;
+  box-shadow: 0 4px 4px rgba(0, 23, 80, 0.02), 0 1px 6px rgba(0, 23, 80, 0.03), 0 8px 8px rgba(0, 23, 80, 0.024), 0 16px 16px rgba(0, 23, 80, 0.024), 8px 32px 32px rgba(0, 23, 80, 0.036), 8px 64px 64px rgba(0, 23, 80, 0.036);
+}
+.opengraph .img-wrap {
+  float: left;
+  width: 450px;
+  height: 100%;
+  background-color: #F6F2ED;
+}
+.opengraph .img-wrap .drink__img {
+  height: 520px;
+}
+.opengraph .text-wrap {
+  float: left;
+  width: 750px;
+  height: 100%;
+  padding: 0 80px;
+}
+.opengraph .text-wrap .drink__name {
+  font-weight: 800;
+  font-size: 60px;
+}
+.opengraph .text-wrap .producer__name {
+  margin-top: 25px;
+  color: #ced7da;
+  font-weight: 600;
+  font-size: 40px;
+}
+.opengraph .text-wrap table {
+  margin-top: 80px;
+  border-top: 2px solid #dee4e6;
+}
+.opengraph .text-wrap table tr td {
+  position: relative;
+  padding: 35px 0 0 20px;
+  font-size: 27px;
+  color: #869196;
+}
+.opengraph .text-wrap table tr td:before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: #dee4e6;
+  content: "";
+}
+.opengraph .text-wrap table tr td small {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+}
+.opengraph .text-wrap table tr td span {
+  display: inline-block;
+  margin-top: 28px;
+  color: inherit;
+}
+.opengraph .text-wrap table tr td:first-child {
+  min-width: 112px;
+}
+.opengraph .text-wrap table tr td:last-child {
+  max-width: 112px;
 }
 
 /*# sourceMappingURL=style.css.map */

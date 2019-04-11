@@ -13,15 +13,16 @@
         <div class="form__input">
             <label>맥주 이미지 URL</label>
             <input class="input__text" type='text' id='drinkImgUrlInput'/>
-            <input class="btn btn--ghost" type="button" onclick="addCan()" value="캔 이미지에요">
         </div>
-        <div class="form__input">
+        <div class="form__input two">
             <label>맥주 이름</label>
             <input class="input__text" type='text' id='drinkNameInput' value="Veluga Beer"/>
+            <input class="input__text" type='text' id='drinkNameInputKO' value="벨루가 비어"/>
         </div>
-        <div class="form__input">
+        <div class="form__input two">
             <label>브루어리명</label>
             <input class="input__text" type='text' id='producerNameInput' value="Veluga Brewery"/>
+            <input class="input__text" type='text' id='producerNameInputKO' value="벨루가 브루어리"/>
         </div>
         <div class="form__input">
             <label>맥주 설명</label>
@@ -32,9 +33,10 @@
             <input class="input__text" type='text' id='originInput'/>
             <input class="btn btn--ghost" type="button" onclick="changeSeasonal()" value="시즈널이에요">
         </div>
-        <div class="form__input">
+        <div class="form__input two">
             <label>스타일</label>
-            <input class="input__text" type='text' id='drinkStyleInput'/>
+            <input class="input__text" type='text' id='drinkStyleInput' placeholder="영문"/>
+            <input class="input__text" type='text' id='drinkStyleInputKO' placeholder="한글"/>
         </div>
         <div class="form__input">
             <label>도수</label>
@@ -182,6 +184,32 @@
             <div class="img-wrap flex-container flex-center item-center">
                 <img id="drinkImgT2" class="drink__img" src="res/common/img/drink_sample.png" alt="상품 이미지">
             </div>
+        </div>
+    </div>
+    
+    <div class="opengraph">
+        <div class="img-wrap flex-container flex-center item-center">
+            <img id="drinkImgOG" class="drink__img" src="res/common/img/drink_sample.png" alt="상품 이미지">
+        </div>
+        <div class="text-wrap flex-container flex-column flex-center">
+            <h1 id="drinkNameOG" class="drink__name">벨루가 비어</h1>
+            <h2 id="producerNameOG" class="producer__name">벨루가 브루어리</h2>
+            <table>
+                <tr>
+                    <td>
+                        <small>스타일</small>
+                        <span id="drinkStyleOG">IPA</span>
+                    </td>
+                    <td>
+                        <small>원산지</small>
+                        <span id="originOG">한국</span>
+                    </td>
+                    <td>
+                        <small>도수</small>
+                        <span id="drinkAbvOG">9.0%</span> abv
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
     <script src="js/Vibrant.min.js"></script>

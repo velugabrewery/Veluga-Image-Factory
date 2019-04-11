@@ -33,13 +33,6 @@
 
 // 템플릿 -- 1
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.template-style--1.can {
-    .content {
-        .img-wrap {
-            .drink__img { height: 470px; }
-        }
-    }
-}
 .template-style--1 {
     z-index: 1;
     position: relative;
@@ -154,12 +147,13 @@
                 td {
                     padding: 0 15px;
                     border-right: 2px solid $gray-9;
-                    font-weight: 900;
+                    font-weight: 700;
                     font-size: 36px;
                     text-align: center;
                     vertical-align: middle;
                     small {
                         margin-right: 4px;
+                        font-weight: 800;
                         font-size: 23px;
                         vertical-align: inherit;
                     }
@@ -203,8 +197,8 @@
                 vertical-align: middle;
                 transform: skewX(-10deg);
                 small {
-                    margin-right: 5px;
-                    font-weight: 600;
+                    margin-right: 6px;
+                    font-weight: 700;
                     font-size: 21px;
                     vertical-align: inherit;
                 }
@@ -267,6 +261,76 @@
             background-color: #f6f6f8;
             .drink__img { height: 630px; }
             // height: 540px;
+        }
+    }
+}
+
+// 오픈그래프
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.opengraph {
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    height: 630px;
+    margin: 100px 0;
+    background-color: white;
+    @include shadow;
+    .img-wrap {
+        float: left;
+        width: 450px;
+        height: 100%;
+        background-color: $secondary;
+        .drink__img { height: 520px; }
+    }
+    .text-wrap {
+        float: left;
+        width: 750px;
+        height: 100%;
+        padding: 0 80px;
+        .drink__name {
+            font-weight: 800;
+            font-size: 60px;
+        }
+        .producer__name {
+            margin-top: 25px;
+            color: $gray-4;
+            font-weight: 600;
+            font-size: 40px;
+        }
+        table {
+            margin-top: 80px;
+            border-top: 2px solid $gray-3;
+            tr {
+                td {
+                    position: relative;
+                    padding: 35px 0 0 20px;
+                    font-size: 27px;
+                    color: $gray-6;
+                    &:before {
+                        position: absolute;
+                        top: -10px;
+                        left: 0;
+                        display: inline-block;
+                        width: 2px;
+                        height: 20px;
+                        background-color: $gray-3;
+                        content: '';
+                    }
+                    small {
+                        display: block;
+                        width: 100%;
+                        font-weight: 600;
+                    }
+                    span {
+                        display: inline-block;
+                        margin-top: 28px;
+                        color: inherit;
+                    }
+                }
+                td:first-child { min-width: 112px; }
+                td:last-child { max-width: 112px; }
+            }
         }
     }
 }

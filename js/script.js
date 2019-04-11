@@ -42,6 +42,18 @@ function beerSubmit(){
     document.getElementById('packageUnitSubT2').innerHTML = packageUnitSubInput;
     document.getElementById('packageQuantitySubT2').innerHTML = packageQuantitySubInput;
 
+    // 오픈그래프
+    var drinkImgOG = document.getElementById('drinkImgOG');
+    drinkImgOG.src = drinkImgUrlInput;
+    var drinkNameInputKO = document.getElementById('drinkNameInputKO').value;
+    document.getElementById('drinkNameOG').innerHTML = drinkNameInputKO;
+    var producerNameInputKO = document.getElementById('producerNameInputKO').value;
+    document.getElementById('producerNameOG').innerHTML = producerNameInputKO;
+    document.getElementById('originOG').innerHTML = originInput;
+    var drinkStyleInputKO = document.getElementById('drinkStyleInputKO').value;
+    document.getElementById('drinkStyleOG').innerHTML = drinkStyleInputKO;
+    document.getElementById('drinkAbvOG').innerHTML = drinkAbvInput;
+
     var circleText1 = document.getElementById('circleText1');
     var circleText2 = document.getElementById('circleText2');
     circleText1.style.borderColor = swatches.Vibrant.getHex();
@@ -55,16 +67,6 @@ function beerSubmit(){
     else {
         headerT2.style.backgroundColor = swatches.Muted.getHex();
     }
-};
-
-function addCan(){
-    // 템플릿 1
-    var templateStyle1 = document.getElementById('templateStyle1');
-    templateStyle1.classList.add('can');
-    
-    // 템플릿 2
-    var templateStyle2 = document.getElementById('templateStyle2');
-    templateStyle2.classList.add('can');
 };
 
 function changeSeasonal(){
