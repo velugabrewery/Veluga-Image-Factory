@@ -1,5 +1,3 @@
-$beer-color: #999;
-
 // SASS Import
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 @import 'ingredients/reset';
@@ -7,18 +5,50 @@ $beer-color: #999;
 @import 'ingredients/mixin';
 @import 'ingredients/color';
 @import 'ingredients/type';
+@import 'ingredients/form';
 
-* {
-    // border: 1px solid $emphasis !important;
-    box-sizing: border-box;
+// 데이터 입력
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.form {
+    width: 500px;
+    margin-top: 100px;
+    padding: 50px;
+    @include shadow;
+    .form__title { margin-bottom: 40px; }
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .form__input.two {
+        overflow: hidden;
+        label { width: 100%; }
+        .input__text {
+            float: left;
+            width: 48%;
+        }
+        .input__text ~ .input__text { margin-left: 4%; }
+    }
+    .btn__submit { margin-top: 30px; }
 }
 
+// 템플릿 -- 1
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.template-style--1.can {
+    .content {
+        .img-wrap {
+            .drink__img { height: 470px; }
+        }
+    }
+}
 .template-style--1 {
+    z-index: 1;
+    position: relative;
     overflow: hidden;
     width: 1000px;
     height: 1000px;
     padding: 50px;
-    transform: scale(0.8);
+    margin-top: 100px;
+    background-color: white;
     @include shadow;
     .header {
         height: 100px;
@@ -36,11 +66,10 @@ $beer-color: #999;
             position: absolute;
             top: 0;
             right: 0;
-            color: red;
-            border-color: red;
+            color: $gray-4;
+            border-color: $gray-4;
             transform: translate(-25px, -95px);
             mix-blend-mode: multiply;
-            @include rotated-text(33, 360, 0);
             &:before,
             &:after {
                 position: absolute;
@@ -75,6 +104,13 @@ $beer-color: #999;
                 color: inherit;
             }
         }
+        .circle-text--yearround {
+            @include rotated-text(33, 360, 0);
+        }
+        .circle-text--seasonal {
+            display: none;
+            @include rotated-text(36, 360, 0);
+        }
     }
     .content {
         overflow: hidden;
@@ -85,6 +121,7 @@ $beer-color: #999;
             width: 50%;
             height: 100%;
             background-color: #f6f6f8;
+            .drink__img { height: 570px; }
         }
         .text-wrap {
             float: left;
@@ -94,6 +131,7 @@ $beer-color: #999;
             .producer__name {
                 font-size: 40px;
                 font-weight: 900;
+                text-transform: uppercase;
             }
             .drink__description {
                 margin-top: 40px;
@@ -128,6 +166,107 @@ $beer-color: #999;
                 }
                 td:last-child { border-right: none; }
             }
+        }
+    }
+}
+
+// 템플릿 -- 2
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.template-style--2 {
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+    height: 1000px;
+    margin-top: 100px;
+    background-color: white;
+    @include shadow;
+    .header {
+        height: 230px;
+        padding-left: 70px;
+        background-color: $gray-3;
+        .drink__name {
+            position: relative;
+            display: inline-block;
+            height: 70px;
+            line-height: 0.8em;
+            font-weight: 500;
+            font-size: 90px;
+            text-transform: capitalize;
+        }
+        .beer-data {
+            margin-top: 38px;
+            .data__list {
+                float: left;
+                position: relative;
+                font-size: 35px;
+                vertical-align: middle;
+                transform: skewX(-10deg);
+                small {
+                    margin-right: 5px;
+                    font-weight: 600;
+                    font-size: 21px;
+                    vertical-align: inherit;
+                }
+            }
+            .data__list ~ .data__list {
+                margin-left: 50px;
+                &:before {
+                    position: absolute;
+                    top: 4px;
+                    left: -27px;
+                    display: inline-block;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 2px;
+                    background-color: $gray-9;
+                    transform: scaleX(0.5) rotate(45deg);
+                    content: '';
+                }
+            }
+        }
+    }
+    .content {
+        overflow: hidden;
+        height: 770px;
+        .text-wrap {
+            position: relative;
+            float: left;
+            width: 55%;
+            height: 100%;
+            padding: 100px 70px 70px;
+            .producer__name {
+                font-weight: 600;
+                font-size: 40px;
+                text-transform: capitalize;
+                transform: skewX(-10deg);
+            }
+            .drink__description {
+                margin-top: 40px;
+                font-size: 26px;
+                text-align: justify;
+                word-break: normal;
+            }
+            .origin-wrap {
+                position: absolute;
+                bottom: 70px;
+                width: calc(100% - 140px);
+                padding-top: 15px;
+                border-top: 1px solid $gray-9;
+                span {
+                    font-weight: 600;
+                    font-size: 20px;
+                    transform: skewX(-10deg);
+                }
+            }
+        }
+        .img-wrap {
+            float: left;
+            width: 45%;
+            height: 100%;
+            background-color: #f6f6f8;
+            .drink__img { height: 630px; }
+            // height: 540px;
         }
     }
 }

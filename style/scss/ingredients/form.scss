@@ -1,0 +1,79 @@
+.form {
+    .input__text,
+    .input__textarea {
+        padding: 9px 15px 8px;
+        border: 1px solid $border;
+        border-radius: 5px;
+        line-height: 1.55em;
+        font-weight: 400;
+        font-size: 15px;
+        background-color: transparent;
+        -webkit-appearance: none;
+        &::-webkit-input-placeholder { color: $gray-5; }
+        &:focus {
+            outline: none;
+            border-color: $gray-9;
+            transition: 0.25s ease-out;
+        }
+    }
+    .input__textarea {
+        min-height: calc(1.65em * 4.1);
+        line-height: 1.65em;
+    }
+    label {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: $gray-9;
+        font-weight: 700;
+        font-size: 15px;
+        user-select: none;
+        .required { color: $emphasis; }
+    }
+    div ~ div { margin-top: 20px; }
+    .form__input {
+        position: relative;
+        .input__text { width: 100%; }
+        .input__description {
+            display: block;
+            margin-top: 8px;
+            padding: 10px;
+            border: 1px solid $gray-4;
+            border-radius: 5px;
+            background-color: $gray-0;
+            color: $gray-7;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+}
+.btn {
+    display: inline-block;
+    padding: 14px 20px 13px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    &:active { transform: scale(0.97); }
+    &:focus { outline: none !important; }
+}
+.btn.btn--filled {
+    background-color: $primary;
+    color: white;
+}
+.btn.btn--ghost.btn--danger {
+    border-color: $emphasis;
+    border-style: dashed;
+    color: $emphasis;
+    transition: 0.2s ease-out;
+    &:hover { background-color: rgba(255,93,92,0.05); }
+}
+.btn.btn--ghost {
+    border-color: $gray-4;
+    color: $gray-9;
+    transition: 0.2s ease-out;
+    &:hover { background-color: $gray-0; }
+}
+

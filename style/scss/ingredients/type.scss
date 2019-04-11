@@ -6,86 +6,86 @@
 
 // Font Import
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-@font-face {
-  font-family: 'BR Firma';
-  font-style: normal;
-  font-weight: 400;
-  src: local('BR Firma Regular'), local('BRFirma-Regular'),
-  url(../../res/common/fonts/BRFirma-Regular.eot),
-  url(../../res/common/fonts/BRFirma-Regular.eot?#iefix) format('embedded-opentype'),
-  url(../../res/common/fonts/BRFirma-Regular.woff) format('woff'),
-  url(../../res/common/fonts/BRFirma-Regular.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'BR Firma';
-  font-style: normal;
-  font-weight: 500;
-  src: local('BR Firma Medium'), local('BRFirma-Medium'),
-  url(../../res/common/fonts/BRFirma-Medium.eot),
-  url(../../res/common/fonts/BRFirma-Medium.eot?#iefix) format('embedded-opentype'),
-  url(../../res/common/fonts/BRFirma-Medium.woff) format('woff'),
-  url(../../res/common/fonts/BRFirma-Medium.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'BR Firma';
-  font-style: normal;
-  font-weight: 600;
-  src: local('BR Firma SemiBold'), local('BRFirma-SemiBold'),
-  url(../../res/common/fonts/BRFirma-SemiBold.eot),
-  url(../../res/common/fonts/BRFirma-SemiBold.eot?#iefix) format('embedded-opentype'),
-  url(../../res/common/fonts/BRFirma-SemiBold.woff) format('woff'),
-  url(../../res/common/fonts/BRFirma-SemiBold.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'BR Firma';
-  font-style: normal;
-  font-weight: 700;
-  src: local('BR Firma SemiBold'), local('BRFirma-SemiBold'),
-  url(../../res/common/fonts/BRFirma-SemiBold.eot),
-  url(../../res/common/fonts/BRFirma-SemiBold.eot?#iefix) format('embedded-opentype'),
-  url(../../res/common/fonts/BRFirma-SemiBold.woff) format('woff'),
-  url(../../res/common/fonts/BRFirma-SemiBold.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Noto Sans CJK KR DemiLight'), local('NotoSansCJKkr-DemiLight'),
-  url(../../res/common/fonts/NotoSans-DemiLight.eot),
-  url(../../res/common/fonts/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
-  url(../../res/common/fonts/NotoSans-DemiLight.woff) format('woff'),
-  url(../../res/common/fonts/NotoSans-DemiLight.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Noto Sans CJK KR Regular'), local('NotoSansCJKkr-Regular'),
-  url(../../res/common/fonts/NotoSans-Regular.eot),
-  url(../../res/common/fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
-  url(../../res/common/fonts/NotoSans-Regular.woff) format('woff'),
-  url(../../res/common/fonts/NotoSans-Regular.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Noto Sans CJK KR Medium'), local('NotoSansCJKkr-Medium'),
-  url(../../res/common/fonts/NotoSans-Medium.eot),
-  url(../../res/common/fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
-  url(../../res/common/fonts/NotoSans-Medium.woff) format('woff'),
-  url(../../res/common/fonts/NotoSans-Medium.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Noto Sans CJK KR Bold'), local('NotoSansCJKkr-Bold'),
-  url(../../res/common/fonts/NotoSans-Bold.eot),
-  url(../../res/common/fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
-  url(../../res/common/fonts/NotoSans-Bold.woff) format('woff'),
-  url(../../res/common/fonts/NotoSans-Bold.woff2) format('woff2');
-}
+// @font-face {
+//   font-family: 'BR Firma';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('BR Firma Regular'), local('BRFirma-Regular'),
+//   url(../../res/common/fonts/BRFirma-Regular.eot),
+//   url(../../res/common/fonts/BRFirma-Regular.eot?#iefix) format('embedded-opentype'),
+//   url(../../res/common/fonts/BRFirma-Regular.woff) format('woff'),
+//   url(../../res/common/fonts/BRFirma-Regular.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'BR Firma';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: local('BR Firma Medium'), local('BRFirma-Medium'),
+//   url(../../res/common/fonts/BRFirma-Medium.eot),
+//   url(../../res/common/fonts/BRFirma-Medium.eot?#iefix) format('embedded-opentype'),
+//   url(../../res/common/fonts/BRFirma-Medium.woff) format('woff'),
+//   url(../../res/common/fonts/BRFirma-Medium.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'BR Firma';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: local('BR Firma SemiBold'), local('BRFirma-SemiBold'),
+//   url(../../res/common/fonts/BRFirma-SemiBold.eot),
+//   url(../../res/common/fonts/BRFirma-SemiBold.eot?#iefix) format('embedded-opentype'),
+//   url(../../res/common/fonts/BRFirma-SemiBold.woff) format('woff'),
+//   url(../../res/common/fonts/BRFirma-SemiBold.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'BR Firma';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('BR Firma SemiBold'), local('BRFirma-SemiBold'),
+//   url(../../res/common/fonts/BRFirma-SemiBold.eot),
+//   url(../../res/common/fonts/BRFirma-SemiBold.eot?#iefix) format('embedded-opentype'),
+//   url(../../res/common/fonts/BRFirma-SemiBold.woff) format('woff'),
+//   url(../../res/common/fonts/BRFirma-SemiBold.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'Noto Sans KR';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Noto Sans CJK KR DemiLight'), local('NotoSansCJKkr-DemiLight'),
+//   url(../../res/common/fonts/NotoSans-DemiLight.eot),
+//   url(../../res/common/fonts/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+//   url(../../res/common/fonts/NotoSans-DemiLight.woff) format('woff'),
+//   url(../../res/common/fonts/NotoSans-DemiLight.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'Noto Sans KR';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: local('Noto Sans CJK KR Regular'), local('NotoSansCJKkr-Regular'),
+//   url(../../res/common/fonts/NotoSans-Regular.eot),
+//   url(../../res/common/fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+//   url(../../res/common/fonts/NotoSans-Regular.woff) format('woff'),
+//   url(../../res/common/fonts/NotoSans-Regular.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'Noto Sans KR';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: local('Noto Sans CJK KR Medium'), local('NotoSansCJKkr-Medium'),
+//   url(../../res/common/fonts/NotoSans-Medium.eot),
+//   url(../../res/common/fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+//   url(../../res/common/fonts/NotoSans-Medium.woff) format('woff'),
+//   url(../../res/common/fonts/NotoSans-Medium.woff2) format('woff2');
+// }
+// @font-face {
+//   font-family: 'Noto Sans KR';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('Noto Sans CJK KR Bold'), local('NotoSansCJKkr-Bold'),
+//   url(../../res/common/fonts/NotoSans-Bold.eot),
+//   url(../../res/common/fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+//   url(../../res/common/fonts/NotoSans-Bold.woff) format('woff'),
+//   url(../../res/common/fonts/NotoSans-Bold.woff2) format('woff2');
+// }
 
 // Body
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
