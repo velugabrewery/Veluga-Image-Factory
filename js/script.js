@@ -3,7 +3,7 @@ function beerSubmit(){
     img.setAttribute('crossOrigin', 'anonymous');
     var vibrant = new window.Vibrant(img);
     var swatches = vibrant.swatches();
-    var circle = document.getElementByClassName('circle-text');
+    var circle = document.getElementsByClassName('circle-text');
     circle.style.borderColor = swatches.Vibrant.getHex();
     circle.style.color = swatches.Vibrant.getHex();
     var headerT2 = document.getElementById('headerT2');
