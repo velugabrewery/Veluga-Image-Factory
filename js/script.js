@@ -3,9 +3,12 @@ function beerSubmit(){
     img.setAttribute('crossOrigin', 'anonymous');
     var vibrant = new window.Vibrant(img);
     var swatches = vibrant.swatches();
-    var circle = document.getElementsByClassName('circle-text');
-    circle.style.borderColor = swatches.Vibrant.getHex();
-    circle.style.color = swatches.Vibrant.getHex();
+    var circleText1 = document.getElementById('circleText1');
+    var circleText2 = document.getElementById('circleText2');
+    circleText1.style.borderColor = swatches.Vibrant.getHex();
+    circleText1.style.color = swatches.Vibrant.getHex();
+    circleText2.style.borderColor = swatches.Vibrant.getHex();
+    circleText2.style.color = swatches.Vibrant.getHex();
     var headerT2 = document.getElementById('headerT2');
     headerT2.style.backgroundColor = swatches.Muted.getHex();
 
