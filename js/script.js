@@ -1,16 +1,6 @@
 function beerSubmit(){
     var img = document.getElementById('drinkImg');
     img.setAttribute('crossOrigin', 'anonymous');
-    var vibrant = new window.Vibrant(img);
-    var swatches = vibrant.swatches();
-    var circleText1 = document.getElementById('circleText1');
-    var circleText2 = document.getElementById('circleText2');
-    circleText1.style.borderColor = swatches.Vibrant.getHex();
-    circleText1.style.color = swatches.Vibrant.getHex();
-    circleText2.style.borderColor = swatches.Vibrant.getHex();
-    circleText2.style.color = swatches.Vibrant.getHex();
-    var headerT2 = document.getElementById('headerT2');
-    headerT2.style.backgroundColor = swatches.Muted.getHex();
 
     // 템플릿 1
     var drinkImgUrlInput = document.getElementById('drinkImgUrlInput').value;
@@ -49,6 +39,22 @@ function beerSubmit(){
     document.getElementById('packageQuantityMainT2').innerHTML = packageQuantityMainInput;
     document.getElementById('packageUnitSubT2').innerHTML = packageUnitSubInput;
     document.getElementById('packageQuantitySubT2').innerHTML = packageQuantitySubInput;
+
+    var vibrant = new window.Vibrant(img);
+    var swatches = vibrant.swatches();
+    var circleText1 = document.getElementById('circleText1');
+    var circleText2 = document.getElementById('circleText2');
+    circleText1.style.borderColor = swatches.Vibrant.getHex();
+    circleText1.style.color = swatches.Vibrant.getHex();
+    circleText2.style.borderColor = swatches.Vibrant.getHex();
+    circleText2.style.color = swatches.Vibrant.getHex();
+    var headerT2 = document.getElementById('headerT2');
+    if (swatches.LightMuted == true) {
+        headerT2.style.backgroundColor = swatches.LightMuted.getHex();
+    }
+    else {
+        headerT2.style.backgroundColor = swatches.Muted.getHex();
+    }
 };
 
 function addCan(){
