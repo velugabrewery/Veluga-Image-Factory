@@ -1,10 +1,6 @@
 function beerSubmit(){
-    var img = document.getElementById('drinkImg');
-    img.setAttribute('crossOrigin', 'anonymous');
-    var vibrant = new window.Vibrant(img);
-    var swatches = vibrant.swatches();
-
     // 템플릿 1
+    var img = document.getElementById('drinkImg');
     var drinkImgUrlInput = document.getElementById('drinkImgUrlInput').value;
     img.src = drinkImgUrlInput;
     var drinkNameInput = document.getElementById('drinkNameInput').value;
@@ -54,6 +50,14 @@ function beerSubmit(){
     document.getElementById('drinkStyleOG').innerHTML = drinkStyleInputKO;
     document.getElementById('drinkAbvOG').innerHTML = drinkAbvInput;
 
+
+};
+
+function colorChange(){
+    var img = document.getElementById('drinkImg');
+    img.setAttribute('crossOrigin', 'anonymous');
+    var vibrant = new window.Vibrant(img);
+    var swatches = vibrant.swatches();
     var circleText1 = document.getElementById('circleText1');
     var circleText2 = document.getElementById('circleText2');
     circleText1.style.borderColor = swatches.Vibrant.getHex();

@@ -28,7 +28,14 @@
         }
         .input__text ~ .input__text { margin-left: 4%; }
     }
-    .btn__submit { margin-top: 30px; }
+    .btn-wrap {
+        margin-top: 30px;
+        .btn {
+            float: left;
+            width: 48%;
+        }
+        .btn ~ .btn { margin-left: 4%; }
+    }
 }
 
 // 템플릿 -- 1
