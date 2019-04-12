@@ -65,7 +65,7 @@ function colorChange(){
     circleText2.style.borderColor = swatches.Vibrant.getHex();
     circleText2.style.color = swatches.Vibrant.getHex();
     var headerT2 = document.getElementById('headerT2');
-    if (vibrant.LightMutedSwatch = true) {
+    if (vibrant.LightMutedSwatch !== true) {
         headerT2.style.backgroundColor = vibrant.LightMutedSwatch.getHex();
     }
     else {
