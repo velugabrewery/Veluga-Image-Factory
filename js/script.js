@@ -94,3 +94,7 @@ function delPackageSub(){
     var packageSubT2 = document.getElementById('packageSubT2');
     packageSubT2.remove();
 };
+
+window.onload = function() {
+    colorChange();
+}
