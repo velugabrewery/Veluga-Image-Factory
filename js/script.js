@@ -74,7 +74,11 @@ function beerSubmit(){
     document.getElementById('drinkStyleOG').innerHTML = drinkStyleInputKO;
     document.getElementById('drinkAbvOG').innerHTML = drinkAbvInput;
 
-    colorChange();
+    resetT1FontSize();
+    resetT2FontSize();
+    resetOGFontSize();
+    changeDefaultFontT1();
+    changeDefaultFontT2();
 };
 
 function changeYearRound(){
@@ -195,6 +199,7 @@ function changeDefaultFontT2(){
 
 var drinkNameFontSize = 90;
 var drinkNameT2FontSize = 90;
+var drinkNameOGFontSize = 60;
 
 function addT1FontSize(){
     var drinkName = document.getElementById('drinkName');
@@ -228,4 +233,21 @@ function subT2FontSize(){
 function resetT2FontSize(){
     drinkNameT2FontSize = 90;
     drinkNameT2.style.fontSize = drinkNameT2FontSize + 'px';
+}
+
+function addOGFontSize(){
+    var drinkNameOG = document.getElementById('drinkNameOG');
+    drinkNameOGFontSize = drinkNameOGFontSize + 2;
+    drinkNameOG.style.fontSize = drinkNameOGFontSize + 'px';
+}
+
+function subOGFontSize(){
+    var drinkNameOG = document.getElementById('drinkNameOG');
+    drinkNameOGFontSize = drinkNameOGFontSize - 2;
+    drinkNameOG.style.fontSize = drinkNameOGFontSize + 'px';
+}
+
+function resetOGFontSize(){
+    drinkNameOGFontSize = 60;
+    drinkNameOG.style.fontSize = drinkNameOGFontSize + 'px';
 }

@@ -15,12 +15,12 @@
         </div>
         <div class="form__input two">
             <label>맥주 이름</label>
-            <input class="input__text" type='text' id='drinkNameInput' value="Veluga Beer"/>
+            <input class="input__text" type='text' id='drinkNameInput' value="veluga beer"/>
             <input class="input__text" type='text' id='drinkNameInputKO' value="벨루가 비어"/>
         </div>
         <div class="form__input two">
             <label>브루어리명</label>
-            <input class="input__text" type='text' id='producerNameInput' value="Veluga Brewery"/>
+            <input class="input__text" type='text' id='producerNameInput' value="veluga brewery"/>
             <input class="input__text" type='text' id='producerNameInputKO' value="벨루가 브루어리"/>
         </div>
         <div class="form__input">
@@ -65,9 +65,9 @@
         </div>
         <h4>맥주 이름 크기</h4>
         <div class="btn-font-size">
-            <input id="" class="btn btn--ghost" type="button" onclick="subT1FontSize()" value="-2px">
-            <input id="" class="btn btn--ghost" type="button" onclick="resetT1FontSize()" value="초기화">
-            <input id="" class="btn btn--ghost" type="button" onclick="addT1FontSize()" value="+2px">
+            <input class="btn btn--ghost" type="button" onclick="subT1FontSize()" value="-2px">
+            <input class="btn btn--ghost" type="button" onclick="resetT1FontSize()" value="초기화">
+            <input class="btn btn--ghost" type="button" onclick="addT1FontSize()" value="+2px">
         </div>
         <hr/>
         <h4>[T2] 맥주 이름 폰트</h4>
@@ -77,9 +77,16 @@
         </div>
         <h4>맥주 이름 크기</h4>
         <div class="btn-font-size">
-            <input id="" class="btn btn--ghost" type="button" onclick="subT2FontSize()" value="-2px">
-            <input id="" class="btn btn--ghost" type="button" onclick="resetT2FontSize()" value="초기화">
-            <input id="" class="btn btn--ghost" type="button" onclick="addT2FontSize()" value="+2px">
+            <input class="btn btn--ghost" type="button" onclick="subT2FontSize()" value="-2px">
+            <input class="btn btn--ghost" type="button" onclick="resetT2FontSize()" value="초기화">
+            <input class="btn btn--ghost" type="button" onclick="addT2FontSize()" value="+2px">
+        </div>
+        <hr/>
+        <h4>[OG] 맥주 이름 크기</h4>
+        <div class="btn-font-size">
+            <input class="btn btn--ghost" type="button" onclick="subOGFontSize()" value="-2px">
+            <input class="btn btn--ghost" type="button" onclick="resetOGFontSize()" value="초기화">
+            <input class="btn btn--ghost" type="button" onclick="addOGFontSize()" value="+2px">
         </div>
         <hr/>
         <div class="btn-switch">
@@ -248,6 +255,17 @@
         </div>
     </div>
     <script src="js/Vibrant.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/dom-to-image.js"></script>
+    <script>
+        // var node = document.getElementById('templateStyle2');
+        domtoimage.toJpeg(document.getElementById('templateStyle2'), { quality: 0.95 })
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'my-image-name.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+    </script>
+    <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
