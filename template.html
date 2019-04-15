@@ -9,7 +9,6 @@
 </head>
 <body class="flex-container flex-column flex-center item-center">
     <form class="form">
-        <h1 class="form__title">정보를 입력하세요</h1>
         <div class="form__input">
             <label>맥주 이미지 URL</label>
             <input class="input__text" type='text' id='drinkImgUrlInput'/>
@@ -31,7 +30,6 @@
         <div class="form__input">
             <label>원산지</label>
             <input class="input__text" type='text' id='originInput'/>
-            <input class="btn btn--ghost" type="button" onclick="changeSeasonal()" value="시즈널이에요">
         </div>
         <div class="form__input two">
             <label>스타일</label>
@@ -40,7 +38,7 @@
         </div>
         <div class="form__input">
             <label>도수</label>
-            <input class="input__text" type='text' id='drinkAbvInput' value="%"/>
+            <input class="input__text" type='text' id='drinkAbvInput' value="9.0"/>
         </div>
         <div class="form__input two">
             <label>가공형태 1</label>
@@ -49,15 +47,50 @@
         </div>
         <div class="form__input two">
             <label>가공형태 2</label>
-            <input class="input__text" type='text' id='packageUnitSubInput' value="케그"/>
-            <input class="input__text" type='text' id='packageQuantitySubInput' value="20L"/>
-            <input class="btn btn--ghost btn--danger" type="button" onclick="delPackageSub()" value="가공형태 2 필요음슴"/>
+            <div style="clear: both; overflow: hidden;">
+                <input class="input__text" type='text' id='packageUnitSubInput' value="케그"/>
+                <input class="input__text" type='text' id='packageQuantitySubInput' value="20L"/>
+            </div>
         </div>
         <div class="btn-wrap">
             <input class="btn btn--ghost" type="button" onclick="colorChange()" value="색 바꾸기"/>
             <input class="btn btn--filled btn__submit" type="button" onclick="beerSubmit()" value="가즈아"/>
         </div>
     </form>
+    <form class="form remote-control">
+        <h4>[T1] 맥주 이름 폰트</h4>
+        <div class="btn-switch">
+            <input id="btnDefaultFontT1" class="btn btn--ghost btn--selected" type="button" onclick="changeDefaultFontT1()" value="기본">
+            <input id="btnCondensedT1" class="btn btn--ghost" type="button" onclick="changeCondensedT1()" value="좁음">
+        </div>
+        <h4>맥주 이름 크기</h4>
+        <div class="btn-font-size">
+            <input id="" class="btn btn--ghost" type="button" onclick="subT1FontSize()" value="-2px">
+            <input id="" class="btn btn--ghost" type="button" onclick="resetT1FontSize()" value="초기화">
+            <input id="" class="btn btn--ghost" type="button" onclick="addT1FontSize()" value="+2px">
+        </div>
+        <hr/>
+        <h4>[T2] 맥주 이름 폰트</h4>
+        <div class="btn-switch">
+            <input id="btnDefaultFontT2" class="btn btn--ghost btn--selected" type="button" onclick="changeDefaultFontT2()" value="기본">
+            <input id="btnCondensedT2" class="btn btn--ghost" type="button" onclick="changeCondensedT2()" value="좁음">
+        </div>
+        <h4>맥주 이름 크기</h4>
+        <div class="btn-font-size">
+            <input id="" class="btn btn--ghost" type="button" onclick="subT2FontSize()" value="-2px">
+            <input id="" class="btn btn--ghost" type="button" onclick="resetT2FontSize()" value="초기화">
+            <input id="" class="btn btn--ghost" type="button" onclick="addT2FontSize()" value="+2px">
+        </div>
+        <hr/>
+        <div class="btn-switch">
+            <input id="btnYearRound" class="btn btn--ghost btn--selected" type="button" onclick="changeYearRound()" value="연중생산이에요">
+            <input id="btnSeasonal" class="btn btn--ghost" type="button" onclick="changeSeasonal()" value="시즈널이에요">
+        </div>
+        <div class="btn-switch">
+            <input id="btnAddPackageSub" class="btn btn--ghost btn--selected" type="button" onclick="addPackageSub()" value="가공형태 2 있음"/>
+            <input id="btnDelPackageSub" class="btn btn--ghost" type="button" onclick="delPackageSub()" value="가공형태 2 없음"/>
+        </div>
+    </form> 
     <div id="templateStyle1" class="template-style--1">
         <div class="header">
             <h1 class="drink__name">
@@ -153,7 +186,7 @@
                 <tr>
                     <td id="origin">한국</td>
                     <td id="drinkStyle">IPA</td>
-                    <td id="drinkAbv">9.0%</td>
+                    <td><span id="drinkAbv">9.0</span>%</td>
                     <td><small id="packageUnitMain">병</small><span id="packageQuantityMain">330ml</span></td>
                     <td id="packageSub"><small id="packageUnitSub">케그</small><span id="packageQuantitySub">20L</span></td>
                 </tr>
@@ -167,7 +200,7 @@
             <h1 id="drinkNameT2" class="drink__name">Veluga Beer</h1>
             <ul class="beer-data">
                 <li id="drinkStyleT2" class="data__list">IPA</li>
-                <li class="data__list"><span id="drinkAbvT2">9.0%</span> abv</li>
+                <li class="data__list"><span id="drinkAbvT2">9.0</span>% abv</li>
                 <li class="data__list"><small id="packageUnitMainT2">병</small><span id="packageQuantityMainT2">330ml</span></li>
                 <li id="packageSubT2" class="data__list"><small id="packageUnitSubT2">케그</small><span id="packageQuantitySubT2">20L</span></li>
             </ul>
@@ -208,7 +241,7 @@
                     </td>
                     <td>
                         <small>도수</small>
-                        <span id="drinkAbvOG">9.0%</span> abv
+                        <span id="drinkAbvOG">9.0</span>% abv
                     </td>
                 </tr>
             </table>

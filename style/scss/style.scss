@@ -7,41 +7,91 @@
 @import 'ingredients/type';
 @import 'ingredients/form';
 
-
-.btn__make-img {
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-}
+.condensed { font-family: "Suisse Int'l Condensed" !important; }
 
 // 데이터 입력
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .form {
+    float: left;
     width: 500px;
     margin-top: 100px;
     padding: 50px;
     @include shadow;
     .form__title { margin-bottom: 40px; }
-    .btn {
-        width: 100%;
-        margin-top: 10px;
-    }
+    .btn { width: 100%; margin-top: 10px; }
     .form__input.two {
         overflow: hidden;
         label { width: 100%; }
-        .input__text {
-            float: left;
-            width: 48%;
-        }
+        .input__text { float: left; width: 48%; }
         .input__text ~ .input__text { margin-left: 4%; }
     }
     .btn-wrap {
-        margin-top: 30px;
+        .btn { float: left; width: 48%; }
+        .btn ~ .btn { margin-left: 4%; }
+    }
+    .btn-switch {
+        overflow: hidden;
+        clear: both;
+        margin-top: 10px;
+        border: 1px solid $gray-4;
+        border-radius: 5px;
         .btn {
             float: left;
-            width: 48%;
+            width: 50%;
+            margin-top: 0;
+            border: 0;
+            border-radius: 0;
+            color: $gray-4;
         }
-        .btn ~ .btn { margin-left: 4%; }
+        .btn:last-child { border-left: 1px solid $gray-4; }
+    }
+}
+
+// 리모컨
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.form.remote-control {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 300px;
+    margin-top: 0;
+    padding: 10px;
+    border: 1px solid $gray-3;
+    box-shadow: none;
+    h4 {
+        margin-top: 12px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    h4:first-child { margin-top: 0; }
+    .btn-font-size {
+        overflow: hidden;
+        clear: both;
+        margin-top: 10px;
+        border: 1px solid $gray-4;
+        border-radius: 5px;
+        .btn {
+            float: left;
+            width: 50%;
+            margin-top: 0;
+            padding-left: 0;
+            padding-right: 0;
+            border: 0;
+            border-radius: 0;
+            color: $gray-9;
+        }
+        .btn:first-child,
+        .btn:last-child {
+            width: 25%;
+            background-color: $gray-1;
+        }
+        .btn:first-child { border-right: 1px solid $gray-4; }
+        .btn:last-child { border-left: 1px solid $gray-4; }
+    }
+    hr {
+        margin-top: 11px;
+        border: 0;
+        border-top: 1px dashed $gray-4;
     }
 }
 
@@ -70,7 +120,7 @@
             text-transform: uppercase;
         }
         .circle-text {
-            z-index: -1;
+            z-index: 2;
             position: absolute;
             top: 0;
             right: 0;
@@ -145,7 +195,7 @@
                 margin-top: 40px;
                 font-size: 26px;
                 text-align: justify;
-                word-break: normal;
+                word-break: break-all;
             }
         }
     }
@@ -161,10 +211,11 @@
             tr {
                 td {
                     padding: 0 15px;
-                    border-right: 2px solid $gray-9;
+                    border-left: 2px solid $gray-9;
                     font-weight: 700;
                     font-size: 36px;
                     text-align: center;
+                    text-transform: capitalize;
                     vertical-align: middle;
                     small {
                         margin-right: 4px;
@@ -173,7 +224,7 @@
                         vertical-align: inherit;
                     }
                 }
-                td:last-child { border-right: none; }
+                td:first-child { border-left: none; }
             }
         }
     }
@@ -218,6 +269,7 @@
                     vertical-align: inherit;
                 }
             }
+            .data__list:first-child { text-transform: capitalize; }
             .data__list ~ .data__list {
                 margin-left: 50px;
                 &:before {
@@ -254,7 +306,7 @@
                 margin-top: 40px;
                 font-size: 26px;
                 text-align: justify;
-                word-break: normal;
+                word-break: break-all;
             }
             .origin-wrap {
                 position: absolute;
@@ -340,6 +392,7 @@
                         display: inline-block;
                         margin-top: 28px;
                         color: inherit;
+                        text-transform: capitalize;
                     }
                 }
                 td:first-child { min-width: 112px; }

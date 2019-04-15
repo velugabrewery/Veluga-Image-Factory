@@ -252,6 +252,15 @@ p {
   color: white;
 }
 
+.btn.btn--ghost {
+  border-color: #ced7da;
+  color: #212729;
+  transition: 0.2s ease-out;
+}
+.btn.btn--ghost:hover {
+  background-color: #f8f9fa;
+}
+
 .btn.btn--ghost.btn--danger {
   border-color: #FF5D5C;
   border-style: dashed;
@@ -262,22 +271,27 @@ p {
   background-color: rgba(255, 93, 92, 0.05);
 }
 
-.btn.btn--ghost {
-  border-color: #ced7da;
-  color: #212729;
+.btn.btn--ghost.btn--primary {
+  border-color: #3b6d4b;
+  color: #3b6d4b;
   transition: 0.2s ease-out;
 }
-.btn.btn--ghost:hover {
-  background-color: #f8f9fa;
+.btn.btn--ghost.btn--primary:hover {
+  background-color: rgba(59, 109, 75, 0.05);
 }
 
-.btn__make-img {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
+.btn.btn--ghost.btn--selected {
+  border: 1px solid;
+  color: #212729 !important;
+  background-color: #f1f4f5;
+}
+
+.condensed {
+  font-family: "Suisse Int'l Condensed" !important;
 }
 
 .form {
+  float: left;
   width: 500px;
   margin-top: 100px;
   padding: 50px;
@@ -303,15 +317,82 @@ p {
 .form .form__input.two .input__text ~ .input__text {
   margin-left: 4%;
 }
-.form .btn-wrap {
-  margin-top: 30px;
-}
 .form .btn-wrap .btn {
   float: left;
   width: 48%;
 }
 .form .btn-wrap .btn ~ .btn {
   margin-left: 4%;
+}
+.form .btn-switch {
+  overflow: hidden;
+  clear: both;
+  margin-top: 10px;
+  border: 1px solid #ced7da;
+  border-radius: 5px;
+}
+.form .btn-switch .btn {
+  float: left;
+  width: 50%;
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
+  color: #ced7da;
+}
+.form .btn-switch .btn:last-child {
+  border-left: 1px solid #ced7da;
+}
+
+.form.remote-control {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 300px;
+  margin-top: 0;
+  padding: 10px;
+  border: 1px solid #dee4e6;
+  box-shadow: none;
+}
+.form.remote-control h4 {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.form.remote-control h4:first-child {
+  margin-top: 0;
+}
+.form.remote-control .btn-font-size {
+  overflow: hidden;
+  clear: both;
+  margin-top: 10px;
+  border: 1px solid #ced7da;
+  border-radius: 5px;
+}
+.form.remote-control .btn-font-size .btn {
+  float: left;
+  width: 50%;
+  margin-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+  border-radius: 0;
+  color: #212729;
+}
+.form.remote-control .btn-font-size .btn:first-child,
+.form.remote-control .btn-font-size .btn:last-child {
+  width: 25%;
+  background-color: #f1f4f5;
+}
+.form.remote-control .btn-font-size .btn:first-child {
+  border-right: 1px solid #ced7da;
+}
+.form.remote-control .btn-font-size .btn:last-child {
+  border-left: 1px solid #ced7da;
+}
+.form.remote-control hr {
+  margin-top: 11px;
+  border: 0;
+  border-top: 1px dashed #ced7da;
 }
 
 .template-style--1 {
@@ -339,7 +420,7 @@ p {
   text-transform: uppercase;
 }
 .template-style--1 .header .circle-text {
-  z-index: -1;
+  z-index: 2;
   position: absolute;
   top: 0;
   right: 0;
@@ -619,7 +700,7 @@ p {
   margin-top: 40px;
   font-size: 26px;
   text-align: justify;
-  word-break: normal;
+  word-break: break-all;
 }
 .template-style--1 .footer {
   height: 90px;
@@ -634,10 +715,11 @@ p {
 }
 .template-style--1 .footer table tr td {
   padding: 0 15px;
-  border-right: 2px solid #212729;
+  border-left: 2px solid #212729;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+  text-transform: capitalize;
   vertical-align: middle;
 }
 .template-style--1 .footer table tr td small {
@@ -646,8 +728,8 @@ p {
   font-size: 23px;
   vertical-align: inherit;
 }
-.template-style--1 .footer table tr td:last-child {
-  border-right: none;
+.template-style--1 .footer table tr td:first-child {
+  border-left: none;
 }
 
 .template-style--2 {
@@ -690,6 +772,9 @@ p {
   font-size: 21px;
   vertical-align: inherit;
 }
+.template-style--2 .header .beer-data .data__list:first-child {
+  text-transform: capitalize;
+}
 .template-style--2 .header .beer-data .data__list ~ .data__list {
   margin-left: 50px;
 }
@@ -726,7 +811,7 @@ p {
   margin-top: 40px;
   font-size: 26px;
   text-align: justify;
-  word-break: normal;
+  word-break: break-all;
 }
 .template-style--2 .content .text-wrap .origin-wrap {
   position: absolute;
@@ -814,6 +899,7 @@ p {
   display: inline-block;
   margin-top: 28px;
   color: inherit;
+  text-transform: capitalize;
 }
 .opengraph .text-wrap table tr td:first-child {
   min-width: 112px;

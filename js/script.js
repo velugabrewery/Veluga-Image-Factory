@@ -1,3 +1,27 @@
+function colorChange(){
+    var img = document.getElementById('drinkImg');
+    img.setAttribute('crossOrigin', 'anonymous');
+    var vibrant = new window.Vibrant(img);
+    var swatches = vibrant.swatches();
+    var circleText1 = document.getElementById('circleText1');
+    var circleText2 = document.getElementById('circleText2');
+    circleText1.style.borderColor = swatches.Vibrant.getHex();
+    circleText1.style.color = swatches.Vibrant.getHex();
+    circleText2.style.borderColor = swatches.Vibrant.getHex();
+    circleText2.style.color = swatches.Vibrant.getHex();
+    var headerT2 = document.getElementById('headerT2');
+    if (vibrant.LightMutedSwatch !== true) {
+        headerT2.style.backgroundColor = vibrant.LightMutedSwatch.getHex();
+    }
+    else {
+        headerT2.style.backgroundColor = swatches.Muted.getHex();
+    }
+};
+
+window.onload = function() {
+    colorChange();
+}
+
 function beerSubmit(){
     // 템플릿 1
     var img = document.getElementById('drinkImg');
@@ -50,27 +74,25 @@ function beerSubmit(){
     document.getElementById('drinkStyleOG').innerHTML = drinkStyleInputKO;
     document.getElementById('drinkAbvOG').innerHTML = drinkAbvInput;
 
-
+    colorChange();
 };
 
-function colorChange(){
-    var img = document.getElementById('drinkImg');
-    img.setAttribute('crossOrigin', 'anonymous');
-    var vibrant = new window.Vibrant(img);
-    var swatches = vibrant.swatches();
+function changeYearRound(){
+    // 템플릿 1
     var circleText1 = document.getElementById('circleText1');
     var circleText2 = document.getElementById('circleText2');
-    circleText1.style.borderColor = swatches.Vibrant.getHex();
-    circleText1.style.color = swatches.Vibrant.getHex();
-    circleText2.style.borderColor = swatches.Vibrant.getHex();
-    circleText2.style.color = swatches.Vibrant.getHex();
-    var headerT2 = document.getElementById('headerT2');
-    if (vibrant.LightMutedSwatch !== true) {
-        headerT2.style.backgroundColor = vibrant.LightMutedSwatch.getHex();
-    }
-    else {
-        headerT2.style.backgroundColor = swatches.Muted.getHex();
-    }
+    circleText1.style.display = 'block';
+    circleText2.style.display = 'none';
+    
+    // 템플릿 2
+    var cycleT2 = document.getElementById('cycleT2');
+    cycleT2.innerHTML = '연중생산';
+
+    // 버튼 클래스 추가 및 제거
+    var btnYearRound = document.getElementById('btnYearRound');
+    var btnSeasonal = document.getElementById('btnSeasonal');
+    btnYearRound.classList.add('btn--selected');
+    btnSeasonal.classList.remove('btn--selected');
 };
 
 function changeSeasonal(){
@@ -83,18 +105,127 @@ function changeSeasonal(){
     // 템플릿 2
     var cycleT2 = document.getElementById('cycleT2');
     cycleT2.innerHTML = '시즈널';
+
+    // 버튼 클래스 추가 및 제거
+    var btnYearRound = document.getElementById('btnYearRound');
+    var btnSeasonal = document.getElementById('btnSeasonal');
+    btnYearRound.classList.remove('btn--selected');
+    btnSeasonal.classList.add('btn--selected');
 };
+
+function addPackageSub(){
+    // 템플릿 1
+    var packageSub = document.getElementById('packageSub');
+    packageSub.style.display = 'table-cell';
+    
+    // 템플릿 2
+    var packageSubT2 = document.getElementById('packageSubT2');
+    packageSubT2.style.display = 'list-item';
+
+    // 버튼 클래스 추가 및 제거
+    var btnAddPackageSub = document.getElementById('btnAddPackageSub');
+    var btnDelPackageSub = document.getElementById('btnDelPackageSub');
+    btnAddPackageSub.classList.add('btn--selected');
+    btnDelPackageSub.classList.remove('btn--selected');
+}
 
 function delPackageSub(){
     // 템플릿 1
     var packageSub = document.getElementById('packageSub');
-    packageSub.remove();
+    packageSub.style.display = 'none';
     
     // 템플릿 2
     var packageSubT2 = document.getElementById('packageSubT2');
-    packageSubT2.remove();
+    packageSubT2.style.display = 'none';
+
+    // 버튼 클래스 추가 및 제거
+    var btnAddPackageSub = document.getElementById('btnAddPackageSub');
+    var btnDelPackageSub = document.getElementById('btnDelPackageSub');
+    btnAddPackageSub.classList.remove('btn--selected');
+    btnDelPackageSub.classList.add('btn--selected');
 };
 
-window.onload = function() {
-    colorChange();
+function changeCondensedT1(){
+    var drinkName = document.getElementById('drinkName');
+
+    drinkName.classList.add('condensed');
+
+    // 버튼 클래스 추가 및 제거
+    var btnDefaultFontT1 = document.getElementById('btnDefaultFontT1');
+    var btnCondensedT1 = document.getElementById('btnCondensedT1');
+    btnDefaultFontT1.classList.remove('btn--selected');
+    btnCondensedT1.classList.add('btn--selected');
+}
+
+function changeDefaultFontT1(){
+    var drinkName = document.getElementById('drinkName');
+
+    drinkName.classList.remove('condensed');
+
+    // 버튼 클래스 추가 및 제거
+    var btnDefaultFontT1 = document.getElementById('btnDefaultFontT1');
+    var btnCondensedT1 = document.getElementById('btnCondensedT1');
+    btnDefaultFontT1.classList.add('btn--selected');
+    btnCondensedT1.classList.remove('btn--selected');
+}
+
+function changeCondensedT2(){
+    var drinkNameT2 = document.getElementById('drinkNameT2');
+
+    drinkNameT2.classList.add('condensed');
+
+    // 버튼 클래스 추가 및 제거
+    var btnDefaultFontT2 = document.getElementById('btnDefaultFontT2');
+    var btnCondensedT2 = document.getElementById('btnCondensedT2');
+    btnDefaultFontT2.classList.remove('btn--selected');
+    btnCondensedT2.classList.add('btn--selected');
+}
+
+function changeDefaultFontT2(){
+    var drinkNameT2 = document.getElementById('drinkNameT2');
+
+    drinkNameT2.classList.remove('condensed');
+
+    // 버튼 클래스 추가 및 제거
+    var btnDefaultFontT2 = document.getElementById('btnDefaultFontT2');
+    var btnCondensedT2 = document.getElementById('btnCondensedT2');
+    btnDefaultFontT2.classList.add('btn--selected');
+    btnCondensedT2.classList.remove('btn--selected');
+}
+
+var drinkNameFontSize = 90;
+var drinkNameT2FontSize = 90;
+
+function addT1FontSize(){
+    var drinkName = document.getElementById('drinkName');
+    drinkNameFontSize = drinkNameFontSize + 2;
+    drinkName.style.fontSize = drinkNameFontSize + 'px';
+}
+
+function subT1FontSize(){
+    var drinkName = document.getElementById('drinkName');
+    drinkNameFontSize = drinkNameFontSize - 2;
+    drinkName.style.fontSize = drinkNameFontSize + 'px';
+}
+
+function resetT1FontSize(){
+    drinkNameFontSize = 90;
+    drinkName.style.fontSize = drinkNameFontSize + 'px';
+}
+
+function addT2FontSize(){
+    var drinkNameT2 = document.getElementById('drinkNameT2');
+    drinkNameT2FontSize = drinkNameT2FontSize + 2;
+    drinkNameT2.style.fontSize = drinkNameT2FontSize + 'px';
+}
+
+function subT2FontSize(){
+    var drinkNameT2 = document.getElementById('drinkNameT2');
+    drinkNameT2FontSize = drinkNameT2FontSize - 2;
+    drinkNameT2.style.fontSize = drinkNameT2FontSize + 'px';
+}
+
+function resetT2FontSize(){
+    drinkNameT2FontSize = 90;
+    drinkNameT2.style.fontSize = drinkNameT2FontSize + 'px';
 }

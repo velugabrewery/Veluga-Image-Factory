@@ -63,6 +63,12 @@
     background-color: $primary;
     color: white;
 }
+.btn.btn--ghost {
+    border-color: $gray-4;
+    color: $gray-9;
+    transition: 0.2s ease-out;
+    &:hover { background-color: $gray-0; }
+}
 .btn.btn--ghost.btn--danger {
     border-color: $emphasis;
     border-style: dashed;
@@ -70,10 +76,14 @@
     transition: 0.2s ease-out;
     &:hover { background-color: rgba(255,93,92,0.05); }
 }
-.btn.btn--ghost {
-    border-color: $gray-4;
-    color: $gray-9;
+.btn.btn--ghost.btn--primary {
+    border-color: $primary;
+    color: $primary;
     transition: 0.2s ease-out;
-    &:hover { background-color: $gray-0; }
+    &:hover { background-color: rgba(59, 109, 75,0.05); }
 }
-
+.btn.btn--ghost.btn--selected {
+    border: 1px solid;
+    color: $gray-9 !important;
+    background-color: $gray-1;
+}
