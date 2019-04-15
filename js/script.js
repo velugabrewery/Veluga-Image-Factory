@@ -253,7 +253,7 @@ function resetOGFontSize(){
 }
 
 function makeTem1(){
-    domtoimage.toJpeg(document.getElementById('templateStyle1'))
+    domtoimage.toJpeg(document.getElementById('templateStyle1'), { width: 1000 })
         .then(function (dataUrl) {
             var link = document.createElement('a');
             link.download = 'Tem1 ' + producerNameInput + ' ' + drinkNameInput + '.jpeg';
@@ -263,7 +263,7 @@ function makeTem1(){
 } 
 
 function makeTem2(){
-    domtoimage.toJpeg(document.getElementById('templateStyle2'))
+    domtoimage.toJpeg(document.getElementById('templateStyle2'), { width: 1000 })
         .then(function (dataUrl) {
             var link = document.createElement('a');
             link.download = 'Tem2 ' + producerNameInput + ' ' + drinkNameInput + '.jpeg';
