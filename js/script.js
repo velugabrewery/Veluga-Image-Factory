@@ -200,6 +200,7 @@ function changeDefaultFontT2(){
 var drinkNameFontSize = 90;
 var drinkNameT2FontSize = 90;
 var drinkNameOGFontSize = 60;
+var beerDataT2MarginTop = 38;
 
 function addT1FontSize(){
     var drinkName = document.getElementById('drinkName');
@@ -222,17 +223,28 @@ function addT2FontSize(){
     var drinkNameT2 = document.getElementById('drinkNameT2');
     drinkNameT2FontSize = drinkNameT2FontSize + 2;
     drinkNameT2.style.fontSize = drinkNameT2FontSize + 'px';
+
+    var beerDataT2 = document.getElementById('beerDataT2');
+    beerDataT2MarginTop = beerDataT2MarginTop + 2;
+    beerDataT2.style.marginTop = beerDataT2MarginTop + 'px';
 }
 
 function subT2FontSize(){
     var drinkNameT2 = document.getElementById('drinkNameT2');
     drinkNameT2FontSize = drinkNameT2FontSize - 2;
     drinkNameT2.style.fontSize = drinkNameT2FontSize + 'px';
+
+    var beerDataT2 = document.getElementById('beerDataT2');
+    beerDataT2MarginTop = beerDataT2MarginTop - 2;
+    beerDataT2.style.marginTop = beerDataT2MarginTop + 'px';
 }
 
 function resetT2FontSize(){
     drinkNameT2FontSize = 90;
     drinkNameT2.style.fontSize = drinkNameT2FontSize + 'px';
+
+    beerDataT2MarginTop = 38;
+    beerDataT2.style.marginTop = beerDataT2MarginTop + 'px';
 }
 
 function addOGFontSize(){
