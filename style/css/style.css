@@ -290,19 +290,20 @@ p {
   font-family: "Suisse Int'l Condensed" !important;
 }
 
+.margin {
+  height: 100px;
+}
+
 .form {
   float: left;
   width: 500px;
-  margin-top: 100px;
+  margin-top: 20px;
   padding: 50px;
   box-shadow: 0 4px 4px rgba(0, 23, 80, 0.02), 0 1px 6px rgba(0, 23, 80, 0.03), 0 8px 8px rgba(0, 23, 80, 0.024), 0 16px 16px rgba(0, 23, 80, 0.024), 8px 32px 32px rgba(0, 23, 80, 0.036), 8px 64px 64px rgba(0, 23, 80, 0.036);
 }
-.form .form__title {
-  margin-bottom: 40px;
-}
 .form .btn {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .form .form__input.two {
   overflow: hidden;
@@ -315,13 +316,6 @@ p {
   width: 48%;
 }
 .form .form__input.two .input__text ~ .input__text {
-  margin-left: 4%;
-}
-.form .btn-wrap .btn {
-  float: left;
-  width: 48%;
-}
-.form .btn-wrap .btn ~ .btn {
   margin-left: 4%;
 }
 .form .btn-switch {
@@ -344,6 +338,7 @@ p {
 }
 
 .form.remote-control {
+  z-index: 999;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -351,6 +346,8 @@ p {
   margin-top: 0;
   padding: 10px;
   border: 1px solid #dee4e6;
+  border-radius: 5px;
+  background-color: white;
   box-shadow: none;
 }
 .form.remote-control h4 {
@@ -394,6 +391,17 @@ p {
   border: 0;
   border-top: 1px dashed #ced7da;
 }
+.form.remote-control .btn-wrap {
+  margin-top: 0;
+}
+.form.remote-control .btn-wrap .btn {
+  float: left;
+  width: 48%;
+  margin-top: 4px;
+}
+.form.remote-control .btn-wrap .btn ~ .btn {
+  margin-left: 4%;
+}
 
 .template-style--1 {
   z-index: 1;
@@ -402,7 +410,6 @@ p {
   width: 1000px;
   height: 1000px;
   padding: 50px;
-  margin-top: 100px;
   background-color: white;
   box-shadow: 0 4px 4px rgba(0, 23, 80, 0.02), 0 1px 6px rgba(0, 23, 80, 0.03), 0 8px 8px rgba(0, 23, 80, 0.024), 0 16px 16px rgba(0, 23, 80, 0.024), 8px 32px 32px rgba(0, 23, 80, 0.036), 8px 64px 64px rgba(0, 23, 80, 0.036);
 }
@@ -738,7 +745,6 @@ p {
   overflow: hidden;
   width: 1000px;
   height: 1000px;
-  margin-top: 100px;
   background-color: white;
   box-shadow: 0 4px 4px rgba(0, 23, 80, 0.02), 0 1px 6px rgba(0, 23, 80, 0.03), 0 8px 8px rgba(0, 23, 80, 0.024), 0 16px 16px rgba(0, 23, 80, 0.024), 8px 32px 32px rgba(0, 23, 80, 0.036), 8px 64px 64px rgba(0, 23, 80, 0.036);
 }
@@ -841,7 +847,6 @@ p {
   overflow: hidden;
   width: 1200px;
   height: 630px;
-  margin: 100px 0;
   background-color: white;
   box-shadow: 0 4px 4px rgba(0, 23, 80, 0.02), 0 1px 6px rgba(0, 23, 80, 0.03), 0 8px 8px rgba(0, 23, 80, 0.024), 0 16px 16px rgba(0, 23, 80, 0.024), 8px 32px 32px rgba(0, 23, 80, 0.036), 8px 64px 64px rgba(0, 23, 80, 0.036);
 }

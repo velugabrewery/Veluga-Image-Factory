@@ -8,26 +8,22 @@
 @import 'ingredients/form';
 
 .condensed { font-family: "Suisse Int'l Condensed" !important; }
+.margin { height: 100px; }
 
 // 데이터 입력
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .form {
     float: left;
     width: 500px;
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 50px;
     @include shadow;
-    .form__title { margin-bottom: 40px; }
-    .btn { width: 100%; margin-top: 10px; }
+    .btn { width: 100%; margin-top: 20px; }
     .form__input.two {
         overflow: hidden;
         label { width: 100%; }
         .input__text { float: left; width: 48%; }
         .input__text ~ .input__text { margin-left: 4%; }
-    }
-    .btn-wrap {
-        .btn { float: left; width: 48%; }
-        .btn ~ .btn { margin-left: 4%; }
     }
     .btn-switch {
         overflow: hidden;
@@ -50,6 +46,7 @@
 // 리모컨
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .form.remote-control {
+    z-index: 999;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -57,6 +54,8 @@
     margin-top: 0;
     padding: 10px;
     border: 1px solid $gray-3;
+    border-radius: 5px;
+    background-color: white;
     box-shadow: none;
     h4 {
         margin-top: 12px;
@@ -93,6 +92,11 @@
         border: 0;
         border-top: 1px dashed $gray-4;
     }
+    .btn-wrap {
+        margin-top: 0;
+        .btn { float: left; width: 48%; margin-top: 4px; }
+        .btn ~ .btn { margin-left: 4%; }
+    }
 }
 
 // 템플릿 -- 1
@@ -104,7 +108,6 @@
     width: 1000px;
     height: 1000px;
     padding: 50px;
-    margin-top: 100px;
     background-color: white;
     @include shadow;
     .header {
@@ -238,7 +241,7 @@
     overflow: hidden;
     width: 1000px;
     height: 1000px;
-    margin-top: 100px;
+    // margin-top: 100px;
     background-color: white;
     @include shadow;
     .header {
@@ -339,7 +342,6 @@
     overflow: hidden;
     width: 1200px;
     height: 630px;
-    margin: 100px 0;
     background-color: white;
     @include shadow;
     .img-wrap {

@@ -52,10 +52,7 @@
                 <input class="input__text" type='text' id='packageQuantitySubInput' value="20L"/>
             </div>
         </div>
-        <div class="btn-wrap">
-            <input class="btn btn--ghost" type="button" onclick="colorChange()" value="색 바꾸기"/>
-            <input class="btn btn--filled btn__submit" type="button" onclick="beerSubmit()" value="가즈아"/>
-        </div>
+        <input class="btn btn--filled btn__submit" type="button" onclick="beerSubmit()" value="내용 변경 가즈아"/>
     </form>
     <form class="form remote-control">
         <h4>[T1] 맥주 이름 폰트</h4>
@@ -97,7 +94,15 @@
             <input id="btnAddPackageSub" class="btn btn--ghost btn--selected" type="button" onclick="addPackageSub()" value="가공형태 2 있음"/>
             <input id="btnDelPackageSub" class="btn btn--ghost" type="button" onclick="delPackageSub()" value="가공형태 2 없음"/>
         </div>
+        <hr/>
+        <div class="btn-wrap">
+            <input class="btn btn--ghost" type="button" onclick="colorChange()" value="색 바꾸기"/>
+            <input class="btn btn--filled btn__submit" type="button" onclick="makeImg()" value="이미지 ㄱㄱ"/>
+        </div>
     </form> 
+
+    <div class="margin"></div>
+
     <div id="templateStyle1" class="template-style--1">
         <div class="header">
             <h1 class="drink__name">
@@ -202,6 +207,8 @@
         <ul></ul>
     </div>
 
+    <div class="margin"></div>
+
     <div id="templateStyle2" class="template-style--2">
         <div id="headerT2" class="header flex-container flex-column flex-center">
             <h1 id="drinkNameT2" class="drink__name">Veluga Beer</h1>
@@ -229,6 +236,8 @@
         </div>
     </div>
     
+    <div class="margin"></div>
+
     <div id="opengraph" class="opengraph">
         <div class="img-wrap flex-container flex-center item-center">
             <img id="drinkImgOG" class="drink__img" src="res/common/img/drink_sample.png" alt="상품 이미지">
@@ -254,18 +263,11 @@
             </table>
         </div>
     </div>
+
+    <div class="margin"></div>
+
     <script src="js/Vibrant.min.js"></script>
     <script src="js/dom-to-image.js"></script>
-    <script>
-        // var node = document.getElementById('templateStyle2');
-        domtoimage.toJpeg(document.getElementById('templateStyle2'), { quality: 0.95 })
-        .then(function (dataUrl) {
-            var link = document.createElement('a');
-            link.download = 'my-image-name.jpeg';
-            link.href = dataUrl;
-            link.click();
-        });
-    </script>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 </html>

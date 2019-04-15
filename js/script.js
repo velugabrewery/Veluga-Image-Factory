@@ -27,7 +27,7 @@ function beerSubmit(){
     var img = document.getElementById('drinkImg');
     var drinkImgUrlInput = document.getElementById('drinkImgUrlInput').value;
     img.src = drinkImgUrlInput;
-    var drinkNameInput = document.getElementById('drinkNameInput').value;
+    drinkNameInput = document.getElementById('drinkNameInput').value;
     document.getElementById('drinkName').innerHTML = drinkNameInput;
     var producerNameInput = document.getElementById('producerNameInput').value;
     document.getElementById('producerName').innerHTML = producerNameInput;
@@ -251,3 +251,13 @@ function resetOGFontSize(){
     drinkNameOGFontSize = 60;
     drinkNameOG.style.fontSize = drinkNameOGFontSize + 'px';
 }
+
+function makeImage(){
+    domtoimage.toJpeg(document.getElementById('templateStyle1'))
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'my-image-name.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+} 
