@@ -256,7 +256,7 @@ function makeTem1(){
     domtoimage.toJpeg(document.getElementById('templateStyle1'))
         .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'Tem1 ' + producerNameInput + ' ' + drinkNameInput.value + '.jpeg';
+            link.download = 'Tem1 ' + producerNameInput + ' ' + drinkNameInput + '.jpeg';
             link.href = dataUrl;
             link.click();
         });
@@ -266,7 +266,7 @@ function makeTem2(){
     domtoimage.toJpeg(document.getElementById('templateStyle2'))
         .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'Tem2 ' + producerNameInput + ' ' + drinkNameInput.value + '.jpeg';
+            link.download = 'Tem2 ' + producerNameInput + ' ' + drinkNameInput + '.jpeg';
             link.href = dataUrl;
             link.click();
         });
@@ -276,7 +276,7 @@ function makeOG(){
     domtoimage.toJpeg(document.getElementById('opengraph'))
         .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'OG ' + producerNameInput + ' ' + drinkNameInput.value + '.jpeg';
+            link.download = 'OG ' + producerNameInput + ' ' + drinkNameInput + '.jpeg';
             link.href = dataUrl;
             link.click();
         });
