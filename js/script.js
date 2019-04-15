@@ -252,12 +252,38 @@ function resetOGFontSize(){
     drinkNameOG.style.fontSize = drinkNameOGFontSize + 'px';
 }
 
-function makeImage(){
+function makeTem1(){
     domtoimage.toJpeg(document.getElementById('templateStyle1'))
         .then(function (dataUrl) {
             var link = document.createElement('a');
-            link.download = 'my-image-name.jpeg';
+            link.download = 'Tem1 ' + drinkNameInput.value + '.jpeg';
             link.href = dataUrl;
             link.click();
         });
 } 
+
+function makeTem2(){
+    domtoimage.toJpeg(document.getElementById('templateStyle2'))
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'Tem2 ' + drinkNameInput.value + '.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+} 
+
+function makeOG(){
+    domtoimage.toJpeg(document.getElementById('opengraph'))
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'OG ' + drinkNameInput.value + '.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+}
+
+function makeImg(){
+    makeTem1();
+    makeTem2();
+    makeOG();
+}
