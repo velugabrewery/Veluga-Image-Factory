@@ -41,6 +41,13 @@
         }
         .btn:last-child { border-left: 1px solid $gray-4; }
     }
+    .btn-wrap {
+        margin-top: 20px;
+        .btn { float: left; margin-top: 0; }
+        .btn.btn--ghost { width: 35%; }
+        .btn.btn--filled { width: 61%; }
+        .btn ~ .btn { margin-left: 4%; }
+    }
 }
 
 // 리모컨
@@ -241,7 +248,6 @@
     overflow: hidden;
     width: 1000px;
     height: 1000px;
-    // margin-top: 100px;
     background-color: white;
     @include shadow;
     .header {
@@ -303,7 +309,6 @@
                 font-weight: 600;
                 font-size: 40px;
                 text-transform: capitalize;
-                transform: skewX(-10deg);
             }
             .drink__description {
                 margin-top: 40px;

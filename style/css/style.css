@@ -336,6 +336,22 @@ p {
 .form .btn-switch .btn:last-child {
   border-left: 1px solid #ced7da;
 }
+.form .btn-wrap {
+  margin-top: 20px;
+}
+.form .btn-wrap .btn {
+  float: left;
+  margin-top: 0;
+}
+.form .btn-wrap .btn.btn--ghost {
+  width: 35%;
+}
+.form .btn-wrap .btn.btn--filled {
+  width: 61%;
+}
+.form .btn-wrap .btn ~ .btn {
+  margin-left: 4%;
+}
 
 .form.remote-control {
   z-index: 999;
@@ -811,7 +827,6 @@ p {
   font-weight: 600;
   font-size: 40px;
   text-transform: capitalize;
-  transform: skewX(-10deg);
 }
 .template-style--2 .content .text-wrap .drink__description {
   margin-top: 40px;

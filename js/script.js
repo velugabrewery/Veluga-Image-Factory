@@ -299,3 +299,9 @@ function makeImg(){
     makeTem2();
     makeOG();
 }
+
+function imgBugFix(){
+    var img = document.getElementById('drinkImg');
+    var drinkImgUrlInput = document.getElementById('drinkImgUrlInput').value;
+    img.src = drinkImgUrlInput;
+}
