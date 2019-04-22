@@ -20,6 +20,18 @@ function colorChange(){
 
 window.onload = function() {
     colorChange();
+
+    let params = window.location.search.substr(1).split('&');
+    for(let i in params) {
+        let keyValue = params[i].split('=')
+        let key = keyValue[0]
+        let val = keyValue[1]
+        console.log(key)
+        console.log(val)
+        console.log(decodeURIComponent(val))
+        document.getElementsByName(key)[0].value = decodeURIComponent(val)
+    }
+    beerSubmit()
 }
 
 function beerSubmit(){
