@@ -788,15 +788,26 @@ p {
   padding: 30px 0;
 }
 .template-style--1 .content .img-wrap {
+  position: relative;
   float: left;
   width: 50%;
   height: 100%;
   background-color: #f6f6f8;
 }
 .template-style--1 .content .img-wrap .drink__img {
-  height: 570px;
+  height: 530px;
+}
+.template-style--1 .content .img-wrap .copyright {
+  position: absolute;
+  right: 0;
+  bottom: 22px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
 }
 .template-style--1 .content .text-wrap {
+  position: relative;
   float: left;
   width: 50%;
   height: 100%;
@@ -935,6 +946,7 @@ p {
   transform: skewX(-10deg);
 }
 .template-style--2 .content .img-wrap {
+  position: relative;
   float: left;
   width: 45%;
   height: 770px;
@@ -942,6 +954,15 @@ p {
 }
 .template-style--2 .content .img-wrap .drink__img {
   height: 630px;
+}
+.template-style--2 .content .img-wrap .copyright {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
 }
 
 .opengraph {

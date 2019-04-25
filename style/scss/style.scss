@@ -187,13 +187,24 @@
         height: 710px;
         padding: 30px 0;
         .img-wrap {
+            position: relative;
             float: left;
             width: 50%;
             height: 100%;
             background-color: #f6f6f8;
-            .drink__img { height: 570px; }
+            .drink__img { height: 530px; }
+            .copyright {
+                position: absolute;
+                right: 0;
+                bottom: 22px;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                opacity: 0.5;
+            }
         }
         .text-wrap {
+            position: relative;
             float: left;
             width: 50%;
             height: 100%;
@@ -332,11 +343,21 @@
             }
         }
         .img-wrap {
+            position: relative;
             float: left;
             width: 45%;
             height: 770px;
             background-color: #f6f6f8;
             .drink__img { height: 630px; }
+            .copyright {
+                position: absolute;
+                right: 0;
+                bottom: 25px;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                opacity: 0.5;
+            }
         }
     }
 }
