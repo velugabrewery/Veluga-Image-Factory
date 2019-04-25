@@ -5,10 +5,13 @@ function colorChange(){
     var swatches = vibrant.swatches();
     var circleText1 = document.getElementById('circleText1');
     var circleText2 = document.getElementById('circleText2');
+    var circleText3 = document.getElementById('circleText3');
     circleText1.style.borderColor = swatches.Vibrant.getHex();
     circleText1.style.color = swatches.Vibrant.getHex();
     circleText2.style.borderColor = swatches.Vibrant.getHex();
     circleText2.style.color = swatches.Vibrant.getHex();
+    circleText3.style.borderColor = swatches.Vibrant.getHex();
+    circleText3.style.color = swatches.Vibrant.getHex();
     var headerT2 = document.getElementById('headerT2');
     if (vibrant.LightMutedSwatch !== true) {
         headerT2.style.backgroundColor = vibrant.LightMutedSwatch.getHex();
