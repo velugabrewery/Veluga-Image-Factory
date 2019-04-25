@@ -19,8 +19,6 @@ function colorChange(){
 };
 
 window.onload = function() {
-    colorChange();
-    
     let params = window.location.search.substr(1).split('&');
     for(let i in params) {
         let keyValue = params[i].split('=')
@@ -125,6 +123,7 @@ function beerSubmit(){
     resetOGFontSize();
     changeDefaultFontT1();
     changeDefaultFontT2();
+    colorChange();
 };
 
 function changeYearRound(){
