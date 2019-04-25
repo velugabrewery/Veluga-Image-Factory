@@ -19,7 +19,7 @@ function colorChange(){
 };
 
 window.onload = function() {
-    colorChange();
+    // colorChange();
 
     let params = window.location.search.substr(1).split('&');
     for(let i in params) {
@@ -29,7 +29,35 @@ window.onload = function() {
         console.log(key)
         console.log(val)
         console.log(decodeURIComponent(val))
-        document.getElementsByName(key)[0].value = decodeURIComponent(val)
+        var text = decodeURIComponent(val)
+        var getml = text.substring(text.length-2, text.length)
+        console.log(getml)
+        if (getml == "mL") {
+            document.getElementsByName(key)[0].value = text.toLowerCase()
+        }
+        else {
+            document.getElementsByName(key)[0].value = text
+        }
+    }
+
+    // 가공형태 갯수에 따라서 없앰
+    if (packageQuantitySubInput.value == "") {
+        delPackageSub()
+        delPackageThird()
+    }
+    else if (packageQuantityThirdInput.value == "") {
+        delPackageThird()
+    }
+
+    // 연중생산, 시즈널, 한정판 체크
+    if (document.getElementsByName('production_cycle_type')[0].value == 'year_round') {
+        changeYearRound()
+    }
+    else if(document.getElementsByName('production_cycle_type')[0].value == 'seasonal') {
+        changeSeasonal()
+    }
+    else {
+        changeLimited()
     }
     beerSubmit()
 }
@@ -59,6 +87,10 @@ function beerSubmit(){
     document.getElementById('packageUnitSub').innerHTML = packageUnitSubInput;
     var packageQuantitySubInput = document.getElementById('packageQuantitySubInput').value;
     document.getElementById('packageQuantitySub').innerHTML = packageQuantitySubInput;
+    var packageUnitThirdInput = document.getElementById('packageUnitThirdInput').value;
+    document.getElementById('packageUnitThird').innerHTML = packageUnitThirdInput;
+    var packageQuantityThirdInput = document.getElementById('packageQuantityThirdInput').value;
+    document.getElementById('packageQuantityThird').innerHTML = packageQuantityThirdInput;
 
     // 템플릿 2
     var drinkImgT2 = document.getElementById('drinkImgT2');
@@ -73,6 +105,8 @@ function beerSubmit(){
     document.getElementById('packageQuantityMainT2').innerHTML = packageQuantityMainInput;
     document.getElementById('packageUnitSubT2').innerHTML = packageUnitSubInput;
     document.getElementById('packageQuantitySubT2').innerHTML = packageQuantitySubInput;
+    document.getElementById('packageUnitThirdT2').innerHTML = packageUnitThirdInput;
+    document.getElementById('packageQuantityThirdT2').innerHTML = packageQuantityThirdInput;
 
     // 오픈그래프
     var drinkImgOG = document.getElementById('drinkImgOG');
@@ -97,26 +131,32 @@ function changeYearRound(){
     // 템플릿 1
     var circleText1 = document.getElementById('circleText1');
     var circleText2 = document.getElementById('circleText2');
+    var circleText3 = document.getElementById('circleText3');
     circleText1.style.display = 'block';
     circleText2.style.display = 'none';
+    circleText3.style.display = 'none';
     
     // 템플릿 2
     var cycleT2 = document.getElementById('cycleT2');
-    cycleT2.innerHTML = '연중생산';
+    cycleT2.innerHTML = '연중 생산';
 
     // 버튼 클래스 추가 및 제거
     var btnYearRound = document.getElementById('btnYearRound');
     var btnSeasonal = document.getElementById('btnSeasonal');
+    var btnLimited = document.getElementById('btnLimited');
     btnYearRound.classList.add('btn--selected');
     btnSeasonal.classList.remove('btn--selected');
+    btnLimited.classList.remove('btn--selected');
 };
 
 function changeSeasonal(){
     // 템플릿 1
     var circleText1 = document.getElementById('circleText1');
     var circleText2 = document.getElementById('circleText2');
+    var circleText3 = document.getElementById('circleText3');
     circleText1.style.display = 'none';
     circleText2.style.display = 'block';
+    circleText3.style.display = 'none';
     
     // 템플릿 2
     var cycleT2 = document.getElementById('cycleT2');
@@ -125,8 +165,32 @@ function changeSeasonal(){
     // 버튼 클래스 추가 및 제거
     var btnYearRound = document.getElementById('btnYearRound');
     var btnSeasonal = document.getElementById('btnSeasonal');
+    var btnLimited = document.getElementById('btnLimited');
     btnYearRound.classList.remove('btn--selected');
     btnSeasonal.classList.add('btn--selected');
+    btnLimited.classList.remove('btn--selected');
+};
+
+function changeLimited(){
+    // 템플릿 1
+    var circleText1 = document.getElementById('circleText1');
+    var circleText2 = document.getElementById('circleText2');
+    var circleText3 = document.getElementById('circleText3');
+    circleText1.style.display = 'none';
+    circleText2.style.display = 'none';
+    circleText3.style.display = 'block';
+    
+    // 템플릿 2
+    var cycleT2 = document.getElementById('cycleT2');
+    cycleT2.innerHTML = '한정판';
+
+    // 버튼 클래스 추가 및 제거
+    var btnYearRound = document.getElementById('btnYearRound');
+    var btnSeasonal = document.getElementById('btnSeasonal');
+    var btnLimited = document.getElementById('btnLimited');
+    btnYearRound.classList.remove('btn--selected');
+    btnSeasonal.classList.remove('btn--selected');
+    btnLimited.classList.add('btn--selected');
 };
 
 function addPackageSub(){
@@ -160,6 +224,39 @@ function delPackageSub(){
     btnAddPackageSub.classList.remove('btn--selected');
     btnDelPackageSub.classList.add('btn--selected');
 };
+
+function addPackageThird(){
+    // 템플릿 1
+    var packageThird = document.getElementById('packageThird');
+    packageThird.style.display = 'table-cell';
+    
+    // 템플릿 2
+    var packageThirdT2 = document.getElementById('packageThirdT2');
+    packageThirdT2.style.display = 'list-item';
+
+    // 버튼 클래스 추가 및 제거
+    var btnAddPackageThird = document.getElementById('btnAddPackageThird');
+    var btnDelPackageThird = document.getElementById('btnDelPackageThird');
+    btnAddPackageThird.classList.add('btn--selected');
+    btnDelPackageThird.classList.remove('btn--selected');
+}
+
+function delPackageThird(){
+    // 템플릿 1
+    var packageThird = document.getElementById('packageThird');
+    packageThird.style.display = 'none';
+    
+    // 템플릿 2
+    var packageThirdT2 = document.getElementById('packageThirdT2');
+    packageThirdT2.style.display = 'none';
+
+    // 버튼 클래스 추가 및 제거
+    var btnAddPackageThird = document.getElementById('btnAddPackageThird');
+    var btnDelPackageThird = document.getElementById('btnDelPackageThird');
+    btnAddPackageThird.classList.remove('btn--selected');
+    btnDelPackageThird.classList.add('btn--selected');
+};
+
 
 function changeCondensedT1(){
     var drinkName = document.getElementById('drinkName');
@@ -310,10 +407,4 @@ function makeImg(){
     makeTem1();
     makeTem2();
     makeOG();
-}
-
-function imgBugFix(){
-    var img = document.getElementById('drinkImg');
-    var drinkImgUrlInput = document.getElementById('drinkImgUrlInput').value;
-    img.src = drinkImgUrlInput;
 }

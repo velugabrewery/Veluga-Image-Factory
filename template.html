@@ -53,14 +53,18 @@
         <div class="form__input two">
             <label>가공형태 2</label>
             <div style="clear: both; overflow: hidden;">
-                <input class="input__text" type='text' id='packageUnitSubInput' value="케그" name="product_2_package"/>
-                <input class="input__text" type='text' id='packageQuantitySubInput' value="20L" name="product_2_volume"/>
+                <input class="input__text" type='text' id='packageUnitSubInput' value="" name="product_2_package"/>
+                <input class="input__text" type='text' id='packageQuantitySubInput' value="" name="product_2_volume"/>
             </div>
         </div>
-        <div class="btn-wrap">
-            <input class="btn btn--ghost" type="button" onclick="imgBugFix()" value="이미지 고쳐줘ㅜ"/>
-            <input class="btn btn--filled btn__submit" type="button" onclick="beerSubmit()" value="내용 변경 가즈아"/>
+        <div class="form__input two">
+            <label>가공형태 3</label>
+            <div style="clear: both; overflow: hidden;">
+                <input class="input__text" type='text' id='packageUnitThirdInput' value="" name="product_3_package"/>
+                <input class="input__text" type='text' id='packageQuantityThirdInput' value="" name="product_3_volume"/>
+            </div>
         </div>
+        <input class="btn btn--filled btn__submit" type="button" onclick="beerSubmit()" value="내용 변경 가즈아"/>
     </form>
     <form class="form remote-control">
         <h4>[T1] 맥주 이름 폰트</h4>
@@ -94,13 +98,19 @@
             <input class="btn btn--ghost" type="button" onclick="addOGFontSize()" value="+2px">
         </div>
         <hr/>
-        <div class="btn-switch">
-            <input id="btnYearRound" class="btn btn--ghost btn--selected" type="button" onclick="changeYearRound()" value="연중생산이에요">
-            <input id="btnSeasonal" class="btn btn--ghost" type="button" onclick="changeSeasonal()" value="시즈널이에요">
+        <input style="display: none;" name="production_cycle_type">
+        <div class="btn-switch three">
+            <input id="btnYearRound" class="btn btn--ghost btn--selected" type="button" onclick="changeYearRound()" value="연중 생산">
+            <input id="btnSeasonal" class="btn btn--ghost" type="button" onclick="changeSeasonal()" value="시즈널">
+            <input id="btnLimited" class="btn btn--ghost" type="button" onclick="changeLimited()" value="한정판">
         </div>
         <div class="btn-switch">
             <input id="btnAddPackageSub" class="btn btn--ghost btn--selected" type="button" onclick="addPackageSub()" value="가공형태 2 있음"/>
             <input id="btnDelPackageSub" class="btn btn--ghost" type="button" onclick="delPackageSub()" value="가공형태 2 없음"/>
+        </div>
+        <div class="btn-switch">
+            <input id="btnAddPackageThird" class="btn btn--ghost btn--selected" type="button" onclick="addPackageThird()" value="가공형태 3 있음"/>
+            <input id="btnDelPackageThird" class="btn btn--ghost" type="button" onclick="delPackageThird()" value="가공형태 3 없음"/>
         </div>
         <hr/>
         <div class="btn-wrap">
@@ -188,6 +198,40 @@
                     <span class="char35">L</span>
                     <span class="char36"></span>
                 </div>
+                <div id="circleText3" class="circle-text circle-text--limited">
+                    <span class="char1">L</span>
+                    <span class="char2">I</span>
+                    <span class="char3">M</span>
+                    <span class="char4">I</span>
+                    <span class="char5">T</span>
+                    <span class="char6">E</span>
+                    <span class="char7">D</span>
+                    <span class="char8"></span>
+                    <span class="char9">L</span>
+                    <span class="char10">I</span>
+                    <span class="char11">M</span>
+                    <span class="char12">I</span>
+                    <span class="char13">T</span>
+                    <span class="char14">E</span>
+                    <span class="char15">D</span>
+                    <span class="char16"></span>
+                    <span class="char17">L</span>
+                    <span class="char18">I</span>
+                    <span class="char19">M</span>
+                    <span class="char20">I</span>
+                    <span class="char21">T</span>
+                    <span class="char22">E</span>
+                    <span class="char23">D</span>
+                    <span class="char24"></span>
+                    <span class="char25">L</span>
+                    <span class="char26">I</span>
+                    <span class="char27">M</span>
+                    <span class="char28">I</span>
+                    <span class="char29">T</span>
+                    <span class="char30">E</span>
+                    <span class="char31">D</span>
+                    <span class="char32"></span>
+                </div>
             </h1>
         </div>
         <div class="content">
@@ -209,6 +253,7 @@
                     <td><span id="drinkAbv">9.0</span>%</td>
                     <td><small id="packageUnitMain">병</small><span id="packageQuantityMain">330ml</span></td>
                     <td id="packageSub"><small id="packageUnitSub">케그</small><span id="packageQuantitySub">20L</span></td>
+                    <td id="packageThird"><small id="packageUnitThird">케그</small><span id="packageQuantityThird">20L</span></td>
                 </tr>
             </table>
         </div>
@@ -225,6 +270,7 @@
                 <li class="data__list"><span id="drinkAbvT2">9.0</span>% abv</li>
                 <li class="data__list"><small id="packageUnitMainT2">병</small><span id="packageQuantityMainT2">330ml</span></li>
                 <li id="packageSubT2" class="data__list"><small id="packageUnitSubT2">케그</small><span id="packageQuantitySubT2">20L</span></li>
+                <li id="packageThirdT2" class="data__list"><small id="packageUnitThirdT2">케그</small><span id="packageQuantityThirdT2">20L</span></li>
             </ul>
         </div>
         <div class="content">

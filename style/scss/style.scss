@@ -36,17 +36,14 @@
             width: 50%;
             margin-top: 0;
             border: 0;
+            border-left: 1px solid $gray-4;
             border-radius: 0;
             color: $gray-4;
         }
-        .btn:last-child { border-left: 1px solid $gray-4; }
+        .btn:first-child { border-left: 0; }
     }
-    .btn-wrap {
-        margin-top: 20px;
-        .btn { float: left; margin-top: 0; }
-        .btn.btn--ghost { width: 35%; }
-        .btn.btn--filled { width: 61%; }
-        .btn ~ .btn { margin-left: 4%; }
+    .btn-switch.three {
+        .btn { width: 33.333334%; }
     }
 }
 
@@ -162,14 +159,15 @@
             span {
                 position: absolute;
                 top: 0;
-                left: 0;
+                left: -3px;
                 display: inline-block;
-                width: 20px;
+                width: 25px;
                 height: 130px;
                 transform-origin: bottom center;
                 font-weight: 900;
                 font-size: 26px;
                 color: inherit;
+                text-align: center;
             }
         }
         .circle-text--yearround {
@@ -178,6 +176,10 @@
         .circle-text--seasonal {
             display: none;
             @include rotated-text(36, 360, 0);
+        }
+        .circle-text--limited {
+            display: none;
+            @include rotated-text(32, 360, 0);
         }
     }
     .content {

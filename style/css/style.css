@@ -330,27 +330,15 @@ p {
   width: 50%;
   margin-top: 0;
   border: 0;
+  border-left: 1px solid #ced7da;
   border-radius: 0;
   color: #ced7da;
 }
-.form .btn-switch .btn:last-child {
-  border-left: 1px solid #ced7da;
+.form .btn-switch .btn:first-child {
+  border-left: 0;
 }
-.form .btn-wrap {
-  margin-top: 20px;
-}
-.form .btn-wrap .btn {
-  float: left;
-  margin-top: 0;
-}
-.form .btn-wrap .btn.btn--ghost {
-  width: 35%;
-}
-.form .btn-wrap .btn.btn--filled {
-  width: 61%;
-}
-.form .btn-wrap .btn ~ .btn {
-  margin-left: 4%;
+.form .btn-switch.three .btn {
+  width: 33.333334%;
 }
 
 .form.remote-control {
@@ -475,14 +463,15 @@ p {
 .template-style--1 .header .circle-text span {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -3px;
   display: inline-block;
-  width: 20px;
+  width: 25px;
   height: 130px;
   transform-origin: bottom center;
   font-weight: 900;
   font-size: 26px;
   color: inherit;
+  text-align: center;
 }
 .template-style--1 .header .circle-text--yearround .char1 {
   transform: rotate(10.9090909091deg);
@@ -692,6 +681,105 @@ p {
   transform: rotate(350deg);
 }
 .template-style--1 .header .circle-text--seasonal .char36 {
+  transform: rotate(360deg);
+}
+.template-style--1 .header .circle-text--limited {
+  display: none;
+}
+.template-style--1 .header .circle-text--limited .char1 {
+  transform: rotate(11.25deg);
+}
+.template-style--1 .header .circle-text--limited .char2 {
+  transform: rotate(22.5deg);
+}
+.template-style--1 .header .circle-text--limited .char3 {
+  transform: rotate(33.75deg);
+}
+.template-style--1 .header .circle-text--limited .char4 {
+  transform: rotate(45deg);
+}
+.template-style--1 .header .circle-text--limited .char5 {
+  transform: rotate(56.25deg);
+}
+.template-style--1 .header .circle-text--limited .char6 {
+  transform: rotate(67.5deg);
+}
+.template-style--1 .header .circle-text--limited .char7 {
+  transform: rotate(78.75deg);
+}
+.template-style--1 .header .circle-text--limited .char8 {
+  transform: rotate(90deg);
+}
+.template-style--1 .header .circle-text--limited .char9 {
+  transform: rotate(101.25deg);
+}
+.template-style--1 .header .circle-text--limited .char10 {
+  transform: rotate(112.5deg);
+}
+.template-style--1 .header .circle-text--limited .char11 {
+  transform: rotate(123.75deg);
+}
+.template-style--1 .header .circle-text--limited .char12 {
+  transform: rotate(135deg);
+}
+.template-style--1 .header .circle-text--limited .char13 {
+  transform: rotate(146.25deg);
+}
+.template-style--1 .header .circle-text--limited .char14 {
+  transform: rotate(157.5deg);
+}
+.template-style--1 .header .circle-text--limited .char15 {
+  transform: rotate(168.75deg);
+}
+.template-style--1 .header .circle-text--limited .char16 {
+  transform: rotate(180deg);
+}
+.template-style--1 .header .circle-text--limited .char17 {
+  transform: rotate(191.25deg);
+}
+.template-style--1 .header .circle-text--limited .char18 {
+  transform: rotate(202.5deg);
+}
+.template-style--1 .header .circle-text--limited .char19 {
+  transform: rotate(213.75deg);
+}
+.template-style--1 .header .circle-text--limited .char20 {
+  transform: rotate(225deg);
+}
+.template-style--1 .header .circle-text--limited .char21 {
+  transform: rotate(236.25deg);
+}
+.template-style--1 .header .circle-text--limited .char22 {
+  transform: rotate(247.5deg);
+}
+.template-style--1 .header .circle-text--limited .char23 {
+  transform: rotate(258.75deg);
+}
+.template-style--1 .header .circle-text--limited .char24 {
+  transform: rotate(270deg);
+}
+.template-style--1 .header .circle-text--limited .char25 {
+  transform: rotate(281.25deg);
+}
+.template-style--1 .header .circle-text--limited .char26 {
+  transform: rotate(292.5deg);
+}
+.template-style--1 .header .circle-text--limited .char27 {
+  transform: rotate(303.75deg);
+}
+.template-style--1 .header .circle-text--limited .char28 {
+  transform: rotate(315deg);
+}
+.template-style--1 .header .circle-text--limited .char29 {
+  transform: rotate(326.25deg);
+}
+.template-style--1 .header .circle-text--limited .char30 {
+  transform: rotate(337.5deg);
+}
+.template-style--1 .header .circle-text--limited .char31 {
+  transform: rotate(348.75deg);
+}
+.template-style--1 .header .circle-text--limited .char32 {
   transform: rotate(360deg);
 }
 .template-style--1 .content {
