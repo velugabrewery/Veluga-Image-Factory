@@ -410,3 +410,17 @@ function makeImg(){
     makeTem2();
     makeOG();
 }
+
+function makeBlogThumb(){
+    domtoimage.toJpeg(document.getElementById('blogThumbnail'))
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'Thumbnail ' + producerNameInput + ' ' + drinkNameInput + '.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+}
+
+function makeBlogImg(){
+    makeBlogThumb();
+}
