@@ -121,6 +121,10 @@ function beerSubmit(){
     document.getElementById('drinkStyleOG').innerHTML = drinkStyleInputKO;
     document.getElementById('drinkAbvOG').innerHTML = drinkAbvInput;
 
+    // 블로그용 썸네일
+    var drinkImgBlogThumb = document.getElementById('drinkImgBlogThumb');
+    drinkImgBlogThumb.src = drinkImgUrlInput;
+
     resetT1FontSize();
     resetT2FontSize();
     resetOGFontSize();
