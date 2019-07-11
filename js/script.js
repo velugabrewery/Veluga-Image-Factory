@@ -127,6 +127,7 @@ function beerSubmit(){
 
     resetT1FontSize();
     resetT2FontSize();
+    resetT2MarginTop();
     resetOGFontSize();
     changeDefaultFontT1();
     changeDefaultFontT2();
@@ -314,6 +315,7 @@ function changeDefaultFontT2(){
 
 var drinkNameFontSize = 90;
 var drinkNameT2FontSize = 90;
+var drinkNameT2MarginTop = 0;
 var drinkNameOGFontSize = 60;
 var beerDataT2MarginTop = 38;
 
@@ -360,6 +362,23 @@ function resetT2FontSize(){
 
     beerDataT2MarginTop = 38;
     beerDataT2.style.marginTop = beerDataT2MarginTop + 'px';
+}
+
+function addT2MarginTop(){
+    var producerNameT2 = document.getElementById('producerNameT2');
+    producerNameT2MarginTop = producerNameT2MarginTop + 10;
+    producerNameT2.style.marginTop = producerNameT2MarginTop + 'px';
+}
+
+function subT2MarginTop(){
+    var producerNameT2 = document.getElementById('producerNameT2');
+    producerNameT2MarginTop = producerNameT2MarginTop - 10;
+    producerNameT2.style.marginTop = producerNameT2MarginTop + 'px';
+}
+
+function resetT2MarginTop(){
+    producerNameT2MarginTop = 0;
+    producerNameT2.style.marginTop = producerNameT2MarginTop + 'px';
 }
 
 function addOGFontSize(){
