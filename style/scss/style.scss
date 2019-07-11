@@ -186,6 +186,10 @@
         overflow: hidden;
         height: 710px;
         padding: 30px 0;
+        hr {
+            margin: 8px 0;
+            border: none;
+        }
         .img-wrap {
             position: relative;
             float: left;
@@ -312,6 +316,10 @@
     .content {
         overflow: hidden;
         height: 770px;
+        hr {
+            margin: 8px 0;
+            border: none;
+        }
         .text-wrap {
             position: relative;
             float: left;
