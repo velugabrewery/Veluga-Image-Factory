@@ -73,6 +73,7 @@ function beerSubmit(){
     producerNameInput = document.getElementById('producerNameInput').value;
     document.getElementById('producerName').innerHTML = producerNameInput;
     var drinkDescriptionInput = document.getElementById('drinkDescriptionInput').value;
+    drinkDescriptionInput = drinkDescriptionInput.replace(/\n\n/g, '<hr><hr>').replace(/\n/g, '<br>');
     document.getElementById('drinkDescription').innerHTML = drinkDescriptionInput;
     var originInput = document.getElementById('originInput').value;
     document.getElementById('origin').innerHTML = originInput;
