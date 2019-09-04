@@ -199,14 +199,12 @@
             height: 100%;
             background-color: #f6f6f8;
             .drink__img { height: 530px; }
-            .copyright {
+            .watermark {
                 position: absolute;
-                right: 0;
-                bottom: 22px;
-                display: inline-block;
-                width: 100%;
-                text-align: center;
-                opacity: 0.5;
+                top: 50%;
+                left: 50%;
+                width: 80%;
+                transform: translate(-50%, -50%);
             }
         }
         .text-wrap {
@@ -359,14 +357,12 @@
             height: 770px;
             background-color: #f6f6f8;
             .drink__img { height: 630px; }
-            .copyright {
+            .watermark {
                 position: absolute;
-                right: 0;
-                bottom: 25px;
-                display: inline-block;
-                width: 100%;
-                text-align: center;
-                opacity: 0.5;
+                top: 50%;
+                left: 50%;
+                width: 80%;
+                transform: translate(-50%, -50%);
             }
         }
     }
