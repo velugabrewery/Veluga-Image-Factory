@@ -617,7 +617,7 @@ p {
         left: 50%;
         width: 80%;
         transform: translate(-50%, -50%);
-        opacity: 0.6; }
+        opacity: 0.8; }
     .template-style--1 .content .text-wrap {
       position: relative;
       float: left;
@@ -751,7 +751,7 @@ p {
         left: 50%;
         width: 80%;
         transform: translate(-50%, -50%);
-        opacity: 0.6; }
+        opacity: 0.8; }
 
 .opengraph {
   z-index: 3;
