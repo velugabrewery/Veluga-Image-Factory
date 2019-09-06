@@ -836,5 +836,12 @@ p {
     background-color: #F6F2ED; }
     .blog-thumbnail .img-wrap .drink__img {
       height: 80%; }
+    .blog-thumbnail .img-wrap .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      transform: translate(-50%, -50%);
+      opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
