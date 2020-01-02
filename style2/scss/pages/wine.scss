@@ -1,0 +1,114 @@
+@mixin rotated-text($num-letters, $angle-span, $angle-offset) {
+  $angle-per-char: $angle-span / $num-letters;
+  @for $i from 1 through $num-letters {
+    .char#{$i} {
+      transform: rotate(($angle-offset + $angle-per-char * $i)+deg);
+    }
+  }
+}
+
+.wine-template-1 {
+  width: 1000px;
+  height: 1000px;
+  .img-wrap {
+    min-width: 400px;
+  }
+  .text-container {
+    
+    .text-wrap {
+      width: 500px;
+      .winery-name {
+        font-family: "Suisse Int'l Condensed";
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: $gray-400;
+      }
+      .wine-name {
+        font-family: "Suisse Int'l Condensed";
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 65px;
+        text-transform: uppercase;
+        .circle-text {
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          right: 0;
+          font-family: "Suisse Int'l";
+          color: $gray-400;
+          border-color: $gray-400;
+          transform: translate(-25px, -95px);
+          mix-blend-mode: multiply;
+          &:before,
+          &:after {
+            position: absolute;
+            display: block;
+            border: 4px solid;
+            border-color: inherit;
+            border-radius: 50%;
+            content: '';
+          }
+          &:before {
+            top: 16px;
+            left: -104px;
+            width: 220px;
+            height: 220px;
+          }
+          &:after {
+            top: 50px;
+            left: -70px;
+            width: 152px;
+            height: 152px;
+          }
+          span {
+            position: absolute;
+            top: 5px;
+            left: -7px;
+            display: inline-block;
+            width: 25px;
+            height: 122px;
+            transform-origin: bottom center;
+            font-weight: 900;
+            font-size: 26px;
+            color: inherit;
+            text-align: center;
+          }
+        }
+        .circle-text--yearround {
+            @include rotated-text(33, 360, 0);
+        }
+        .circle-text--seasonal {
+            display: none;
+            @include rotated-text(36, 360, 0);
+        }
+        .circle-text--limited {
+            display: none;
+            @include rotated-text(32, 360, 0);
+        }
+      }
+      .wine-info {
+        margin-top: 42px;
+        .info-item {
+          font-size: 21px;
+          .info-name {
+            min-width: 140px;
+            font-weight: 600;
+          }
+          .info-data {}
+        }
+        .info-item ~ .info-item {
+          margin-top: 20px;
+        }
+      }
+      .paragraph {
+        margin-top: 40px;
+        font-size: 23px;
+        line-height: 40px;
+        // text-align: justify;
+        word-break: keep-all;
+        letter-spacing: -.03em;
+      }
+    }
+  }
+}
