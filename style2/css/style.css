@@ -7390,6 +7390,43 @@ select.form-control {
 /*
  * based on bootstrap
  */
+.radio-btn-group {
+  display: flex; }
+  .radio-btn-group .radio-btn {
+    flex: 1 1 auto;
+    margin-bottom: 0;
+    padding: .6125rem 0;
+    border: 1px solid #dee4e6;
+    border-right-color: transparent;
+    color: #869196;
+    text-align: center; }
+  .radio-btn-group .radio-btn:last-child {
+    border-right-color: #dee4e6; }
+  .radio-btn-group input[type=radio]:checked + .radio-btn {
+    border-color: #8aac80;
+    background-color: #dfe8dc;
+    color: #4c6844; }
+  .radio-btn-group input[type=radio]:checked + .radio-btn + input[type=radio] + .radio-btn {
+    border-left-color: transparent; }
+  .radio-btn-group .radio-btn ~ .radio-btn {
+    border-left-color: #dee4e6; }
+  .radio-btn-group .radio-btn:nth-child(2) {
+    border-radius: 0.375rem 0 0 0.375rem; }
+  .radio-btn-group .radio-btn:last-child {
+    border-radius: 0 0.375rem 0.375rem 0; }
+  .radio-btn-group.is-invalid .radio-btn {
+    color: #fa5252 !important;
+    border-color: #fa5252 !important;
+    background-color: rgba(250, 82, 82, 0.25) !important; }
+    .radio-btn-group.is-invalid .radio-btn:focus {
+      border-color: #fa5252 !important;
+      box-shadow: 0 0 0 0.2rem rgba(250, 82, 82, 0.25) !important; }
+  .radio-btn-group.is-invalid .radio-btn ~ .radio-btn {
+    border-left-color: transparent !important; }
+  .radio-btn-group.is-invalid ~ .invalid-feedback,
+  .radio-btn-group.is-invalid ~ .invalid-tooltip {
+    display: block !important; }
+
 *, body {
   font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', Sans-serif; }
 
@@ -7401,6 +7438,12 @@ select.form-control {
 
 .form {
   width: 500px; }
+
+.remote-control {
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  width: 300px; }
 
 .wine-template-1 {
   width: 1000px;
