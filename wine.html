@@ -63,10 +63,10 @@
         </div>
       </div>
       <div class="form-group">
-        <label>가공형태 2</label>
+        <label>가공형태 3</label>
         <div class="d-flex">
           <input class="form-control" type="text" id="packageUnitThirdInput" value="병" name="product_3_package" />
-          <input class="form-control ml-3" type="text" id="packageQuantityThirdInput" value="1500ml" name="product_3_volume" />
+          <input class="form-control ml-3" type="text" id="packageQuantityThirdInput" value="3000ml" name="product_3_volume" />
         </div>
       </div>
       <button class="w-100 btn btn-primary" type="button" onclick="beerSubmit()">내용 변경 가즈아</button>
@@ -193,7 +193,9 @@
           <ul class="wine-info pl-0">
             <li class="info-item d-flex">
               <span class="info-name">국가/지역</span>
-              <span class="info-data">헝가리, 토카이</span>
+              <span class="info-data">헝가리</span>
+              <span>,&nbsp;</span>
+              <span class="info-data">토카이</span>
             </li>
             <li class="info-item d-flex">
               <span class="info-name">베이스</span>
@@ -206,10 +208,21 @@
             <li class="info-item d-flex">
               <span class="info-name">형태/용량</span>
               <span class="info-data">병 750ml</span>
+              <div class="d-flex">
+                <span>,&nbsp;</span>
+                <span class="info-data">병 1500ml</span>
+              </div>
+              <div class="d-flex">
+                <span>,&nbsp;</span>
+                <span class="info-data">병 3000ml</span>
+              </div>
             </li>
             <li class="info-item d-flex">
               <span class="info-name">도수</span>
-              <span class="info-data">11.5%</span>
+              <div class="info-data d-flex">
+                <span>11.5</span>
+                <span>%</span>
+              </div>
             </li>
           </ul>
           <p class="paragraph">토카이 지역은 수백만 년 전의 화산 활동으로 지하에 인체에 유익한 미네랄 성분이 많아 이 지역에서 생산된 포도는 맛있고 몸에 유익한 미네랄 성분이 많이 함유되어 있습니다. 토카이 디저트 와인으로 유명한 헝가리 토카이 지방에서 생산된 머스캣 루넬 포도 품종으로 담근 dry 한 맛의 화이트 와인입니다. 병을 따는 순간 느껴지는 풍부한 향은 당신의 식욕을 자극할 것입니다.  위생적인 스테인레스 통 숙성,  테이블 와인으로 적당하고 가성비가 좋은 와인입니다.</p>
@@ -227,7 +240,20 @@
         <div class="og-info d-flex">
           <div class="info-item position-relative d-flex flex-column flex-fill">
             <span class="info-name">국가/지역</span>
-            <span id="originOG" class="info-data mt-2 text-dark-muted">헝가리, 토카이</span>
+            <div class="info-data d-flex mt-2 text-dark-muted">
+              <span id="originOG">헝가리</span>
+              <span>,&nbsp;</span>
+              <span id="">토카이</span>
+            </div>
+            <!--
+            <div class="info-data mt-2 text-dark-muted">
+              <div class="d-flex">
+                <span id="originOG">헝가리</span>
+                <span>,</span>
+              </div>
+              <span id="">토카이</span>
+            </div>
+            -->
           </div>
           <div class="info-item position-relative d-flex flex-column flex-fill">
             <span class="info-name">스타일</span>
@@ -235,7 +261,10 @@
           </div>
           <div class="info-item position-relative d-flex flex-column flex-fill">
             <span class="info-name">도수</span>
-            <span id="wineAbvOG" class="info-data mt-2 text-dark-muted">11.5%</span>
+            <div class="info-data d-flex mt-2 text-dark-muted">
+              <span id="wineAbvOG">11.5</span>
+              <span>%</span>
+            </div>
           </div>
         </div>
       </div>
