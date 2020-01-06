@@ -7,25 +7,44 @@
   }
 }
 
+*, body {
+  font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', Sans-serif;
+}
+
+.condensed {
+  font-family: "Suisse Int'l Condensed" !important;
+}
+
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+// 데이터 입력
+// –––––––––––––––––––––––––––––––––––––––––––––––––– 
+.form {
+  width: 500px;
+}
+
+// 와인 템플릿 1
+// –––––––––––––––––––––––––––––––––––––––––––––––––– 
 .wine-template-1 {
   width: 1000px;
   height: 1000px;
   .img-wrap {
+    max-width: 400px;
     min-width: 400px;
   }
   .text-container {
-    
+    width: 600px;
     .text-wrap {
       width: 500px;
       .winery-name {
-        font-family: "Suisse Int'l Condensed";
         font-weight: 700;
         font-size: 30px;
         text-transform: uppercase;
         color: $gray-400;
       }
       .wine-name {
-        font-family: "Suisse Int'l Condensed";
         font-weight: 700;
         font-size: 65px;
         line-height: 65px;
@@ -38,7 +57,7 @@
           font-family: "Suisse Int'l";
           color: $gray-400;
           border-color: $gray-400;
-          transform: translate(-25px, -95px);
+          transform: translate(-40px, -95px);
           mix-blend-mode: multiply;
           &:before,
           &:after {
@@ -88,27 +107,140 @@
         }
       }
       .wine-info {
-        margin-top: 42px;
+        margin-top: 40px;
         .info-item {
           font-size: 21px;
           .info-name {
             min-width: 140px;
-            font-weight: 600;
+            font-weight: 700;
           }
           .info-data {}
         }
         .info-item ~ .info-item {
-          margin-top: 20px;
+          margin-top: 18px;
         }
       }
       .paragraph {
-        margin-top: 40px;
-        font-size: 23px;
-        line-height: 40px;
-        // text-align: justify;
-        word-break: keep-all;
+        margin-top: 38px;
+        font-size: 22px;
+        line-height: 38px;
+        text-align: justify;
+        word-break: break-all;
         letter-spacing: -.03em;
       }
     }
+  }
+}
+
+// 오픈그래프
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.opengraph {
+  z-index: 3;
+  width: 1200px;
+  height: 630px;
+  .img-wrap {
+    max-width: 450px;
+    min-width: 450px;
+    background-color: $secondary;
+  }
+  .text-wrap {
+      width: 750px;
+      padding: 0 80px;
+      .wine-name {
+        font-weight: 800;
+        font-size: 60px;
+        letter-spacing: -.03em;
+      }
+      .producer-name {
+        color: $gray-400;
+        font-weight: 600;
+        font-size: 40px;
+      }
+      .og-info {
+        margin-top: 80px;
+        border-top: 2px solid $gray-300;
+        .info-item {
+          min-width: 180px;
+          padding: 35px 20px 0 20px;
+          font-size: 27px;
+          &:before {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            display: inline-block;
+            width: 2px;
+            height: 20px;
+            background-color: $gray-300;
+            content: '';
+          }
+          .info-name {
+            font-weight: 600;
+          }
+          .info-data {
+            text-transform: capitalize;
+          }
+        }
+        .info-item:last-child {
+          max-width: 150px;
+          min-width: 150px;
+          &:after {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            display: inline-block;
+            width: 2px;
+            height: 20px;
+            background-color: $gray-300;
+            content: '';
+          }
+        }
+      }
+      table {
+          margin-top: 80px;
+          border-top: 2px solid $gray-300;
+          tr {
+              td {
+                  position: relative;
+                  padding: 35px 0 0 20px;
+                  font-size: 27px;
+                  color: $gray-600;
+                  &:before {
+                      position: absolute;
+                      top: -10px;
+                      left: 0;
+                      display: inline-block;
+                      width: 2px;
+                      height: 20px;
+                      background-color: $gray-300;
+                      content: '';
+                  }
+                  small {
+                      display: block;
+                      width: 100%;
+                      font-weight: 600;
+                  }
+                  span {
+                      display: inline-block;
+                      margin-top: 28px;
+                      color: inherit;
+                      text-transform: capitalize;
+                  }
+              }
+              td:first-child { min-width: 112px; }
+              td:last-child {
+                  max-width: 112px;
+                  &:after {
+                      position: absolute;
+                      top: -10px;
+                      right: 0;
+                      display: inline-block;
+                      width: 2px;
+                      height: 20px;
+                      background-color: $gray-300;
+                      content: '';
+                  }
+              }
+          }
+      }
   }
 }

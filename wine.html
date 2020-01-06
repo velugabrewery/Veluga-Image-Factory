@@ -13,18 +13,75 @@
     <link rel="stylesheet" type="text/css" href="style2/css/style.css">
   </head>
   <body class="d-flex flex-column align-items-center justify-content-center">
-    <form class=""></form>
     <div class="my-5"></div>
-    <div id="wineTemplate1" class="wine-template-1 d-flex shadow overflow-hidden">
+    <form class="form p-5 shadow-lg">
+      <div class="form-group">
+        <label>와인 이미지 URL</label>
+        <input class="form-control" type="text" id="wineImgUrlInput" name="main_image_url" />
+      </div>
+      <div class="form-group">
+        <label>와인 이름</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="" value="Tokaji Muscat Lunel 2016" name="english_name" />
+          <input class="form-control ml-3" type="text" id="" value="토카이 머스캣 루넬 2016" name="name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>와이너리명</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="producerNameInput" value="Pannon Tokaji" name="producer_english_name" />
+          <input class="form-control ml-3" type="text" id="producerNameInputKO" value="파논 토카이" name="producer_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>와인 설명</label>
+        <textarea class="form-control" id="wineDescriptionInput" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label>국가/지역</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="" value="헝가리" name="" />
+          <input class="form-control ml-3" type="text" id="" value="토카이" name="" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>도수</label>
+        <input class="form-control" type="text" id="wineAbvInput" value="11.5" name="abv" />
+      </div>
+      <div class="form-group">
+        <label>가공형태 1</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="packageUnitFirstInput" value="병" name="product_1_package" />
+          <input class="form-control ml-3" type="text" id="packageQuantityFirstInput" value="750ml" name="product_1_volume" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>가공형태 2</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="packageUnitSecondInput" value="병" name="product_2_package" />
+          <input class="form-control ml-3" type="text" id="packageQuantitySecondInput" value="1500ml" name="product_2_volume" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>가공형태 2</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="packageUnitThirdInput" value="병" name="product_3_package" />
+          <input class="form-control ml-3" type="text" id="packageQuantityThirdInput" value="1500ml" name="product_3_volume" />
+        </div>
+      </div>
+      <button class="w-100 btn btn-primary" type="button" onclick="beerSubmit()">내용 변경 가즈아</button>
+    </form>
+    <div class="my-5"></div>
+    <div id="wineTemplate1" class="wine-template-1 d-flex shadow-lg overflow-hidden">
       <div class="img-wrap d-flex align-items-center justify-content-center bg-light">
-        <img id="wineImg" class="wine-img" height="750px" src="res/common/img/drink_sample.png" alt="상품 이미지">
+        <img id="wineImg" class="wine-img" height="750px" src="res/common/img/wine_sample.png" alt="상품 이미지">
         <img class="watermark position-absolute" width="400px" src="res/common/img/watermark.png" alt="워터마크">
       </div>
       <div class="text-container d-flex w-100 align-items-center justify-content-center">
         <div class="text-wrap">
-          <h5 class="winery-name">Pannon Tokaji</h5>
-          <h1 class="wine-name position-relative">
-              <span id="wineName">Tokaji Muscat Lunel Semi sweet</span>
+          <h5 class="winery-name condensed">Pannon Tokaji</h5>
+          <h1 class="wine-name position-relative mt-2">
+              <span id="wineName" class="condensed">Tokaji Muscat Lunel 2016</span>
               <div id="circleTextY" class="circle-text circle-text--yearround">
                 <span class="char1">Y</span>
                 <span class="char2">E</span>
@@ -136,14 +193,14 @@
           <ul class="wine-info pl-0">
             <li class="info-item d-flex">
               <span class="info-name">국가/지역</span>
-              <span class="info-data">프랑스, 몽따뉴 드 랭스</span>
+              <span class="info-data">헝가리, 토카이</span>
             </li>
             <li class="info-item d-flex">
-              <span class="info-name">포도 품종</span>
-              <span class="info-data">멜롯, 머스캣 블랑, 산지오베제 외 3종</span>
+              <span class="info-name">베이스</span>
+              <span class="info-data">머스캣 루넬</span>
             </li>
             <li class="info-item d-flex">
-              <span class="info-name">와인 스타일</span>
+              <span class="info-name">스타일</span>
               <span class="info-data">화이트 와인</span>
             </li>
             <li class="info-item d-flex">
@@ -152,13 +209,38 @@
             </li>
             <li class="info-item d-flex">
               <span class="info-name">도수</span>
-              <span class="info-data">12%</span>
+              <span class="info-data">11.5%</span>
             </li>
           </ul>
-          <p class="paragraph">토카이 와인으로 유명한 헝가리 토카이 지방에서 생산된 머스캣 루넬 포도 품종으로 담근 약간 달달한 semi sweet 맛의 화이트 와인. 병을 따는 순간 느껴지는 풍부한 아카시아 향은 당신의 식욕을 자극할 것입니다. 위생적인 스테인레스 통 숙성,</p>
+          <p class="paragraph">토카이 지역은 수백만 년 전의 화산 활동으로 지하에 인체에 유익한 미네랄 성분이 많아 이 지역에서 생산된 포도는 맛있고 몸에 유익한 미네랄 성분이 많이 함유되어 있습니다. 토카이 디저트 와인으로 유명한 헝가리 토카이 지방에서 생산된 머스캣 루넬 포도 품종으로 담근 dry 한 맛의 화이트 와인입니다. 병을 따는 순간 느껴지는 풍부한 향은 당신의 식욕을 자극할 것입니다.  위생적인 스테인레스 통 숙성,  테이블 와인으로 적당하고 가성비가 좋은 와인입니다.</p>
         </div>
       </div>
     </div>
+    <div class="my-5"></div>
+    <div id="opengraph" class="opengraph d-flex position-relative overflow-hidden bg-white shadow-lg">
+      <div class="img-wrap d-flex align-items-center justify-content-center">
+        <img id="wineImgOG" class="wine-img" height="520px" src="res/common/img/wine_sample.png" alt="상품 이미지">
+      </div>
+      <div class="text-wrap d-flex flex-column w-100 justify-content-center">
+        <h1 id="wineNameOG" class="wine-name">토카이 머스캣 루넬 2016</h1>
+        <h2 id="producerNameOG" class="producer-name mt-3">파논 토카이</h2>
+        <div class="og-info d-flex">
+          <div class="info-item position-relative d-flex flex-column flex-fill">
+            <span class="info-name">국가/지역</span>
+            <span id="originOG" class="info-data mt-2 text-dark-muted">헝가리, 토카이</span>
+          </div>
+          <div class="info-item position-relative d-flex flex-column flex-fill">
+            <span class="info-name">스타일</span>
+            <span id="wineStyleOG" class="info-data mt-2 text-dark-muted">화이트 와인</span>
+          </div>
+          <div class="info-item position-relative d-flex flex-column flex-fill">
+            <span class="info-name">도수</span>
+            <span id="wineAbvOG" class="info-data mt-2 text-dark-muted">11.5%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-5"></div>
     <script src="js/dom-to-image.js"></script>
   </body>
 </html>
