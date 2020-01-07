@@ -7818,4 +7818,12 @@ select.form-control {
           background-color: #dee4e6;
           content: ''; }
 
+.blog-thumbnail {
+  z-index: 3;
+  width: 960px;
+  height: 960px; }
+  .blog-thumbnail .img-wrap {
+    height: 100%;
+    background-color: #f6f2ed; }
+
 /*# sourceMappingURL=style.css.map */
