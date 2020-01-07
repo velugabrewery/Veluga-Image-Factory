@@ -35,3 +35,40 @@ function formSubmit(){
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
   mainImageBlogThumb.src = inputMainImageUrl;
 };
+
+
+function makeTem1(){
+  domtoimage.toJpeg(document.getElementById('wineTemplate1'), { width: 1000 })
+      .then(function (dataUrl) {
+          var link = document.createElement('a');
+          link.download = 'Tem1 ' + inputProducerEnglishName + ' ' + inputEnglishName + '.jpeg';
+          link.href = dataUrl;
+          link.click();
+      });
+} 
+function makeOG(){
+  domtoimage.toJpeg(document.getElementById('opengraph'))
+      .then(function (dataUrl) {
+          var link = document.createElement('a');
+          link.download = 'OG ' + inputProducerEnglishName + ' ' + inputEnglishName + '.jpeg';
+          link.href = dataUrl;
+          link.click();
+      });
+}
+function makeImage(){
+  makeTem1();
+  makeOG();
+}
+
+function makeBlogThumb(){
+  domtoimage.toJpeg(document.getElementById('blogThumbnail'))
+      .then(function (dataUrl) {
+          var link = document.createElement('a');
+          link.download = 'Thumbnail ' + inputProducerEnglishName + ' ' + inputEnglishName + '.jpeg';
+          link.href = dataUrl;
+          link.click();
+      });
+}
+function makeBlogImage(){
+  makeBlogThumb();
+}
