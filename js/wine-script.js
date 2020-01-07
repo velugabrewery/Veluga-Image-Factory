@@ -1,3 +1,16 @@
+function colorChange(){
+  var img = document.getElementById('mainImage');
+  img.setAttribute('crossOrigin', 'anonymous');
+  var vibrant = new window.Vibrant(img);
+  var swatches = vibrant.swatches();
+  var arrCircle = ['circleTextY', 'circleTextS', 'circleTextL'];
+  arrCircle.forEach(item => {
+    var item = document.getElementById(item);
+    item.style.borderColor = swatches.Vibrant.getHex();
+    item.style.color = swatches.Vibrant.getHex();
+  });
+};
+
 function formSubmit(){
   // 템플릿 1
   // 메인 이미지 URL을 받아서 삽입

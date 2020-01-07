@@ -1,5 +1,5 @@
 function colorChange(){
-    var img = document.getElementById('drinkImg');
+    var img = document.getElementById('mainImage');
     img.setAttribute('crossOrigin', 'anonymous');
     var vibrant = new window.Vibrant(img);
     var swatches = vibrant.swatches();
@@ -12,13 +12,6 @@ function colorChange(){
     circleText2.style.color = swatches.Vibrant.getHex();
     circleText3.style.borderColor = swatches.Vibrant.getHex();
     circleText3.style.color = swatches.Vibrant.getHex();
-    var headerT2 = document.getElementById('headerT2');
-    if (vibrant.LightMutedSwatch !== true) {
-        headerT2.style.backgroundColor = vibrant.LightMutedSwatch.getHex();
-    }
-    else {
-        headerT2.style.backgroundColor = swatches.Muted.getHex();
-    }
 };
 
 window.onload = function() {
