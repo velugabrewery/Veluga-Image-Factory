@@ -80,16 +80,41 @@
       <button class="w-100 btn btn-primary" type="button" onclick="formSubmit()">내용 변경 가즈아</button>
     </form>
     <form class="remote-control position-fixed p-3 border rounded bg-white shadow">
-        <div class="radio-btn-group">
-          <input id="" type="radio" class="d-none form-control"/>
-          <label for="" class="radio-btn">
-            <span class="font-weight-semibold">가공형태 2 있음</span>
-          </label>
-          <input id="" type="radio" class="d-none form-control"/>
-          <label for="" class="radio-btn">
-            <span class="font-weight-semibold">가공형태 2 없음</span>
-          </label>
-        </div>
+      <span class="font-weight-semibold">[T1] 맥주 이름 크기</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch on btn flex-fill">-2px</button>
+        <button class="switch btn flex-fill w-100">초기화</button>
+        <button class="switch on btn flex-fill">+2px</button>
+      </div>
+      <span class="font-weight-semibold d-block mt-2">스탬프 위치</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch btn flex-fill w-100">↑</button>
+        <button class="switch btn flex-fill w-100">↓</button>
+        <button class="switch btn w-100">←</button>
+        <button class="switch btn w-100">→</button>
+      </div>
+      <hr class="border-top-0 border-bottom-dashed">
+      <span class="font-weight-semibold">[OG] 맥주 이름 크기</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch on btn flex-fill">-2px</button>
+        <button class="switch btn flex-fill w-100">초기화</button>
+        <button class="switch on btn flex-fill">+2px</button>
+      </div>
+      <hr class="border-top-0 border-bottom-dashed">
+      <div class="switch-wrap d-flex mt-2">
+        <button class="switch on btn flex-fill w-100">연중 생산</button>
+        <button class="switch btn flex-fill w-100">시즈널</button>
+        <button class="switch btn flex-fill w-100">한정판</button>
+      </div>
+      <div class="switch-wrap d-flex mt-2">
+        <button class="switch btn flex-fill w-100">가공형태2 있음</button>
+        <button class="switch on btn flex-fill w-100">가공형태2 없음</button>
+      </div>
+      <div class="switch-wrap d-flex mt-2">
+        <button class="switch btn flex-fill w-100">가공형태3 있음</button>
+        <button class="switch on btn flex-fill w-100">가공형태3 없음</button>
+      </div>
+      <hr class="border-top-0 border-bottom-dashed">
       <div class="d-flex mt-3">
         <button class="btn btn-outline-primary flex-fill" type="button" onclick="colorChange()">색 바꾸기</button>
         <button class="btn btn-primary flex-fill ml-3" type="button" onclick="makeImage()">이미지 ㄱㄱ</button>

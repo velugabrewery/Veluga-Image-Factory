@@ -7423,7 +7423,29 @@ select.form-control {
   z-index: 999;
   right: 20px;
   bottom: 20px;
-  width: 300px; }
+  width: 300px;
+  transform: scale(0.9);
+  transform-origin: bottom right; }
+  .remote-control .switch-wrap .switch {
+    color: #adb8bd;
+    border-color: #dee4e6;
+    border-right: 0px; }
+    .remote-control .switch-wrap .switch:hover {
+      background-color: #f1f4f5; }
+  .remote-control .switch-wrap .switch:first-child {
+    border-radius: 0.375rem 0 0 0.375rem; }
+  .remote-control .switch-wrap .switch:nth-child(n+2) {
+    border-radius: 0; }
+  .remote-control .switch-wrap .switch:last-child {
+    border-right: 1px solid #dee4e6;
+    border-radius: 0 0.375rem 0.375rem 0; }
+  .remote-control .switch-wrap .switch.on {
+    border: 1px solid #a6c09f;
+    font-weight: 500;
+    color: #4c6844;
+    background-color: #dfe8dc; }
+  .remote-control .switch-wrap .switch.on + .switch {
+    border-left: 0; }
 
 .wine-template-1 {
   width: 1000px;
