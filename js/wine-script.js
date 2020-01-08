@@ -67,7 +67,7 @@ function formSubmit(){
     var itemValue = document.getElementById(item).value;
     var subStringItem = item.substring(5);
     subStringItem = subStringItem.charAt(0).toLowerCase() + subStringItem.substring(1);
-    return document.getElementById(subStringItem).innerHTML = itemValue;
+    document.getElementById(subStringItem).innerHTML = itemValue;
   });
   
   // 오픈그래프
@@ -81,8 +81,12 @@ function formSubmit(){
     var subStringItem = item.substring(5);
     // 오픈그래프는 뒤에 OG가 붙음 
     subStringItem = subStringItem.charAt(0).toLowerCase() + subStringItem.substring(1) + "OG";
-    return document.getElementById(subStringItem).innerHTML = itemValue;
+    document.getElementById(subStringItem).innerHTML = itemValue;
   });
+
+  // 상세 지역 명이 너무 길 때, 사용하려고 만든 거
+  document.getElementById('origin2OG').innerHTML = document.getElementById('inputOrigin').value;
+  document.getElementById('originDetail2OG').innerHTML = document.getElementById('inputOriginDetail').value;
 
   // 블로그용 썸네일
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
@@ -219,4 +223,11 @@ function moveStamp(direction, num){
       resultArr[i].style.right = stampRight + 'px';
     }
   }
+}
+
+// 오픈 그래프에 들어가는 지역명이 너무 길어요
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+function toLongOrigin(){
+  document.getElementById('originOG1').classList.remove('d-flex');
+  document.getElementById('originOG2').classList.remove('d-none');
 }

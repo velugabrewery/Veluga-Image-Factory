@@ -100,6 +100,7 @@
         <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize(nameOG, 60)">초기화</button>
         <button class="switch on btn flex-fill" type="button" onclick="addFontSize(nameOG)">+2px</button>
       </div>
+      <button class="btn btn-outline-primary w-100 mt-2" type="button" onclick="toLongOrigin()">상세 지역이 넘 길어요ㅠ</button>
       <hr class="border-top-0 border-bottom-dashed">
       <div class="switch-wrap d-flex mt-2">
         <button id="btnCircleTextY" class="switch on btn flex-fill w-100" type="button" onclick="changeCircle(circleTextY)">연중 생산</button>
@@ -302,20 +303,18 @@
         <div class="og-info d-flex">
           <div class="info-item position-relative d-flex flex-column flex-fill">
             <span class="info-name">국가/지역</span>
-            <div class="info-data d-flex mt-2 text-dark-muted">
+            <div id="originOG1" class="info-data d-none d-flex mt-2 text-dark-muted">
               <span id="originOG">헝가리</span>
               <span>,&nbsp;</span>
               <span id="originDetailOG">토카이</span>
             </div>
-            <!--
-            <div class="info-data mt-2 text-dark-muted">
+            <div id="originOG2" class="info-data mt-2 d-none text-dark-muted">
               <div class="d-flex">
-                <span id="originOG">헝가리</span>
+                <span id="origin2OG">헝가리</span>
                 <span>,</span>
               </div>
-              <span id="">토카이</span>
+              <span id="originDetail2OG">토카이</span>
             </div>
-            -->
           </div>
           <div class="info-item position-relative d-flex flex-column flex-fill">
             <span class="info-name">스타일</span>
