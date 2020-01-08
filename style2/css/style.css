@@ -7428,6 +7428,7 @@ select.form-control {
   transform-origin: bottom right; }
   .remote-control .switch-wrap .switch {
     color: #adb8bd;
+    background-color: white;
     border-color: #dee4e6;
     border-right: 0px; }
     .remote-control .switch-wrap .switch:hover {
