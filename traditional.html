@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="style2/css/style.css">
   </head>
   <body class="d-flex flex-column align-items-center justify-content-center">
+    <div class="my-5"></div>
     <form class="form p-5 shadow-lg">
       <div class="form-group">
         <label>전통주 이미지 URL</label>
@@ -71,6 +72,228 @@
       </div>
       <button class="w-100 btn btn-primary" type="button" onclick="formSubmit()">내용 변경 가즈아</button>
     </form>
+    <form class="remote-control position-fixed p-3 border rounded bg-white shadow">
+      <span class="font-weight-semibold">[T1] 맥주 이름 크기</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('name', -2)">-2px</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('name', 90)">초기화</button>
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('name', 2)">+2px</button>
+      </div>
+      <span class="font-weight-semibold d-block mt-2">스탬프 위치</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch btn flex-fill w-100" type="button" onclick="moveStamp('top', -5)">↑</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="moveStamp('top', 5)">↓</button>
+        <button class="switch btn w-100" type="button" onclick="moveStamp('right', 5)">←</button>
+        <button class="switch btn w-100" type="button" onclick="moveStamp('right', -5)">→</button>
+      </div>
+      <hr class="border-top-0 border-bottom-dashed">
+      <span class="font-weight-semibold">[OG] 맥주 이름 크기</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', -2)">-2px</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('nameOG', 60)">초기화</button>
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', 2)">+2px</button>
+      </div>
+      <hr class="border-top-0 border-bottom-dashed">
+      <div class="switch-wrap d-flex mt-2">
+        <button id="btnCircleTextY" class="switch on btn flex-fill w-100" type="button" onclick="changeCircle(circleTextY)">연중 생산</button>
+        <button id="btnCircleTextS" class="switch btn flex-fill w-100" type="button" onclick="changeCircle(circleTextS)">시즈널</button>
+        <button id="btnCircleTextL" class="switch btn flex-fill w-100" type="button" onclick="changeCircle(circleTextL)">한정판</button>
+      </div>
+      <div class="switch-wrap d-flex mt-2">
+        <button id="btnAddPackage2" class="switch btn flex-fill w-100" type="button" onclick="addPackage(2)">가공형태2 있음</button>
+        <button id="btnDelPackage2" class="switch on btn flex-fill w-100" type="button" onclick="delPackage(2)">가공형태2 없음</button>
+      </div>
+      <div class="switch-wrap d-flex mt-2">
+        <button id="btnAddPackage3" class="switch btn flex-fill w-100" type="button" onclick="addPackage(3)">가공형태3 있음</button>
+        <button id="btnDelPackage3" class="switch on btn flex-fill w-100" type="button" onclick="delPackage(3)">가공형태3 없음</button>
+      </div>
+      <hr class="border-top-0 border-bottom-dashed">
+      <div class="d-flex mt-3">
+        <button class="btn btn-outline-primary flex-fill" type="button" onclick="colorChange()">색 바꾸기</button>
+        <button class="btn btn-primary flex-fill ml-3" type="button" onclick="makeImage()">이미지 ㄱㄱ</button>
+      </div>
+      <button class="btn btn-primary w-100 mt-3" type="button" onclick="makeBlogImage()">블로그용 이미지 ㄱㄱ</button>
+    </form>
+    <div class="my-5"></div>
+    <div id="traditionalTemplate1" class="traditional-template-1 bg-white shadow-lg overflow-hidden">
+      <div class="header">
+        <h1 class="name position-relative mt-2">
+          <span id="name" style="font-size: 90px; line-height: 0.8em;">장수 생막걸리</span>
+          <div id="circleTextY" class="circle-text circle-text-yearround">
+            <span class="char1">연</span>
+            <span class="char2">중</span>
+            <span class="char3">생</span>
+            <span class="char4">산</span>
+            <span class="char5"></span>
+            <span class="char6">연</span>
+            <span class="char7">중</span>
+            <span class="char8">생</span>
+            <span class="char9">산</span>
+            <span class="char10"></span>
+            <span class="char11">연</span>
+            <span class="char12">중</span>
+            <span class="char13">생</span>
+            <span class="char14">산</span>
+            <span class="char15"></span>
+            <span class="char16">연</span>
+            <span class="char17">중</span>
+            <span class="char18">생</span>
+            <span class="char19">산</span>
+            <span class="char20"></span>
+            <span class="char21">연</span>
+            <span class="char22">중</span>
+            <span class="char23">생</span>
+            <span class="char24">산</span>
+            <span class="char25"></span>
+            <span class="char26">연</span>
+            <span class="char27">중</span>
+            <span class="char28">생</span>
+            <span class="char29">산</span>
+            <span class="char30"></span>
+          </div>
+          <div id="circleTextS" class="circle-text circle-text-seasonal">
+            <span class="char1">시</span>
+            <span class="char2">즈</span>
+            <span class="char3">널</span>
+            <span class="char4"></span>
+            <span class="char5">시</span>
+            <span class="char6">즈</span>
+            <span class="char7">널</span>
+            <span class="char8"></span>
+            <span class="char9">시</span>
+            <span class="char10">즈</span>
+            <span class="char11">널</span>
+            <span class="char12"></span>
+            <span class="char13">시</span>
+            <span class="char14">즈</span>
+            <span class="char15">널</span>
+            <span class="char16"></span>
+            <span class="char17">시</span>
+            <span class="char18">즈</span>
+            <span class="char19">널</span>
+            <span class="char20"></span>
+            <span class="char21">시</span>
+            <span class="char22">즈</span>
+            <span class="char23">널</span>
+            <span class="char24"></span>
+            <span class="char25">시</span>
+            <span class="char26">즈</span>
+            <span class="char27">널</span>
+            <span class="char28"></span>
+            <span class="char29">시</span>
+            <span class="char30">즈</span>
+            <span class="char31">널</span>
+            <span class="char32"></span>
+          </div>
+          <div id="circleTextL" class="circle-text circle-text-limited">
+            <span class="char1">한</span>
+            <span class="char2">정</span>
+            <span class="char3">판</span>
+            <span class="char4"></span>
+            <span class="char5">한</span>
+            <span class="char6">정</span>
+            <span class="char7">판</span>
+            <span class="char8"></span>
+            <span class="char9">한</span>
+            <span class="char10">정</span>
+            <span class="char11">판</span>
+            <span class="char12"></span>
+            <span class="char13">한</span>
+            <span class="char14">정</span>
+            <span class="char15">판</span>
+            <span class="char16"></span>
+            <span class="char17">한</span>
+            <span class="char18">정</span>
+            <span class="char19">판</span>
+            <span class="char20"></span>
+            <span class="char21">한</span>
+            <span class="char22">정</span>
+            <span class="char23">판</span>
+            <span class="char24"></span>
+            <span class="char25">한</span>
+            <span class="char26">정</span>
+            <span class="char27">판</span>
+            <span class="char28"></span>
+            <span class="char29">한</span>
+            <span class="char30">정</span>
+            <span class="char31">판</span>
+            <span class="char32"></span>
+          </div>
+        </h1>
+      </div>
+      <div class="content d-flex w-100">
+        <div class="img-wrap d-flex align-items-center justify-content-center">
+          <img id="mainImage" height="530px" src="res/common/img/traditional_sample.png" alt="상품 이미지">
+          <img class="watermark position-absolute" width="360px" src="res/common/img/watermark.png" alt="워터마크">
+        </div>
+        <div class="text-wrap d-flex flex-column justify-content-center">
+          <h3 id="producerName" class="producer-name">서울탁주</h3>
+          <p id="description" class="description">장수(長壽) 생막걸리는 효모균이 그대로 살아있습니다. 백미를 사용해 장기저온숙성 방식으로 만들어져 영양이 풍부하고 자연발효에 의한 탄산과 어울려 감칠맛과 청량감이 일품입니다. 또한 고품격 전통 막걸리의 대명사로서 트림과 숙취도 거의 없어 오랜시간 동안 사랑을 받고 있습니다.</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="traditional-info d-flex w-100">
+          <div class="info-item d-flex flex-fill align-items-center justify-content-center">
+            <span id="originDetail">영등포</span>
+          </div>
+          <div class="info-item d-flex flex-fill align-items-center justify-content-center">
+            <span id="subtype">막걸리</span>
+          </div>
+          <div class="info-item d-flex flex-fill align-items-center justify-content-center">
+            <span id="abv">6.0</span>
+            <span>%</span>
+          </div>
+          <div class="info-item d-flex flex-fill align-items-center justify-content-center">
+            <small id="productPackage1">페트</small>
+            <span id="productVolume1">750ml</span>
+          </div>
+          <div id="package2" class="info-item d-none flex-fill align-items-center justify-content-center">
+            <small id="productPackage2"></small>
+            <span id="productVolume2"></span>
+          </div>
+          <div id="package3" class="info-item d-none flex-fill align-items-center justify-content-center">
+            <small id="productPackage3"></small>
+            <span id="productVolume3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-5"></div>
+    <div id="opengraph" class="opengraph d-flex position-relative overflow-hidden bg-white shadow-lg">
+      <div class="img-wrap d-flex align-items-center justify-content-center">
+        <img id="mainImageOG" class="drink-img" height="520px" src="res/common/img/traditional_sample.png" alt="상품 이미지">
+      </div>
+      <div class="text-wrap d-flex flex-column w-100 justify-content-center">
+        <h1 id="nameOG" class="drink-name" style="font-size: 65px; line-height: 1em;">장수 생막걸리</h1>
+        <h2 id="producerNameOG" class="producer-name mt-3">서울탁주</h2>
+        <div class="og-info d-flex">
+          <div class="info-item position-relative d-flex flex-column flex-fill">
+            <span class="info-name">지역</span>
+            <div id="originOG1" class="info-data d-none d-flex mt-2 text-dark-muted">
+              <span id="originDetailOG">영등포</span>
+            </div>
+          </div>
+          <div class="info-item position-relative d-flex flex-column flex-fill">
+            <span class="info-name">스타일</span>
+            <span id="subtypeOG" class="info-data mt-2 text-dark-muted">막걸리</span>
+          </div>
+          <div class="info-item position-relative d-flex flex-column flex-fill">
+            <span class="info-name">도수</span>
+            <div class="info-data d-flex mt-2 text-dark-muted">
+              <span id="abvOG">6.0</span>
+              <span>%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-5"></div>
+    <div id="blogThumbnail" class="blog-thumbnail position-relative overflow-hidden shadow-lg">
+      <div class="img-wrap d-flex align-items-center justify-content-center">
+        <img id="mainImageBlogThumb" class="drink-img" height="80%" src="res/common/img/traditional_sample.png" alt="상품 이미지">
+        <img class="watermark position-absolute" width="80%" src="res/common/img/watermark.png" alt="워터마크">
+      </div>
+    </div>
     <div class="my-5"></div>
     <script src="js/Vibrant.min.js"></script>
     <script src="js/dom-to-image.js"></script>

@@ -7831,9 +7831,6 @@ select.form-control {
 *, body {
   font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', Sans-serif; }
 
-.condensed {
-  font-family: "Suisse Int'l Condensed" !important; }
-
 .flex-fill {
   flex: 1 1 auto !important; }
 
@@ -7869,6 +7866,290 @@ select.form-control {
   .remote-control .switch-wrap .switch.on + .switch {
     border-left: 0; }
 
+.traditional-template-1 {
+  width: 1000px;
+  height: 1000px;
+  padding: 50px; }
+  .traditional-template-1 .header {
+    height: 100px;
+    border-bottom: 2px solid #212729; }
+    .traditional-template-1 .header .name {
+      display: inline-block;
+      height: 70px;
+      line-height: 0.8em;
+      font-weight: 800;
+      font-size: 90px; }
+    .traditional-template-1 .header .circle-text {
+      z-index: 2;
+      position: absolute;
+      top: -95px;
+      right: 30px;
+      color: #ced7da;
+      border-color: #ced7da;
+      mix-blend-mode: multiply; }
+      .traditional-template-1 .header .circle-text:before, .traditional-template-1 .header .circle-text:after {
+        position: absolute;
+        display: block;
+        border: 4px solid;
+        border-color: inherit;
+        border-radius: 50%;
+        content: ''; }
+      .traditional-template-1 .header .circle-text:before {
+        top: 16px;
+        left: -104px;
+        width: 220px;
+        height: 220px; }
+      .traditional-template-1 .header .circle-text:after {
+        top: 50px;
+        left: -70px;
+        width: 152px;
+        height: 152px; }
+      .traditional-template-1 .header .circle-text span {
+        position: absolute;
+        top: 0px;
+        left: -7px;
+        display: inline-block;
+        width: 25px;
+        height: 126px;
+        transform-origin: bottom center;
+        font-weight: 900;
+        font-size: 26px;
+        color: inherit;
+        text-align: center; }
+    .traditional-template-1 .header .circle-text-yearround .char1 {
+      transform: rotate(12deg); }
+    .traditional-template-1 .header .circle-text-yearround .char2 {
+      transform: rotate(24deg); }
+    .traditional-template-1 .header .circle-text-yearround .char3 {
+      transform: rotate(36deg); }
+    .traditional-template-1 .header .circle-text-yearround .char4 {
+      transform: rotate(48deg); }
+    .traditional-template-1 .header .circle-text-yearround .char5 {
+      transform: rotate(60deg); }
+    .traditional-template-1 .header .circle-text-yearround .char6 {
+      transform: rotate(72deg); }
+    .traditional-template-1 .header .circle-text-yearround .char7 {
+      transform: rotate(84deg); }
+    .traditional-template-1 .header .circle-text-yearround .char8 {
+      transform: rotate(96deg); }
+    .traditional-template-1 .header .circle-text-yearround .char9 {
+      transform: rotate(108deg); }
+    .traditional-template-1 .header .circle-text-yearround .char10 {
+      transform: rotate(120deg); }
+    .traditional-template-1 .header .circle-text-yearround .char11 {
+      transform: rotate(132deg); }
+    .traditional-template-1 .header .circle-text-yearround .char12 {
+      transform: rotate(144deg); }
+    .traditional-template-1 .header .circle-text-yearround .char13 {
+      transform: rotate(156deg); }
+    .traditional-template-1 .header .circle-text-yearround .char14 {
+      transform: rotate(168deg); }
+    .traditional-template-1 .header .circle-text-yearround .char15 {
+      transform: rotate(180deg); }
+    .traditional-template-1 .header .circle-text-yearround .char16 {
+      transform: rotate(192deg); }
+    .traditional-template-1 .header .circle-text-yearround .char17 {
+      transform: rotate(204deg); }
+    .traditional-template-1 .header .circle-text-yearround .char18 {
+      transform: rotate(216deg); }
+    .traditional-template-1 .header .circle-text-yearround .char19 {
+      transform: rotate(228deg); }
+    .traditional-template-1 .header .circle-text-yearround .char20 {
+      transform: rotate(240deg); }
+    .traditional-template-1 .header .circle-text-yearround .char21 {
+      transform: rotate(252deg); }
+    .traditional-template-1 .header .circle-text-yearround .char22 {
+      transform: rotate(264deg); }
+    .traditional-template-1 .header .circle-text-yearround .char23 {
+      transform: rotate(276deg); }
+    .traditional-template-1 .header .circle-text-yearround .char24 {
+      transform: rotate(288deg); }
+    .traditional-template-1 .header .circle-text-yearround .char25 {
+      transform: rotate(300deg); }
+    .traditional-template-1 .header .circle-text-yearround .char26 {
+      transform: rotate(312deg); }
+    .traditional-template-1 .header .circle-text-yearround .char27 {
+      transform: rotate(324deg); }
+    .traditional-template-1 .header .circle-text-yearround .char28 {
+      transform: rotate(336deg); }
+    .traditional-template-1 .header .circle-text-yearround .char29 {
+      transform: rotate(348deg); }
+    .traditional-template-1 .header .circle-text-yearround .char30 {
+      transform: rotate(360deg); }
+    .traditional-template-1 .header .circle-text-seasonal {
+      display: none; }
+      .traditional-template-1 .header .circle-text-seasonal .char1 {
+        transform: rotate(11.25deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char2 {
+        transform: rotate(22.5deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char3 {
+        transform: rotate(33.75deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char4 {
+        transform: rotate(45deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char5 {
+        transform: rotate(56.25deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char6 {
+        transform: rotate(67.5deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char7 {
+        transform: rotate(78.75deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char8 {
+        transform: rotate(90deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char9 {
+        transform: rotate(101.25deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char10 {
+        transform: rotate(112.5deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char11 {
+        transform: rotate(123.75deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char12 {
+        transform: rotate(135deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char13 {
+        transform: rotate(146.25deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char14 {
+        transform: rotate(157.5deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char15 {
+        transform: rotate(168.75deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char16 {
+        transform: rotate(180deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char17 {
+        transform: rotate(191.25deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char18 {
+        transform: rotate(202.5deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char19 {
+        transform: rotate(213.75deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char20 {
+        transform: rotate(225deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char21 {
+        transform: rotate(236.25deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char22 {
+        transform: rotate(247.5deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char23 {
+        transform: rotate(258.75deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char24 {
+        transform: rotate(270deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char25 {
+        transform: rotate(281.25deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char26 {
+        transform: rotate(292.5deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char27 {
+        transform: rotate(303.75deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char28 {
+        transform: rotate(315deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char29 {
+        transform: rotate(326.25deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char30 {
+        transform: rotate(337.5deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char31 {
+        transform: rotate(348.75deg); }
+      .traditional-template-1 .header .circle-text-seasonal .char32 {
+        transform: rotate(360deg); }
+    .traditional-template-1 .header .circle-text-limited {
+      display: none; }
+      .traditional-template-1 .header .circle-text-limited .char1 {
+        transform: rotate(11.25deg); }
+      .traditional-template-1 .header .circle-text-limited .char2 {
+        transform: rotate(22.5deg); }
+      .traditional-template-1 .header .circle-text-limited .char3 {
+        transform: rotate(33.75deg); }
+      .traditional-template-1 .header .circle-text-limited .char4 {
+        transform: rotate(45deg); }
+      .traditional-template-1 .header .circle-text-limited .char5 {
+        transform: rotate(56.25deg); }
+      .traditional-template-1 .header .circle-text-limited .char6 {
+        transform: rotate(67.5deg); }
+      .traditional-template-1 .header .circle-text-limited .char7 {
+        transform: rotate(78.75deg); }
+      .traditional-template-1 .header .circle-text-limited .char8 {
+        transform: rotate(90deg); }
+      .traditional-template-1 .header .circle-text-limited .char9 {
+        transform: rotate(101.25deg); }
+      .traditional-template-1 .header .circle-text-limited .char10 {
+        transform: rotate(112.5deg); }
+      .traditional-template-1 .header .circle-text-limited .char11 {
+        transform: rotate(123.75deg); }
+      .traditional-template-1 .header .circle-text-limited .char12 {
+        transform: rotate(135deg); }
+      .traditional-template-1 .header .circle-text-limited .char13 {
+        transform: rotate(146.25deg); }
+      .traditional-template-1 .header .circle-text-limited .char14 {
+        transform: rotate(157.5deg); }
+      .traditional-template-1 .header .circle-text-limited .char15 {
+        transform: rotate(168.75deg); }
+      .traditional-template-1 .header .circle-text-limited .char16 {
+        transform: rotate(180deg); }
+      .traditional-template-1 .header .circle-text-limited .char17 {
+        transform: rotate(191.25deg); }
+      .traditional-template-1 .header .circle-text-limited .char18 {
+        transform: rotate(202.5deg); }
+      .traditional-template-1 .header .circle-text-limited .char19 {
+        transform: rotate(213.75deg); }
+      .traditional-template-1 .header .circle-text-limited .char20 {
+        transform: rotate(225deg); }
+      .traditional-template-1 .header .circle-text-limited .char21 {
+        transform: rotate(236.25deg); }
+      .traditional-template-1 .header .circle-text-limited .char22 {
+        transform: rotate(247.5deg); }
+      .traditional-template-1 .header .circle-text-limited .char23 {
+        transform: rotate(258.75deg); }
+      .traditional-template-1 .header .circle-text-limited .char24 {
+        transform: rotate(270deg); }
+      .traditional-template-1 .header .circle-text-limited .char25 {
+        transform: rotate(281.25deg); }
+      .traditional-template-1 .header .circle-text-limited .char26 {
+        transform: rotate(292.5deg); }
+      .traditional-template-1 .header .circle-text-limited .char27 {
+        transform: rotate(303.75deg); }
+      .traditional-template-1 .header .circle-text-limited .char28 {
+        transform: rotate(315deg); }
+      .traditional-template-1 .header .circle-text-limited .char29 {
+        transform: rotate(326.25deg); }
+      .traditional-template-1 .header .circle-text-limited .char30 {
+        transform: rotate(337.5deg); }
+      .traditional-template-1 .header .circle-text-limited .char31 {
+        transform: rotate(348.75deg); }
+      .traditional-template-1 .header .circle-text-limited .char32 {
+        transform: rotate(360deg); }
+  .traditional-template-1 .content {
+    height: 710px;
+    padding: 30px 0; }
+    .traditional-template-1 .content .img-wrap {
+      width: 50%;
+      height: 100%;
+      background-color: #f1f4f5; }
+    .traditional-template-1 .content .text-wrap {
+      width: 50%;
+      height: 100%;
+      padding-left: 40px; }
+      .traditional-template-1 .content .text-wrap .producer-name {
+        font-size: 40px;
+        font-weight: 900;
+        text-transform: uppercase; }
+      .traditional-template-1 .content .text-wrap .description {
+        margin-top: 20px;
+        font-size: 26px;
+        text-align: justify;
+        word-break: break-all;
+        letter-spacing: -.015em; }
+  .traditional-template-1 .footer {
+    height: 90px;
+    padding-bottom: 4px;
+    border-top: 2px solid #212729;
+    border-bottom: 4px solid #212729; }
+    .traditional-template-1 .footer .traditional-info {
+      height: 100%;
+      border-bottom: 2px solid #212729; }
+      .traditional-template-1 .footer .traditional-info .info-item {
+        padding: 0 15px;
+        border-left: 2px solid #212729;
+        font-weight: 700;
+        font-size: 36px; }
+        .traditional-template-1 .footer .traditional-info .info-item small {
+          margin-top: 5px;
+          margin-right: 8px;
+          font-weight: 800;
+          font-size: 23px; }
+      .traditional-template-1 .footer .traditional-info .info-item:first-child {
+        border-left: none; }
+
 .opengraph {
   z-index: 3;
   width: 1200px;
@@ -7880,7 +8161,7 @@ select.form-control {
   .opengraph .text-wrap {
     width: 750px;
     padding: 0 80px; }
-    .opengraph .text-wrap .wine-name {
+    .opengraph .text-wrap .drink-name {
       font-weight: 800;
       font-size: 60px;
       letter-spacing: -.03em; }
