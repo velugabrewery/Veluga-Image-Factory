@@ -1,5 +1,5 @@
 function colorChange(){
-    var img = document.getElementById('mainImage');
+    var img = document.getElementById('drinkImg');
     img.setAttribute('crossOrigin', 'anonymous');
     var vibrant = new window.Vibrant(img);
     var swatches = vibrant.swatches();
@@ -430,7 +430,7 @@ function makeOG(){
 }
 
 function makeImg(){
-    makeTem1();
+    // makeTem1();
     makeTem2();
     makeOG();
 }
