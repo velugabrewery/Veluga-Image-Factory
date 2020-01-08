@@ -1,5 +1,4 @@
 function colorChange(){
-<<<<<<< HEAD
     var img = document.getElementById('drinkImg');
     img.setAttribute('crossOrigin', 'anonymous');
     var vibrant = new window.Vibrant(img);
@@ -20,12 +19,6 @@ function colorChange(){
     else {
         headerT2.style.backgroundColor = swatches.Muted.getHex();
     }
-=======
-    var img = document.getElementById('drinkImgT2');
-    img.setAttribute('crossOrigin', 'anonymous');
-    var vibrant = new window.Vibrant(img);
-    var swatches = vibrant.swatches();
->>>>>>> cdf814509a055b833b7dd50b30e8cf2df10c9d95
 };
 
 window.onload = function() {
@@ -72,34 +65,34 @@ window.onload = function() {
 
 function beerSubmit(){
     // 템플릿 1
-    // var img = document.getElementById('drinkImg');
-    // var drinkImgUrlInput = document.getElementById('drinkImgUrlInput').value;
-    // img.src = drinkImgUrlInput;
-    // drinkNameInput = document.getElementById('drinkNameInput').value;
-    // document.getElementById('drinkName').innerHTML = drinkNameInput;
-    // producerNameInput = document.getElementById('producerNameInput').value;
-    // document.getElementById('producerName').innerHTML = producerNameInput;
-    // var drinkDescriptionInput = document.getElementById('drinkDescriptionInput').value;
-    // drinkDescriptionInput = drinkDescriptionInput.replace(/\n\n/g, '<hr><hr>').replace(/\n/g, '<br>');
-    // document.getElementById('drinkDescription').innerHTML = drinkDescriptionInput;
-    // var originInput = document.getElementById('originInput').value;
-    // document.getElementById('origin').innerHTML = originInput;
-    // var drinkStyleInput = document.getElementById('drinkStyleInput').value;
-    // document.getElementById('drinkStyle').innerHTML = drinkStyleInput;
-    // var drinkAbvInput = document.getElementById('drinkAbvInput').value;
-    // document.getElementById('drinkAbv').innerHTML = drinkAbvInput;
-    // var packageUnitMainInput = document.getElementById('packageUnitMainInput').value;
-    // document.getElementById('packageUnitMain').innerHTML = packageUnitMainInput;
-    // var packageQuantityMainInput = document.getElementById('packageQuantityMainInput').value;
-    // document.getElementById('packageQuantityMain').innerHTML = packageQuantityMainInput;
-    // var packageUnitSubInput = document.getElementById('packageUnitSubInput').value;
-    // document.getElementById('packageUnitSub').innerHTML = packageUnitSubInput;
-    // var packageQuantitySubInput = document.getElementById('packageQuantitySubInput').value;
-    // document.getElementById('packageQuantitySub').innerHTML = packageQuantitySubInput;
-    // var packageUnitThirdInput = document.getElementById('packageUnitThirdInput').value;
-    // document.getElementById('packageUnitThird').innerHTML = packageUnitThirdInput;
-    // var packageQuantityThirdInput = document.getElementById('packageQuantityThirdInput').value;
-    // document.getElementById('packageQuantityThird').innerHTML = packageQuantityThirdInput;
+    var img = document.getElementById('drinkImg');
+    var drinkImgUrlInput = document.getElementById('drinkImgUrlInput').value;
+    img.src = drinkImgUrlInput;
+    drinkNameInput = document.getElementById('drinkNameInput').value;
+    document.getElementById('drinkName').innerHTML = drinkNameInput;
+    producerNameInput = document.getElementById('producerNameInput').value;
+    document.getElementById('producerName').innerHTML = producerNameInput;
+    var drinkDescriptionInput = document.getElementById('drinkDescriptionInput').value;
+    drinkDescriptionInput = drinkDescriptionInput.replace(/\n\n/g, '<hr><hr>').replace(/\n/g, '<br>');
+    document.getElementById('drinkDescription').innerHTML = drinkDescriptionInput;
+    var originInput = document.getElementById('originInput').value;
+    document.getElementById('origin').innerHTML = originInput;
+    var drinkStyleInput = document.getElementById('drinkStyleInput').value;
+    document.getElementById('drinkStyle').innerHTML = drinkStyleInput;
+    var drinkAbvInput = document.getElementById('drinkAbvInput').value;
+    document.getElementById('drinkAbv').innerHTML = drinkAbvInput;
+    var packageUnitMainInput = document.getElementById('packageUnitMainInput').value;
+    document.getElementById('packageUnitMain').innerHTML = packageUnitMainInput;
+    var packageQuantityMainInput = document.getElementById('packageQuantityMainInput').value;
+    document.getElementById('packageQuantityMain').innerHTML = packageQuantityMainInput;
+    var packageUnitSubInput = document.getElementById('packageUnitSubInput').value;
+    document.getElementById('packageUnitSub').innerHTML = packageUnitSubInput;
+    var packageQuantitySubInput = document.getElementById('packageQuantitySubInput').value;
+    document.getElementById('packageQuantitySub').innerHTML = packageQuantitySubInput;
+    var packageUnitThirdInput = document.getElementById('packageUnitThirdInput').value;
+    document.getElementById('packageUnitThird').innerHTML = packageUnitThirdInput;
+    var packageQuantityThirdInput = document.getElementById('packageQuantityThirdInput').value;
+    document.getElementById('packageQuantityThird').innerHTML = packageQuantityThirdInput;
 
     // 템플릿 2
     var drinkImgT2 = document.getElementById('drinkImgT2');
@@ -133,8 +126,8 @@ function beerSubmit(){
     var drinkImgBlogThumb = document.getElementById('drinkImgBlogThumb');
     drinkImgBlogThumb.src = drinkImgUrlInput;
 
-    // resetT1FontSize();
-    // resetT2FontSize();
+    resetT1FontSize();
+    resetT2FontSize();
     resetT2MarginTop();
     resetOGFontSize();
     changeDefaultFontT1();
@@ -144,12 +137,12 @@ function beerSubmit(){
 
 function changeYearRound(){
     // 템플릿 1
-    // var circleText1 = document.getElementById('circleText1');
-    // var circleText2 = document.getElementById('circleText2');
-    // var circleText3 = document.getElementById('circleText3');
-    // circleText1.style.display = 'block';
-    // circleText2.style.display = 'none';
-    // circleText3.style.display = 'none';
+    var circleText1 = document.getElementById('circleText1');
+    var circleText2 = document.getElementById('circleText2');
+    var circleText3 = document.getElementById('circleText3');
+    circleText1.style.display = 'block';
+    circleText2.style.display = 'none';
+    circleText3.style.display = 'none';
     
     // 템플릿 2
     var cycleT2 = document.getElementById('cycleT2');
@@ -166,12 +159,12 @@ function changeYearRound(){
 
 function changeSeasonal(){
     // 템플릿 1
-    // var circleText1 = document.getElementById('circleText1');
-    // var circleText2 = document.getElementById('circleText2');
-    // var circleText3 = document.getElementById('circleText3');
-    // circleText1.style.display = 'none';
-    // circleText2.style.display = 'block';
-    // circleText3.style.display = 'none';
+    var circleText1 = document.getElementById('circleText1');
+    var circleText2 = document.getElementById('circleText2');
+    var circleText3 = document.getElementById('circleText3');
+    circleText1.style.display = 'none';
+    circleText2.style.display = 'block';
+    circleText3.style.display = 'none';
     
     // 템플릿 2
     var cycleT2 = document.getElementById('cycleT2');
@@ -188,12 +181,12 @@ function changeSeasonal(){
 
 function changeLimited(){
     // 템플릿 1
-    // var circleText1 = document.getElementById('circleText1');
-    // var circleText2 = document.getElementById('circleText2');
-    // var circleText3 = document.getElementById('circleText3');
-    // circleText1.style.display = 'none';
-    // circleText2.style.display = 'none';
-    // circleText3.style.display = 'block';
+    var circleText1 = document.getElementById('circleText1');
+    var circleText2 = document.getElementById('circleText2');
+    var circleText3 = document.getElementById('circleText3');
+    circleText1.style.display = 'none';
+    circleText2.style.display = 'none';
+    circleText3.style.display = 'block';
     
     // 템플릿 2
     var cycleT2 = document.getElementById('cycleT2');
@@ -210,8 +203,8 @@ function changeLimited(){
 
 function addPackageSub(){
     // 템플릿 1
-    // var packageSub = document.getElementById('packageSub');
-    // packageSub.style.display = 'table-cell';
+    var packageSub = document.getElementById('packageSub');
+    packageSub.style.display = 'table-cell';
     
     // 템플릿 2
     var packageSubT2 = document.getElementById('packageSubT2');
@@ -226,8 +219,8 @@ function addPackageSub(){
 
 function delPackageSub(){
     // 템플릿 1
-    // var packageSub = document.getElementById('packageSub');
-    // packageSub.style.display = 'none';
+    var packageSub = document.getElementById('packageSub');
+    packageSub.style.display = 'none';
     
     // 템플릿 2
     var packageSubT2 = document.getElementById('packageSubT2');
@@ -242,8 +235,8 @@ function delPackageSub(){
 
 function addPackageThird(){
     // 템플릿 1
-    // var packageThird = document.getElementById('packageThird');
-    // packageThird.style.display = 'table-cell';
+    var packageThird = document.getElementById('packageThird');
+    packageThird.style.display = 'table-cell';
     
     // 템플릿 2
     var packageThirdT2 = document.getElementById('packageThirdT2');
@@ -258,8 +251,8 @@ function addPackageThird(){
 
 function delPackageThird(){
     // 템플릿 1
-    // var packageThird = document.getElementById('packageThird');
-    // packageThird.style.display = 'none';
+    var packageThird = document.getElementById('packageThird');
+    packageThird.style.display = 'none';
     
     // 템플릿 2
     var packageThirdT2 = document.getElementById('packageThirdT2');
@@ -273,29 +266,29 @@ function delPackageThird(){
 };
 
 
-// function changeCondensedT1(){
-//     var drinkName = document.getElementById('drinkName');
+function changeCondensedT1(){
+    var drinkName = document.getElementById('drinkName');
 
-//     drinkName.classList.add('condensed');
+    drinkName.classList.add('condensed');
 
-//     // 버튼 클래스 추가 및 제거
-//     var btnDefaultFontT1 = document.getElementById('btnDefaultFontT1');
-//     var btnCondensedT1 = document.getElementById('btnCondensedT1');
-//     btnDefaultFontT1.classList.remove('btn--selected');
-//     btnCondensedT1.classList.add('btn--selected');
-// }
+    // 버튼 클래스 추가 및 제거
+    var btnDefaultFontT1 = document.getElementById('btnDefaultFontT1');
+    var btnCondensedT1 = document.getElementById('btnCondensedT1');
+    btnDefaultFontT1.classList.remove('btn--selected');
+    btnCondensedT1.classList.add('btn--selected');
+}
 
-// function changeDefaultFontT1(){
-//     var drinkName = document.getElementById('drinkName');
+function changeDefaultFontT1(){
+    var drinkName = document.getElementById('drinkName');
 
-//     drinkName.classList.remove('condensed');
+    drinkName.classList.remove('condensed');
 
-//     // 버튼 클래스 추가 및 제거
-//     var btnDefaultFontT1 = document.getElementById('btnDefaultFontT1');
-//     var btnCondensedT1 = document.getElementById('btnCondensedT1');
-//     btnDefaultFontT1.classList.add('btn--selected');
-//     btnCondensedT1.classList.remove('btn--selected');
-// }
+    // 버튼 클래스 추가 및 제거
+    var btnDefaultFontT1 = document.getElementById('btnDefaultFontT1');
+    var btnCondensedT1 = document.getElementById('btnCondensedT1');
+    btnDefaultFontT1.classList.add('btn--selected');
+    btnCondensedT1.classList.remove('btn--selected');
+}
 
 function changeCondensedT2(){
     var drinkNameT2 = document.getElementById('drinkNameT2');
@@ -321,28 +314,28 @@ function changeDefaultFontT2(){
     btnCondensedT2.classList.remove('btn--selected');
 }
 
-// var drinkNameFontSize = 90;
+var drinkNameFontSize = 90;
 var drinkNameT2FontSize = 90;
 var drinkNameT2MarginTop = 0;
 var drinkNameOGFontSize = 60;
 var beerDataT2MarginTop = 38;
 
-// function addT1FontSize(){
-//     var drinkName = document.getElementById('drinkName');
-//     drinkNameFontSize = drinkNameFontSize + 2;
-//     drinkName.style.fontSize = drinkNameFontSize + 'px';
-// }
+function addT1FontSize(){
+    var drinkName = document.getElementById('drinkName');
+    drinkNameFontSize = drinkNameFontSize + 2;
+    drinkName.style.fontSize = drinkNameFontSize + 'px';
+}
 
-// function subT1FontSize(){
-//     var drinkName = document.getElementById('drinkName');
-//     drinkNameFontSize = drinkNameFontSize - 2;
-//     drinkName.style.fontSize = drinkNameFontSize + 'px';
-// }
+function subT1FontSize(){
+    var drinkName = document.getElementById('drinkName');
+    drinkNameFontSize = drinkNameFontSize - 2;
+    drinkName.style.fontSize = drinkNameFontSize + 'px';
+}
 
-// function resetT1FontSize(){
-//     drinkNameFontSize = 90;
-//     drinkName.style.fontSize = drinkNameFontSize + 'px';
-// }
+function resetT1FontSize(){
+    drinkNameFontSize = 90;
+    drinkName.style.fontSize = drinkNameFontSize + 'px';
+}
 
 function addT2FontSize(){
     var drinkNameT2 = document.getElementById('drinkNameT2');
@@ -406,15 +399,15 @@ function resetOGFontSize(){
     drinkNameOG.style.fontSize = drinkNameOGFontSize + 'px';
 }
 
-// function makeTem1(){
-//     domtoimage.toJpeg(document.getElementById('templateStyle1'), { width: 1000 })
-//         .then(function (dataUrl) {
-//             var link = document.createElement('a');
-//             link.download = 'Tem1 ' + producerNameInput + ' ' + drinkNameInput + '.jpeg';
-//             link.href = dataUrl;
-//             link.click();
-//         });
-// } 
+function makeTem1(){
+    domtoimage.toJpeg(document.getElementById('templateStyle1'), { width: 1000 })
+        .then(function (dataUrl) {
+            var link = document.createElement('a');
+            link.download = 'Tem1 ' + producerNameInput + ' ' + drinkNameInput + '.jpeg';
+            link.href = dataUrl;
+            link.click();
+        });
+} 
 
 function makeTem2(){
     domtoimage.toJpeg(document.getElementById('templateStyle2'), { width: 1000 })
