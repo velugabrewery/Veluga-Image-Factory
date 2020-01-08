@@ -184,18 +184,11 @@ function resetFontSize(name, fontSize){
   name.style.fontSize = fontSize + 'px';
 }
 
-function addFontSize(name){
+function fontSize(name, num){
   var fontSize = name.style.fontSize;
   fontSizeSubstring = fontSize.slice(0,2);
-  fontSizeSubstring = fontSizeSubstring * 1 + 2;
-  return name.style.fontSize = fontSizeSubstring + 'px';
-}
-
-function subFontSize(name){
-  var fontSize = name.style.fontSize;
-  fontSizeSubstring = fontSize.slice(0,2);
-  fontSizeSubstring = fontSizeSubstring * 1 - 2;
-  return name.style.fontSize = fontSizeSubstring + 'px';
+  fontSizeSubstring = fontSizeSubstring * 1 + num;
+  name.style.fontSize = fontSizeSubstring + 'px';
 }
 
 // 스탬프 이동
