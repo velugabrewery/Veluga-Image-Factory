@@ -13,6 +13,64 @@
     <link rel="stylesheet" type="text/css" href="style2/css/style.css">
   </head>
   <body class="d-flex flex-column align-items-center justify-content-center">
+    <form class="form p-5 shadow-lg">
+      <div class="form-group">
+        <label>전통주 이미지 URL</label>
+        <input class="form-control" type="text" id="inputMainImageUrl" name="main_image_url" />
+      </div>
+      <div class="form-group">
+        <label>전통주 이름</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputName" value="장수 생막걸리" name="name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>양조장명</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputProducerName" value="서울탁주" name="producer_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>전통주 설명</label>
+        <textarea class="form-control" id="inputDescription" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label>지역</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputOriginDetail" value="영등포" name="origin_detail" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>스타일</label>
+        <input class="form-control" type="text" id="inputSubtype" name="subtype" />
+      </div>
+      <div class="form-group">
+        <label>도수</label>
+        <input class="form-control" type="text" id="inputAbv" value="6.0" name="abv" />
+      </div>
+      <div class="form-group">
+        <label>가공형태 1</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputProductPackage1" value="페트" name="product_1_package" />
+          <input class="form-control ml-3" type="text" id="inputProductVolume1" value="750ml" name="product_1_volume" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>가공형태 2</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputProductPackage2" value="페트" name="product_2_package" />
+          <input class="form-control ml-3" type="text" id="inputProductVolume2" value="1500ml" name="product_2_volume" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>가공형태 3</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputProductPackage3" value="페트" name="product_3_package" />
+          <input class="form-control ml-3" type="text" id="inputProductVolume3" value="3000ml" name="product_3_volume" />
+        </div>
+      </div>
+      <button class="w-100 btn btn-primary" type="button" onclick="formSubmit()">내용 변경 가즈아</button>
+    </form>
     <div class="my-5"></div>
     <script src="js/Vibrant.min.js"></script>
     <script src="js/dom-to-image.js"></script>
