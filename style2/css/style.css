@@ -7892,14 +7892,14 @@ select.form-control {
             font-weight: 700; }
         .wine-template-1 .text-container .text-wrap .wine-info .info-item ~ .info-item {
           margin-top: 18px; }
-      .wine-template-1 .text-container .text-wrap .paragraph {
+      .wine-template-1 .text-container .text-wrap .description {
         margin-top: 38px;
         font-size: 22px;
         line-height: 38px;
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.03em; }
-        .wine-template-1 .text-container .text-wrap .paragraph hr {
+        .wine-template-1 .text-container .text-wrap .description hr {
           margin: 8px 0;
           border: none; }
 

@@ -104,9 +104,9 @@
       <hr class="border-top-0 border-bottom-dashed">
       <input style="display: none;" name="production_cycle_type">
       <div class="switch-wrap d-flex mt-2">
-        <button id="btnCircleTextY" class="switch on btn flex-fill w-100" type="button" onclick="changeCircle(circleTextY)">연중 생산</button>
-        <button id="btnCircleTextS" class="switch btn flex-fill w-100" type="button" onclick="changeCircle(circleTextS)">시즈널</button>
-        <button id="btnCircleTextL" class="switch btn flex-fill w-100" type="button" onclick="changeCircle(circleTextL)">한정판</button>
+        <button id="btnCycleY" class="switch on btn flex-fill w-100" type="button" onclick="changeCycle('yearround')">연중 생산</button>
+        <button id="btnCycleS" class="switch btn flex-fill w-100" type="button" onclick="changeCycle('seasonal')">시즈널</button>
+        <button id="btnCycleL" class="switch btn flex-fill w-100" type="button" onclick="changeCycle('limited')">한정판</button>
       </div>
       <div class="switch-wrap d-flex mt-2">
         <button id="btnAddPackage2" class="switch btn flex-fill w-100" type="button" onclick="addPackage(2)">가공형태2 있음</button>
@@ -134,7 +134,7 @@
           <h5 id="producerEnglishName" class="winery-name condensed">Pannon Tokaji</h5>
           <h1 class="wine-name position-relative mt-2">
               <span id="englishName" class="condensed" style="font-size: 65px; line-height: 1em;">Tokaji Muscat Lunel 2016</span>
-              <div id="circleTextY" class="circle-text circle-text-yearround">
+              <div id="cycleY" class="circle-text circle-text-yearround">
                 <span class="char1">Y</span>
                 <span class="char2">E</span>
                 <span class="char3">A</span>
@@ -169,7 +169,7 @@
                 <span class="char32">D</span>
                 <span class="char33"></span>
               </div>
-              <div id="circleTextS" class="circle-text circle-text-seasonal">
+              <div id="cycleS" class="circle-text circle-text-seasonal">
                 <span class="char1">S</span>
                 <span class="char2">E</span>
                 <span class="char3">A</span>
@@ -207,7 +207,7 @@
                 <span class="char35">L</span>
                 <span class="char36"></span>
               </div>
-              <div id="circleTextL" class="circle-text circle-text-limited">
+              <div id="cycleL" class="circle-text circle-text-limited">
                 <span class="char1">L</span>
                 <span class="char2">I</span>
                 <span class="char3">M</span>
@@ -289,7 +289,7 @@
               </div>
             </li>
           </ul>
-          <p id="description" class="paragraph">토카이 지역은 수백만 년 전의 화산 활동으로 지하에 인체에 유익한 미네랄 성분이 많아 이 지역에서 생산된 포도는 맛있고 몸에 유익한 미네랄 성분이 많이 함유되어 있습니다. 토카이 디저트 와인으로 유명한 헝가리 토카이 지방에서 생산된 머스캣 루넬 포도 품종으로 담근 dry 한 맛의 화이트 와인입니다. 병을 따는 순간 느껴지는 풍부한 향은 당신의 식욕을 자극할 것입니다.  위생적인 스테인레스 통 숙성,  테이블 와인으로 적당하고 가성비가 좋은 와인입니다.</p>
+          <p id="description" class="description">토카이 지역은 수백만 년 전의 화산 활동으로 지하에 인체에 유익한 미네랄 성분이 많아 이 지역에서 생산된 포도는 맛있고 몸에 유익한 미네랄 성분이 많이 함유되어 있습니다. 토카이 디저트 와인으로 유명한 헝가리 토카이 지방에서 생산된 머스캣 루넬 포도 품종으로 담근 dry 한 맛의 화이트 와인입니다. 병을 따는 순간 느껴지는 풍부한 향은 당신의 식욕을 자극할 것입니다.  위생적인 스테인레스 통 숙성,  테이블 와인으로 적당하고 가성비가 좋은 와인입니다.</p>
         </div>
       </div>
     </div>

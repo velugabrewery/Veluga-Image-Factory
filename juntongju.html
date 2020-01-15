@@ -96,9 +96,9 @@
       <hr class="border-top-0 border-bottom-dashed">
       <input style="display: none;" name="production_cycle_type">
       <div class="switch-wrap d-flex mt-2">
-        <button id="btnCircleTextY" class="switch on btn flex-fill w-100" type="button" onclick="changeCircle(circleTextY)">연중 생산</button>
-        <button id="btnCircleTextS" class="switch btn flex-fill w-100" type="button" onclick="changeCircle(circleTextS)">시즈널</button>
-        <button id="btnCircleTextL" class="switch btn flex-fill w-100" type="button" onclick="changeCircle(circleTextL)">한정판</button>
+        <button id="btnCycleY" class="switch on btn flex-fill w-100" type="button" onclick="changeCycle('yearround')">연중 생산</button>
+        <button id="btnCycleS" class="switch btn flex-fill w-100" type="button" onclick="changeCycle('seasonal')">시즈널</button>
+        <button id="btnCycleL" class="switch btn flex-fill w-100" type="button" onclick="changeCycle('limited')">한정판</button>
       </div>
       <div class="switch-wrap d-flex mt-2">
         <button id="btnAddPackage2" class="switch btn flex-fill w-100" type="button" onclick="addPackage(2)">가공형태2 있음</button>
@@ -120,7 +120,7 @@
       <div class="header">
         <h1 class="name position-relative mt-2">
           <span id="name" style="font-size: 90px; line-height: 0.8em;">장수 생막걸리</span>
-          <div id="circleTextY" class="circle-text circle-text-yearround">
+          <div id="cycleY" class="circle-text circle-text-yearround">
             <span class="char1">연</span>
             <span class="char2">중</span>
             <span class="char3">생</span>
@@ -152,7 +152,7 @@
             <span class="char29">산</span>
             <span class="char30"></span>
           </div>
-          <div id="circleTextS" class="circle-text circle-text-seasonal">
+          <div id="cycleS" class="circle-text circle-text-seasonal">
             <span class="char1">시</span>
             <span class="char2">즈</span>
             <span class="char3">널</span>
@@ -186,7 +186,7 @@
             <span class="char31">널</span>
             <span class="char32"></span>
           </div>
-          <div id="circleTextL" class="circle-text circle-text-limited">
+          <div id="cycleL" class="circle-text circle-text-limited">
             <span class="char1">한</span>
             <span class="char2">정</span>
             <span class="char3">판</span>

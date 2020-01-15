@@ -28,10 +28,10 @@ window.onload = function() {
     var getml = text.substring(text.length-2, text.length)
     console.log(getml)
     if (getml == "mL") {
-        document.getElementsByName(key)[0].value = text.toLowerCase()
+      document.getElementsByName(key)[0].value = text.toLowerCase()
     }
     else {
-        document.getElementsByName(key)[0].value = text
+      document.getElementsByName(key)[0].value = text
     }
   }
 
@@ -46,13 +46,13 @@ window.onload = function() {
 
   // 연중생산, 시즈널, 한정판 체크
   if (document.getElementsByName('production_cycle_type')[0].value == 'year_round') {
-    changeCircle(circleTextY)
+    changeCycle('yearround')
   }
   else if(document.getElementsByName('production_cycle_type')[0].value == 'seasonal') {
-    changeCircle(circleTextS)
+    changeCycle('seasonal')
   }
   else {
-    changeCircle(circleTextL)
+    changeCycle('limited')
   }
   formSubmit()
 }
@@ -98,24 +98,41 @@ function makeBlogImage(){
 
 // 리모컨
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-function changeCircle(circleName){
-  var arrCircle = ['circleTextY', 'circleTextS', 'circleTextL'];
-  arrCircle.forEach(item => {
-    var upperCaseItem = item;
-    var item = document.getElementById(item);
-    item.style.display = 'none';
-
-    upperCaseItem = 'btn' + upperCaseItem.charAt(0).toUpperCase() + upperCaseItem.substring(1);
-
-    var upperCaseItem = document.getElementById(upperCaseItem);
-    upperCaseItem.classList.remove('on');
+function changeCycle(cycle) {
+  var arrCycle = ['cycleY', 'cycleS', 'cycleL'];
+  arrCycle.forEach(item => {
+    // 도장이 있으면
+    if (document.getElementById(item)){
+      var circle = document.getElementById(item);
+      circle.style.display = 'none';
+    }
+    // 도장이 없으면
+    else {}
+    btnCycle = 'btn' + item.charAt(0).toUpperCase() + item.substring(1);
+    document.getElementById(btnCycle).classList.remove('on');
   });
-  btnCircle = 'btn' + circleName.id.charAt(0).toUpperCase() + circleName.id.substring(1);  
-  circleName.style.display = 'block';
 
-  document.getElementById(btnCircle).classList.add('on');
-};
-
+  // 도장이 있으면
+  cycleStamp = 'cycle' + cycle.charAt(0).toUpperCase();
+  if (document.getElementById(cycleStamp)){
+    document.getElementById(cycleStamp).style.display = 'block';
+  }
+  // 도장이 없으면
+  else {
+    var cycleTag = document.getElementById('cycle');
+    if (cycle == 'yearround') {
+      cycleTag.innerText = '연중생산';
+    }
+    else if (cycle == 'seasonal') {
+      cycleTag.innerText = '시즈널';
+    }
+    else if (cycle == 'limited') {
+      cycleTag.innerText = '한정판';
+    }
+  }
+  btnCycle = 'btnCycle' + cycle.charAt(0).toUpperCase();
+  document.getElementById(btnCycle).classList.add('on');
+}
 
 function addPackage(num){
   // 템플릿 1

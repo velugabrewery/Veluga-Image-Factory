@@ -39,15 +39,13 @@
       </div>
       <div class="form-group">
         <label>원산지</label>
-        <div class="d-flex">
-          <input class="form-control" type="text" id="inputOrigin" value="헝가리" name="origin" />
-        </div>
+        <input class="form-control" type="text" id="inputOrigin" value="헝가리" name="origin" />
       </div>
       <div class="form-group">
         <label>스타일</label>
         <div class="d-flex">
           <input class="form-control" type="text" id="inputSubtype" value="화이트 와인" name="subtype" />
-          <input class="form-control ml-3" type="text" id="inputEnglishSubtype" value="파논 토카이" name="english_subtype" />
+          <input class="form-control ml-3" type="text" id="inputEnglishSubtype" value="화이트 와인" name="english_subtype" />
         </div>
       </div>
       <div class="form-group">
@@ -94,10 +92,11 @@
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', 2)">+2px</button>
       </div>
       <hr class="border-top-0 border-bottom-dashed">
+      <input style="display: none;" name="production_cycle_type">
       <div class="switch-wrap d-flex mt-2">
-        <button id="btnCircleTextY" class="switch on btn flex-fill w-100" type="button" onclick="changeCircle(circleTextY)">연중 생산</button>
-        <button id="btnCircleTextS" class="switch btn flex-fill w-100" type="button" onclick="changeCircle(circleTextS)">시즈널</button>
-        <button id="btnCircleTextL" class="switch btn flex-fill w-100" type="button" onclick="changeCircle(circleTextL)">한정판</button>
+        <button id="btnCycleY" class="switch on btn flex-fill w-100" type="button" onclick="changeCycle('yearround')">연중 생산</button>
+        <button id="btnCycleS" class="switch btn flex-fill w-100" type="button" onclick="changeCycle('seasonal')">시즈널</button>
+        <button id="btnCycleL" class="switch btn flex-fill w-100" type="button" onclick="changeCycle('limited')">한정판</button>
       </div>
       <div class="switch-wrap d-flex mt-2">
         <button id="btnAddPackage2" class="switch btn flex-fill w-100" type="button" onclick="addPackage(2)">가공형태2 있음</button>
@@ -117,42 +116,42 @@
     <div class="my-5"></div>
     <div id="beerTemplate1" class="beer-template-1 d-flex flex-column bg-white shadow-lg overflow-hidden">
       <div class="header d-flex flex-column justify-content-center">
-        <h1 class="beer-name">Veluga Beer</h1>
+        <h1 id="englishName" class="beer-name">Veluga Beer</h1>
         <ul class="beer-info d-flex">
           <li class="info-item">
-            <span>IPA</span>
+            <span id="englishSubtype">IPA</span>
           </li>
           <li class="info-item d-flex">
-            <span>9.0</span>
+            <span id="abv">9.0</span>
             <span>%</span>
           </li>
           <li class="info-item d-flex align-items-baseline">
-            <small>병</small>
-            <span>330ml</span>
+            <small id="productPackage1">병</small>
+            <span id="productVolume1">330ml</span>
           </li>
-          <li class="info-item d-none">
-            <small>케그</small>
-            <span>20L</span>
+          <li id="package2" class="info-item d-none align-items-baseline">
+            <small id="productPackage2">케그</small>
+            <span id="productVolume2">20L</span>
           </li>
-          <li class="info-item d-none">
-            <small>케그</small>
-            <span>20L</span>
+          <li id="package3" class="info-item d-none align-items-baseline">
+            <small id="productPackage3">케그</small>
+            <span id="productVolume3">20L</span>
           </li>
         </ul>
       </div>
       <div class="content d-flex">
         <div class="text-wrap position-relative">
-          <h2 class="producer-name">Veluga Brewery</h2>
-          <p class="description">
+          <h2 id="producerEnglishName" class="producer-name">Veluga Brewery</h2>
+          <p id="description" class="description">
             Ratebeer 선정 Top 5 juntongju IPA, 네이버 포스트에서 '꼭 마셔봐야 하는 한국 맥주'에 선정된 맥주입니다. 벨루가 비어는 와사비의 향미와 거친 질감이 특징인 맥주로 국내에서 만들었다고 상상조차 할 수 없을 정도로 묘한 맥주입니다. 알싸한 와사비향에 김치를 싸서 드셔보세요.
           </p>
           <div class="origin d-flex">
-            <span>한국</span>
-            <span class="ml-auto">연중생산</span>
+            <span id="origin">한국</span>
+            <span id="cycle" class="ml-auto">연중생산</span>
           </div>
         </div>
         <div class="img-wrap d-flex align-items-center justify-content-center bg-light">
-          <img id="mainImage" class="wine-img" height="630px" src="res/common/img/drink_sample.png" alt="상품 이미지">
+          <img id="mainImage" class="beer-img" height="630px" src="res/common/img/drink_sample.png" alt="상품 이미지">
           <img class="watermark position-absolute" width="360px" src="res/common/img/watermark.png" alt="워터마크">
         </div>
       </div>
@@ -172,7 +171,7 @@
           </div>
           <div class="info-item position-relative d-flex flex-column flex-fill">
             <span class="info-name">원산지</span>
-            <span id="originOG">한국</span>
+            <span id="originOG" class="info-data mt-2 text-dark-muted">한국</span>
           </div>
           <div class="info-item position-relative d-flex flex-column flex-fill">
             <span class="info-name">도수</span>
