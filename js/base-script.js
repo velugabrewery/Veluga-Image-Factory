@@ -58,24 +58,8 @@ function makeTem1(){
       var link = document.createElement('a');
       link.download = 'Tem1 ' + inputProducerEnglishName + ' ' + inputEnglishName + '.jpeg';
       link.href = dataUrl;
-
-      $.ajax('https://api.tinify.com/shrink', {
-        method: 'POST',
-        headers: {
-          'Authorization': 'Basic ' + btoa('SX8bMjnxNJXhq286Z2LHctwL17cTNn4B'),
-          'Content-Type': 'application/json'
-        },
-        data: {
-          source: {
-            url: dataUrl
-          }
-        }
-      }).done(function(data, textStatus, jqXHR) {
-        console.log(jqXHR);
-      });
-
       link.click();
-    });
+    }); 
 } 
 function makeOG(){
   domtoimage.toJpeg(document.getElementById('opengraph'))
