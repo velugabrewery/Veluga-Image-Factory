@@ -59,9 +59,11 @@ function makeTem1(){
       link.download = 'Tem1 ' + inputProducerEnglishName + ' ' + inputEnglishName + '.jpeg';
       link.href = dataUrl;
 
-      $.ajax('', {
+      $.ajax('https://api.tinify.com/shrink', {
+        method: 'POST',
         header: {
-          'Authorization': 'Basic ' + btoa('SX8bMjnxNJXhq286Z2LHctwL17cTNn4B')
+          'Authorization': 'Basic ' + btoa('SX8bMjnxNJXhq286Z2LHctwL17cTNn4B'),
+          'Content-Type': 'application/json'
         },
         data: {
           source: {
