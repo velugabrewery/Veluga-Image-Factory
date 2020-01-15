@@ -173,3 +173,10 @@ function moveStamp(direction, num){
     }
   }
 }
+
+// 오픈 그래프에 들어가는 지역명이 너무 길어요
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+function toLongOrigin(){
+  document.getElementById('originOG1').classList.remove('d-flex');
+  document.getElementById('originOG2').classList.remove('d-none');
+}
