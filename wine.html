@@ -80,7 +80,7 @@
       <button class="w-100 btn btn-primary" type="button" onclick="formSubmit()">내용 변경 가즈아</button>
     </form>
     <form class="remote-control position-fixed p-3 border rounded bg-white shadow">
-      <span class="font-weight-semibold">[T1] 맥주 이름 크기</span>
+      <span class="font-weight-semibold">[T1] 와인 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
         <button class="switch on btn flex-fill" type="button" onclick="fontSize(englishName, -2)">-2px</button>
         <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize(englishName, 65)">초기화</button>
@@ -94,7 +94,7 @@
         <button class="switch btn w-100" type="button" onclick="moveStamp('right', -5)">→</button>
       </div>
       <hr class="border-top-0 border-bottom-dashed">
-      <span class="font-weight-semibold">[OG] 맥주 이름 크기</span>
+      <span class="font-weight-semibold">[OG] 와인 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
         <button class="switch on btn flex-fill" type="button" onclick="fontSize(nameOG, -2)">-2px</button>
         <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize(nameOG, 60)">초기화</button>
@@ -295,10 +295,10 @@
     <div class="my-5"></div>
     <div id="opengraph" class="opengraph d-flex position-relative overflow-hidden bg-white shadow-lg">
       <div class="img-wrap d-flex align-items-center justify-content-center">
-        <img id="mainImageOG" class="wine-img" height="520px" src="res/common/img/wine_sample.png" alt="상품 이미지">
+        <img id="mainImageOG" class="drink-img" height="520px" src="res/common/img/wine_sample.png" alt="상품 이미지">
       </div>
       <div class="text-wrap d-flex flex-column w-100 justify-content-center">
-        <h1 id="nameOG" class="wine-name" style="font-size: 65px; line-height: 1em;">토카이 머스캣 루넬 2016</h1>
+        <h1 id="nameOG" class="drink-name" style="font-size: 65px; line-height: 1em;">토카이 머스캣 루넬 2016</h1>
         <h2 id="producerNameOG" class="producer-name mt-3">파논 토카이</h2>
         <div class="og-info d-flex">
           <div class="info-item position-relative d-flex flex-column flex-fill">
@@ -333,7 +333,7 @@
     <div class="my-5"></div>
     <div id="blogThumbnail" class="blog-thumbnail position-relative overflow-hidden shadow-lg">
       <div class="img-wrap d-flex align-items-center justify-content-center">
-        <img id="mainImageBlogThumb" class="wind-img" height="80%" src="res/common/img/wine_sample.png" alt="상품 이미지">
+        <img id="mainImageBlogThumb" class="drink-img" height="80%" src="res/common/img/wine_sample.png" alt="상품 이미지">
         <img class="watermark position-absolute" width="80%" src="res/common/img/watermark.png" alt="워터마크">
       </div>
     </div>
@@ -341,5 +341,6 @@
     <script src="js/Vibrant.min.js"></script>
     <script src="js/dom-to-image.js"></script>
     <script src="js/wine-script.js"></script>
+    <!-- <script src="js/base-script.js"></script> -->
   </body>
 </html>

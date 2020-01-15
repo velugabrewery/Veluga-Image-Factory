@@ -33,3 +33,12 @@
               // 8px 32px 32px rgba(239, 132, 74, .18);
               // 8px 64px 64px rgba(239, 132, 74, .18);
 }
+
+@mixin rotated-text($num-letters, $angle-span, $angle-offset) {
+  $angle-per-char: $angle-span / $num-letters;
+  @for $i from 1 through $num-letters {
+    .char#{$i} {
+      transform: rotate(($angle-offset + $angle-per-char * $i)+deg);
+    }
+  }
+}
