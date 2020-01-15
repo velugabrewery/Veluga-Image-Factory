@@ -58,6 +58,20 @@ function makeTem1(){
       var link = document.createElement('a');
       link.download = 'Tem1 ' + inputProducerEnglishName + ' ' + inputEnglishName + '.jpeg';
       link.href = dataUrl;
+
+      $.ajax('', {
+        header: {
+          'Authorization': 'Basic ' + btoa('SX8bMjnxNJXhq286Z2LHctwL17cTNn4B')
+        },
+        data: {
+          source: {
+            url: dataUrl
+          }
+        }
+      }).done(function(data, textStatus, jqXHR) {
+        console.log(jqXHR);
+      });
+
       link.click();
     });
 } 
