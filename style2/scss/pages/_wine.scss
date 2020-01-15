@@ -99,6 +99,10 @@
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.03em;
+        hr {
+          margin: 8px 0;
+          border: none;
+        }
       }
     }
   }

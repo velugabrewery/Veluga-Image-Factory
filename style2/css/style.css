@@ -7545,6 +7545,80 @@ select.form-control {
     height: 100%;
     background-color: #f6f2ed; }
 
+.beer-template-1 {
+  width: 1000px;
+  height: 1000px; }
+  .beer-template-1 .header {
+    height: 230px;
+    padding-left: 70px;
+    background-color: #dee4e6; }
+    .beer-template-1 .header .beer-name {
+      display: inline-block;
+      margin-top: 15px;
+      margin-bottom: 0;
+      height: 70px;
+      line-height: .8em;
+      font-size: 90px;
+      text-transform: capitalize; }
+    .beer-template-1 .header .beer-info {
+      margin-top: 20px;
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style: none; }
+      .beer-template-1 .header .beer-info .info-item {
+        font-size: 35px;
+        transform: skewX(-10deg); }
+        .beer-template-1 .header .beer-info .info-item small {
+          display: inline-block;
+          margin-right: 8px;
+          font-weight: 700;
+          font-size: 21px; }
+      .beer-template-1 .header .beer-info .info-item:first-child {
+        text-transform: capitalize; }
+      .beer-template-1 .header .beer-info .info-item ~ .info-item {
+        margin-left: 50px; }
+        .beer-template-1 .header .beer-info .info-item ~ .info-item:before {
+          position: absolute;
+          top: 21px;
+          left: -28px;
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 2px;
+          background-color: #212729;
+          transform: scaleX(0.5) rotate(45deg);
+          content: ''; }
+  .beer-template-1 .content {
+    height: 770px; }
+    .beer-template-1 .content .text-wrap {
+      width: 55%;
+      height: 100%;
+      padding: 100px 70px 70px; }
+      .beer-template-1 .content .text-wrap .producer-name {
+        font-size: 40px;
+        text-transform: capitalize; }
+      .beer-template-1 .content .text-wrap .description {
+        margin-top: 40px;
+        font-size: 26px;
+        text-align: justify;
+        word-break: break-all; }
+      .beer-template-1 .content .text-wrap .origin {
+        position: absolute;
+        bottom: 70px;
+        width: calc(100% - 140px);
+        padding-top: 15px;
+        border-top: 1px solid #212729; }
+        .beer-template-1 .content .text-wrap .origin span {
+          font-weight: 600;
+          font-size: 20px;
+          transform: skewX(-10deg); }
+      .beer-template-1 .content .text-wrap hr {
+        margin: 8px 0;
+        border: none; }
+    .beer-template-1 .content .img-wrap {
+      width: 45%;
+      height: 100%; }
+
 .wine-template-1 {
   width: 1000px;
   height: 1000px; }
@@ -7825,6 +7899,9 @@ select.form-control {
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.03em; }
+        .wine-template-1 .text-container .text-wrap .paragraph hr {
+          margin: 8px 0;
+          border: none; }
 
 .juntongju-template-1 {
   width: 1000px;
@@ -8089,6 +8166,9 @@ select.form-control {
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.015em; }
+        .juntongju-template-1 .content .text-wrap .description hr {
+          margin: 8px 0;
+          border: none; }
   .juntongju-template-1 .footer {
     height: 90px;
     padding-bottom: 4px;

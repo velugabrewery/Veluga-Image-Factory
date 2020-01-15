@@ -9,15 +9,83 @@
     <meta property="og:title" content="즐거운 성진이네 이미지 공장">
     <meta property="og:description" content="집에 일찍 가고 싶어서 세운 공장이에요.">
     <meta property="og:image" content="https://seongj1n.github.io/template/res/common/img/opengraph.png">
-    <meta property="og:url" content="https://seongj1n.github.io/template/wine">
+    <meta property="og:url" content="https://seongj1n.github.io/template/beer">
     <link rel="stylesheet" type="text/css" href="style2/css/style.css">
   </head>
   <body class="d-flex flex-column align-items-center justify-content-center">
     <div class="my-5"></div>
     <form class="form p-5 shadow-lg">
+      <div class="form-group">
+        <label>맥주 이미지 URL</label>
+        <input class="form-control" type="text" id="inputMainImageUrl" name="main_image_url" />
+      </div>
+      <div class="form-group">
+        <label>맥주 이름</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputEnglishName" value="Tokaji Muscat Lunel 2016" name="english_name" />
+          <input class="form-control ml-3" type="text" id="inputName" value="토카이 머스캣 루넬 2016" name="name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>브루어리명</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputProducerEnglishName" value="Pannon Tokaji" name="producer_english_name" />
+          <input class="form-control ml-3" type="text" id="inputProducerName" value="파논 토카이" name="producer_name" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>맥주 설명</label>
+        <textarea class="form-control" id="inputDescription" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label>원산지</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputOrigin" value="헝가리" name="origin" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>스타일</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputSubtype" value="화이트 와인" name="subtype" />
+          <input class="form-control ml-3" type="text" id="inputEnglishSubtype" value="파논 토카이" name="english_subtype" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>도수</label>
+        <input class="form-control" type="text" id="inputAbv" value="11.5" name="abv" />
+      </div>
+      <div class="form-group">
+        <label>가공형태 1</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputProductPackage1" value="병" name="product_1_package" />
+          <input class="form-control ml-3" type="text" id="inputProductVolume1" value="750ml" name="product_1_volume" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>가공형태 2</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputProductPackage2" name="product_2_package" />
+          <input class="form-control ml-3" type="text" id="inputProductVolume2" name="product_2_volume" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>가공형태 3</label>
+        <div class="d-flex">
+          <input class="form-control" type="text" id="inputProductPackage3" name="product_3_package" />
+          <input class="form-control ml-3" type="text" id="inputProductVolume3" name="product_3_volume" />
+        </div>
+      </div>
       <button class="w-100 btn btn-primary" type="button" onclick="formSubmit()">내용 변경 가즈아</button>
     </form>
     <form class="remote-control position-fixed p-3 border rounded bg-white shadow">
+      <span class="font-weight-semibold">[T1] 맥주 이름 크기</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('englishName', -2)">-2px</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('englishName', 65)">초기화</button>
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('englishName', 2)">+2px</button>
+      </div>
+      <span class="font-weight-semibold">[T1] 맥주 이름 크기</span>
+      <div></div>
       <hr class="border-top-0 border-bottom-dashed">
       <span class="font-weight-semibold">[OG] 맥주 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
@@ -47,6 +115,48 @@
       <button class="btn btn-primary w-100 mt-3" type="button" onclick="makeBlogImage()">블로그용 이미지 ㄱㄱ</button>
     </form>
     <div class="my-5"></div>
+    <div id="beerTemplate1" class="beer-template-1 d-flex flex-column bg-white shadow-lg overflow-hidden">
+      <div class="header d-flex flex-column justify-content-center">
+        <h1 class="beer-name">Veluga Beer</h1>
+        <ul class="beer-info d-flex">
+          <li class="info-item">
+            <span>IPA</span>
+          </li>
+          <li class="info-item d-flex">
+            <span>9.0</span>
+            <span>%</span>
+          </li>
+          <li class="info-item d-flex align-items-baseline">
+            <small>병</small>
+            <span>330ml</span>
+          </li>
+          <li class="info-item d-none">
+            <small>케그</small>
+            <span>20L</span>
+          </li>
+          <li class="info-item d-none">
+            <small>케그</small>
+            <span>20L</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content d-flex">
+        <div class="text-wrap position-relative">
+          <h2 class="producer-name">Veluga Brewery</h2>
+          <p class="description">
+            Ratebeer 선정 Top 5 juntongju IPA, 네이버 포스트에서 '꼭 마셔봐야 하는 한국 맥주'에 선정된 맥주입니다. 벨루가 비어는 와사비의 향미와 거친 질감이 특징인 맥주로 국내에서 만들었다고 상상조차 할 수 없을 정도로 묘한 맥주입니다. 알싸한 와사비향에 김치를 싸서 드셔보세요.
+          </p>
+          <div class="origin d-flex">
+            <span>한국</span>
+            <span class="ml-auto">연중생산</span>
+          </div>
+        </div>
+        <div class="img-wrap d-flex align-items-center justify-content-center bg-light">
+          <img id="mainImage" class="wine-img" height="630px" src="res/common/img/drink_sample.png" alt="상품 이미지">
+          <img class="watermark position-absolute" width="360px" src="res/common/img/watermark.png" alt="워터마크">
+        </div>
+      </div>
+    </div>
     <div class="my-5"></div>
     <div id="opengraph" class="opengraph d-flex position-relative overflow-hidden bg-white shadow-lg">
       <div class="img-wrap d-flex align-items-center justify-content-center">

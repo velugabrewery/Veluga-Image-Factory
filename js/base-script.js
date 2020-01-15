@@ -25,6 +25,14 @@ window.onload = function() {
     console.log(val)
     console.log(decodeURIComponent(val))
     var text = decodeURIComponent(val)
+    var getml = text.substring(text.length-2, text.length)
+    console.log(getml)
+    if (getml == "mL") {
+        document.getElementsByName(key)[0].value = text.toLowerCase()
+    }
+    else {
+        document.getElementsByName(key)[0].value = text
+    }
   }
 
   // 가공형태 갯수에 따라서 없앰
