@@ -61,7 +61,7 @@ function makeTem1(){
 
       $.ajax('https://api.tinify.com/shrink', {
         method: 'POST',
-        header: {
+        headers: {
           'Authorization': 'Basic ' + btoa('SX8bMjnxNJXhq286Z2LHctwL17cTNn4B'),
           'Content-Type': 'application/json'
         },
