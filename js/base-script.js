@@ -14,7 +14,7 @@ function colorChange(){
     };
   });
   if (document.getElementsByClassName('beer-header')){
-    var beerTemHeader = document.getElementsByClassName('beer-header');
+    var beerTemHeader = document.getElementsByClassName('beer-header')[0];
     if (vibrant.LightMutedSwatch !== true) {
       beerTemHeader.style.backgroundColor = vibrant.LightMutedSwatch.getHex();
     }
