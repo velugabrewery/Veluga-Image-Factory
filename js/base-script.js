@@ -5,12 +5,23 @@ function colorChange(){
   img.setAttribute('crossOrigin', 'anonymous');
   var vibrant = new window.Vibrant(img);
   var swatches = vibrant.swatches();
-  var arrCircle = ['circleTextY', 'circleTextS', 'circleTextL'];
-  arrCircle.forEach(item => {
+  var arrCycle = ['cycleY', 'cycleS', 'cycleL'];
+  arrCycle.forEach(item => {
+    if (document.getElementById(item)){
     var item = document.getElementById(item);
     item.style.borderColor = swatches.Vibrant.getHex();
     item.style.color = swatches.Vibrant.getHex();
+    };
   });
+  if (document.getElementsByClassName('beer-header')){
+    var beerTemHeader = document.getElementsByClassName('beer-header');
+    if (vibrant.LightMutedSwatch !== true) {
+      beerTemHeader.style.backgroundColor = vibrant.LightMutedSwatch.getHex();
+    }
+    else {
+      beerTemHeader.style.backgroundColor = swatches.Muted.getHex();
+    }
+  };
 };
 
 // 페이지 로드
