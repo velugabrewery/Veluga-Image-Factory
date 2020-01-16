@@ -8,9 +8,9 @@ function colorChange(){
   var arrCycle = ['cycleY', 'cycleS', 'cycleL'];
   arrCycle.forEach(item => {
     if (document.getElementById(item)){
-    var item = document.getElementById(item);
-    item.style.borderColor = swatches.Vibrant.getHex();
-    item.style.color = swatches.Vibrant.getHex();
+      var item = document.getElementById(item);
+      item.style.borderColor = swatches.Vibrant.getHex();
+      item.style.color = swatches.Vibrant.getHex();
     };
   });
   if (document.getElementsByClassName('beer-header')){
@@ -66,6 +66,7 @@ window.onload = function() {
     changeCycle('limited')
   }
   formSubmit()
+  colorChange()
 }
 
 
@@ -178,7 +179,7 @@ function resetFontSize(name, fontSize){
 
 function fontSize(name, num){
   var fontSize = document.getElementById(name).style.fontSize;
-  fontSizeSubstring = fontSize.slice(0,2);
+  fontSizeSubstring = fontSize.slice(0,-2);
   fontSizeSubstring = fontSizeSubstring * 1 + num;
   document.getElementById(name).style.fontSize = fontSizeSubstring + 'px';
 }
@@ -215,4 +216,39 @@ function moveStamp(direction, num){
 function toLongOrigin(){
   document.getElementById('originOG1').classList.remove('d-flex');
   document.getElementById('originOG2').classList.remove('d-none');
+}
+
+// 폰트 종류 선택 
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+function chanageFontStyle(target, kind){
+  var target = document.getElementById(target);
+  btnFont = document.getElementsByClassName('btn-font');
+  for(var i=0; i < btnFont.length; i++){
+    btnFont[i].classList.remove('on');
+  }
+  if (kind == 'default') {
+    btnName = 'btnFont' + kind.charAt(0).toUpperCase() + kind.substring(1);
+    document.getElementById(btnName).classList.add('on');
+
+    target.classList.remove('condensed');
+  }
+  else if (kind == 'condensed') {
+    btnName = 'btnFont' + kind.charAt(0).toUpperCase() + kind.substring(1);
+    document.getElementById(btnName).classList.add('on');
+
+    target.classList.add('condensed');
+  }
+}
+
+// 마진 변경
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+function resetMarginTop(target, num){
+  document.getElementById(target).style.marginTop = num + 'px';
+}
+
+function marginTop(target, num){
+  var marginTop = document.getElementById(target).style.marginTop;
+  marginTopSubstring = marginTop.slice(0,-2);
+  marginTopSubstring = marginTopSubstring * 1 + num;
+  document.getElementById(target).style.marginTop = marginTopSubstring + 'px';
 }

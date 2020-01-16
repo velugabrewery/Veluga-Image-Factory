@@ -7593,8 +7593,9 @@ select.form-control {
     .beer-template-1 .content .text-wrap {
       width: 55%;
       height: 100%;
-      padding: 100px 70px 70px; }
+      padding: 90px 70px 70px; }
       .beer-template-1 .content .text-wrap .producer-name {
+        margin-top: 10px;
         font-size: 40px;
         text-transform: capitalize; }
       .beer-template-1 .content .text-wrap .description {

@@ -76,13 +76,23 @@
       <button class="w-100 btn btn-primary" type="button" onclick="formSubmit()">내용 변경 가즈아</button>
     </form>
     <form class="remote-control position-fixed p-3 border rounded bg-white shadow">
-      <span class="font-weight-semibold">[T1] 맥주 이름 크기</span>
+      <span class="font-weight-semibold">[T1] 맥주 이름 폰트</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button id="btnFontDefault" class="btn-font switch on btn flex-fill" type="button" onclick="chanageFontStyle('englishName', 'default')">기본</button>
+        <button id="btnFontCondensed" class="btn-font switch btn flex-fill" type="button" onclick="chanageFontStyle('englishName', 'condensed')">좁음</button>
+      </div>
+      <span class="font-weight-semibold d-block mt-2">맥주 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('englishName', -2)">-2px</button>
         <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('englishName', 90)">초기화</button>
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('englishName', 2)">+2px</button>
       </div>
-      <span class="font-weight-semibold">[T1] 맥주 이름 크기</span>
+      <span class="font-weight-semibold d-block mt-2">브루어리명 상단여백</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch on btn flex-fill" type="button" onclick="marginTop('producerEnglishName', -10)">-10px</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetMarginTop('producerEnglishName', 10)">초기화</button>
+        <button class="switch on btn flex-fill" type="button" onclick="marginTop('producerEnglishName', 10)">+10px</button>
+      </div>
       <div></div>
       <hr class="border-top-0 border-bottom-dashed">
       <span class="font-weight-semibold">[OG] 맥주 이름 크기</span>
