@@ -178,7 +178,8 @@ function resetFontSize(name, fontSize){
 }
 
 function fontSize(name, num){
-  var fontSize = document.getElementById(name).style.fontSize;
+  var el = document.getElementById(name)
+  var fontSize = window.getComputedStyle(el, null).getPropertyValue('font-size');
   fontSizeSubstring = fontSize.slice(0,-2);
   fontSizeSubstring = fontSizeSubstring * 1 + num;
   document.getElementById(name).style.fontSize = fontSizeSubstring + 'px';
@@ -247,7 +248,8 @@ function resetMarginTop(target, num){
 }
 
 function marginTop(target, num){
-  var marginTop = document.getElementById(target).style.marginTop;
+  var el = document.getElementById(target)
+  var marginTop = window.getComputedStyle(el, null).getPropertyValue('margin-top');
   marginTopSubstring = marginTop.slice(0,-2);
   marginTopSubstring = marginTopSubstring * 1 + num;
   document.getElementById(target).style.marginTop = marginTopSubstring + 'px';
