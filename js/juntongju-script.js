@@ -33,10 +33,6 @@ function formSubmit(){
     document.getElementById(subStringItem).innerHTML = itemValue;
   });
 
-  // 상세 지역 명이 너무 길 때, 사용하려고 만든 거
-  document.getElementById('origin2OG').innerHTML = document.getElementById('inputOrigin').value;
-  document.getElementById('originDetail2OG').innerHTML = document.getElementById('inputOriginDetail').value;
-
   // 블로그용 썸네일
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
   mainImageBlogThumb.src = inputMainImageUrl;
