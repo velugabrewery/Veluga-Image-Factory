@@ -45,6 +45,8 @@ window.onload = function() {
       document.getElementsByName(key)[0].value = text
     }
   }
+  addPackage(2)
+  addPackage(3)
 
   // 가공형태 갯수에 따라서 없앰
   if (inputProductPackage2.value == "") {
