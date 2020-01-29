@@ -76,7 +76,12 @@ function makeTem1(){
   domtoimage.toJpeg(document.getElementById('template1'), { width: 1000 })
     .then(function (dataUrl) {
       var link = document.createElement('a');
-      link.download = 'Tem1 ' + inputProducerEnglishName.value + ' ' + inputEnglishName.value + '.jpeg';
+      if (inputProducerEnglishName == null) {
+        link.download = 'Tem1 ' + inputProducerName.value + ' ' + inputName.value + '.jpeg';
+      }
+      else {
+        link.download = 'Tem1 ' + inputProducerEnglishName.value + ' ' + inputEnglishName.value + '.jpeg';
+      }
       link.href = dataUrl;
       link.click();
     }); 
@@ -85,7 +90,12 @@ function makeOG(){
   domtoimage.toJpeg(document.getElementById('opengraph'))
     .then(function (dataUrl) {
       var link = document.createElement('a');
-      link.download = 'OG ' + inputProducerEnglishName.value + ' ' + inputEnglishName.value + '.jpeg';
+      if (inputProducerEnglishName == null) {
+        link.download = 'OG ' + inputProducerName.value + ' ' + inputName.value + '.jpeg';
+      }
+      else {
+        link.download = 'OG ' + inputProducerEnglishName.value + ' ' + inputEnglishName.value + '.jpeg';
+      }
       link.href = dataUrl;
       link.click();
     });
