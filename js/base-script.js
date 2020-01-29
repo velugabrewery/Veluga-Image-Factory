@@ -76,7 +76,7 @@ function makeTem1(){
   domtoimage.toJpeg(document.getElementById('template1'), { width: 1000 })
     .then(function (dataUrl) {
       var link = document.createElement('a');
-      if (inputProducerEnglishName == null) {
+      if (inputEnglishName == "") {
         link.download = 'Tem1 ' + inputProducerName.value + ' ' + inputName.value + '.jpeg';
       }
       else {
@@ -90,7 +90,7 @@ function makeOG(){
   domtoimage.toJpeg(document.getElementById('opengraph'))
     .then(function (dataUrl) {
       var link = document.createElement('a');
-      if (inputProducerEnglishName == null) {
+      if (inputEnglishName == "") {
         link.download = 'OG ' + inputProducerName.value + ' ' + inputName.value + '.jpeg';
       }
       else {

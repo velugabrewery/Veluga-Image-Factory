@@ -36,4 +36,7 @@ function formSubmit(){
   // 블로그용 썸네일
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
   mainImageBlogThumb.src = inputMainImageUrl;
+
+  // 값이 없는지 체크
+  var inputEnglishName = "";
 };
