@@ -111,7 +111,12 @@ function makeBlogThumb(){
   domtoimage.toJpeg(document.getElementById('blogThumbnail'))
     .then(function (dataUrl) {
       var link = document.createElement('a');
-      link.download = 'Thumbnail ' + inputProducerEnglishName.value + ' ' + inputEnglishName.value + '.jpeg';
+      if (inputEnglishName == "") {
+        link.download = 'Thumbnail ' + inputProducerName.value + ' ' + inputName.value + '.jpeg';
+      }
+      else {
+        link.download = 'Thumbnail ' + inputProducerEnglishName.value + ' ' + inputEnglishName.value + '.jpeg';
+      }
       link.href = dataUrl;
       link.click();
     });
