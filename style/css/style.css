@@ -8191,4 +8191,39 @@ select.form-control {
       .juntongju-template-1 .footer .juntongju-info .info-item:first-child {
         border-left: none; }
 
+.sake-template-1 {
+  width: 1000px;
+  height: 1000px; }
+  .sake-template-1 .img-wrap {
+    max-width: 400px;
+    min-width: 400px; }
+  .sake-template-1 .text-container {
+    width: 600px; }
+    .sake-template-1 .text-container .text-wrap {
+      width: 500px; }
+      .sake-template-1 .text-container .text-wrap .sake-name {
+        font-weight: 900;
+        font-size: 65px;
+        line-height: 70px;
+        text-transform: uppercase; }
+      .sake-template-1 .text-container .text-wrap .sake-info {
+        margin-top: 40px; }
+        .sake-template-1 .text-container .text-wrap .sake-info .info-item {
+          font-size: 21px; }
+          .sake-template-1 .text-container .text-wrap .sake-info .info-item .info-name {
+            min-width: 140px;
+            font-weight: 700; }
+        .sake-template-1 .text-container .text-wrap .sake-info .info-item ~ .info-item {
+          margin-top: 18px; }
+      .sake-template-1 .text-container .text-wrap .description {
+        margin-top: 38px;
+        font-size: 22px;
+        line-height: 38px;
+        text-align: justify;
+        word-break: break-all;
+        letter-spacing: -.03em; }
+        .sake-template-1 .text-container .text-wrap .description hr {
+          margin: 8px 0;
+          border: none; }
+
 /*# sourceMappingURL=style.css.map */
