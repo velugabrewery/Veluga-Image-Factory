@@ -32,8 +32,8 @@ window.onload = function() {
     let keyValue = params[i].split('=')
     let key = keyValue[0]
     let val = keyValue[1]
-    if (key == "None") {
-      key = "-"
+    if (val == "None") {
+      val = "-"
     }
     console.log(key)
     console.log(val)
