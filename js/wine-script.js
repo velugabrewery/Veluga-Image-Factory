@@ -15,7 +15,7 @@ function formSubmit(){
   arrTem1.forEach(item => {
     var itemValue = document.getElementById(item).value;
     if (itemValue == "None") {
-      itemValue = "-";
+      itemValue = "-"
     }
     var subStringItem = item.substring(5);
     subStringItem = subStringItem.charAt(0).toLowerCase() + subStringItem.substring(1);
@@ -30,6 +30,9 @@ function formSubmit(){
   var arrOG = ['inputName', 'inputProducerName', 'inputOrigin', 'inputOriginDetail', 'inputSubtype', 'inputAbv'];
   arrOG.forEach(item => {
     var itemValue = document.getElementById(item).value;
+    if (itemValue == "None") {
+      itemValue = "-"
+    }
     var subStringItem = item.substring(5);
     // 오픈그래프는 뒤에 OG가 붙음 
     subStringItem = subStringItem.charAt(0).toLowerCase() + subStringItem.substring(1) + "OG";
