@@ -14,6 +14,9 @@ function formSubmit(){
   var arrTem1 = ['inputEnglishName', 'inputProducerEnglishName', 'inputOrigin', 'inputOriginDetail', 'inputBase', 'inputSubtype', 'inputAbv', 'inputProductPackage1', 'inputProductVolume1', 'inputProductPackage2', 'inputProductVolume2', 'inputProductPackage3', 'inputProductVolume3'];
   arrTem1.forEach(item => {
     var itemValue = document.getElementById(item).value;
+    if (itemValue == "None") {
+      itemValue = "-";
+    }
     var subStringItem = item.substring(5);
     subStringItem = subStringItem.charAt(0).toLowerCase() + subStringItem.substring(1);
     document.getElementById(subStringItem).innerHTML = itemValue;
