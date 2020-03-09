@@ -212,7 +212,7 @@ var stampRight = 30;
 
 function moveStamp(direction, num){
   var direction = direction;
-  var arr = document.getElementsByClassName('circle-text');
+  var arr = document.getElementsByClassName('stamp');
   var arrLength = arr.length;
   var resultArr = new Array();
   for(var i=0; i<arrLength; i++){

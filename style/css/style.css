@@ -7640,7 +7640,7 @@ select.form-control {
         font-size: 65px;
         line-height: 65px;
         text-transform: uppercase; }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp {
           z-index: 2;
           position: absolute;
           top: -95px;
@@ -7649,24 +7649,24 @@ select.form-control {
           color: #ced7da;
           border-color: #ced7da;
           mix-blend-mode: multiply; }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text:before, .wine-template-1 .text-container .text-wrap .wine-name .circle-text:after {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp:before, .wine-template-1 .text-container .text-wrap .wine-name .stamp:after {
             position: absolute;
             display: block;
             border: 4px solid;
             border-color: inherit;
             border-radius: 50%;
             content: ''; }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text:before {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp:before {
             top: 16px;
             left: -104px;
             width: 220px;
             height: 220px; }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text:after {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp:after {
             top: 50px;
             left: -70px;
             width: 152px;
             height: 152px; }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text span {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp span {
             position: absolute;
             top: 5px;
             left: -7px;
@@ -7678,211 +7678,211 @@ select.form-control {
             font-size: 26px;
             color: inherit;
             text-align: center; }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char1 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char1 {
           transform: rotate(10.9090909091deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char2 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char2 {
           transform: rotate(21.8181818182deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char3 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char3 {
           transform: rotate(32.7272727273deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char4 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char4 {
           transform: rotate(43.6363636364deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char5 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char5 {
           transform: rotate(54.5454545455deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char6 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char6 {
           transform: rotate(65.4545454545deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char7 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char7 {
           transform: rotate(76.3636363636deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char8 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char8 {
           transform: rotate(87.2727272727deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char9 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char9 {
           transform: rotate(98.1818181818deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char10 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char10 {
           transform: rotate(109.0909090909deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char11 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char11 {
           transform: rotate(120deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char12 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char12 {
           transform: rotate(130.9090909091deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char13 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char13 {
           transform: rotate(141.8181818182deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char14 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char14 {
           transform: rotate(152.7272727273deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char15 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char15 {
           transform: rotate(163.6363636364deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char16 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char16 {
           transform: rotate(174.5454545455deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char17 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char17 {
           transform: rotate(185.4545454545deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char18 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char18 {
           transform: rotate(196.3636363636deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char19 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char19 {
           transform: rotate(207.2727272727deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char20 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char20 {
           transform: rotate(218.1818181818deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char21 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char21 {
           transform: rotate(229.0909090909deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char22 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char22 {
           transform: rotate(240deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char23 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char23 {
           transform: rotate(250.9090909091deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char24 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char24 {
           transform: rotate(261.8181818182deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char25 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char25 {
           transform: rotate(272.7272727273deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char26 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char26 {
           transform: rotate(283.6363636364deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char27 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char27 {
           transform: rotate(294.5454545455deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char28 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char28 {
           transform: rotate(305.4545454545deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char29 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char29 {
           transform: rotate(316.3636363636deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char30 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char30 {
           transform: rotate(327.2727272727deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char31 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char31 {
           transform: rotate(338.1818181818deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char32 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char32 {
           transform: rotate(349.0909090909deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-yearround .char33 {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-yearround .char33 {
           transform: rotate(360deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal {
           display: none; }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char1 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char1 {
             transform: rotate(10deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char2 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char2 {
             transform: rotate(20deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char3 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char3 {
             transform: rotate(30deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char4 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char4 {
             transform: rotate(40deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char5 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char5 {
             transform: rotate(50deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char6 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char6 {
             transform: rotate(60deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char7 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char7 {
             transform: rotate(70deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char8 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char8 {
             transform: rotate(80deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char9 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char9 {
             transform: rotate(90deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char10 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char10 {
             transform: rotate(100deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char11 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char11 {
             transform: rotate(110deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char12 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char12 {
             transform: rotate(120deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char13 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char13 {
             transform: rotate(130deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char14 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char14 {
             transform: rotate(140deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char15 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char15 {
             transform: rotate(150deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char16 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char16 {
             transform: rotate(160deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char17 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char17 {
             transform: rotate(170deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char18 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char18 {
             transform: rotate(180deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char19 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char19 {
             transform: rotate(190deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char20 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char20 {
             transform: rotate(200deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char21 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char21 {
             transform: rotate(210deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char22 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char22 {
             transform: rotate(220deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char23 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char23 {
             transform: rotate(230deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char24 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char24 {
             transform: rotate(240deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char25 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char25 {
             transform: rotate(250deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char26 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char26 {
             transform: rotate(260deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char27 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char27 {
             transform: rotate(270deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char28 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char28 {
             transform: rotate(280deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char29 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char29 {
             transform: rotate(290deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char30 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char30 {
             transform: rotate(300deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char31 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char31 {
             transform: rotate(310deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char32 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char32 {
             transform: rotate(320deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char33 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char33 {
             transform: rotate(330deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char34 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char34 {
             transform: rotate(340deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char35 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char35 {
             transform: rotate(350deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-seasonal .char36 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-seasonal .char36 {
             transform: rotate(360deg); }
-        .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited {
+        .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited {
           display: none; }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char1 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char1 {
             transform: rotate(11.25deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char2 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char2 {
             transform: rotate(22.5deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char3 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char3 {
             transform: rotate(33.75deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char4 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char4 {
             transform: rotate(45deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char5 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char5 {
             transform: rotate(56.25deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char6 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char6 {
             transform: rotate(67.5deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char7 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char7 {
             transform: rotate(78.75deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char8 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char8 {
             transform: rotate(90deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char9 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char9 {
             transform: rotate(101.25deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char10 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char10 {
             transform: rotate(112.5deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char11 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char11 {
             transform: rotate(123.75deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char12 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char12 {
             transform: rotate(135deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char13 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char13 {
             transform: rotate(146.25deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char14 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char14 {
             transform: rotate(157.5deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char15 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char15 {
             transform: rotate(168.75deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char16 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char16 {
             transform: rotate(180deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char17 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char17 {
             transform: rotate(191.25deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char18 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char18 {
             transform: rotate(202.5deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char19 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char19 {
             transform: rotate(213.75deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char20 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char20 {
             transform: rotate(225deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char21 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char21 {
             transform: rotate(236.25deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char22 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char22 {
             transform: rotate(247.5deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char23 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char23 {
             transform: rotate(258.75deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char24 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char24 {
             transform: rotate(270deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char25 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char25 {
             transform: rotate(281.25deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char26 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char26 {
             transform: rotate(292.5deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char27 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char27 {
             transform: rotate(303.75deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char28 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char28 {
             transform: rotate(315deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char29 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char29 {
             transform: rotate(326.25deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char30 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char30 {
             transform: rotate(337.5deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char31 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char31 {
             transform: rotate(348.75deg); }
-          .wine-template-1 .text-container .text-wrap .wine-name .circle-text-limited .char32 {
+          .wine-template-1 .text-container .text-wrap .wine-name .stamp-limited .char32 {
             transform: rotate(360deg); }
       .wine-template-1 .text-container .text-wrap .wine-info {
         margin-top: 40px; }

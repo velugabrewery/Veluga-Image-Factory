@@ -22,7 +22,7 @@
         font-size: 65px;
         line-height: 65px;
         text-transform: uppercase;
-        .circle-text {
+        .stamp {
           z-index: 2;
           position: absolute;
           top: -95px;
@@ -66,14 +66,14 @@
             text-align: center;
           }
         }
-        .circle-text-yearround {
+        .stamp-yearround {
             @include rotated-text(33, 360, 0);
         }
-        .circle-text-seasonal {
+        .stamp-seasonal {
             display: none;
             @include rotated-text(36, 360, 0);
         }
-        .circle-text-limited {
+        .stamp-limited {
             display: none;
             @include rotated-text(32, 360, 0);
         }
