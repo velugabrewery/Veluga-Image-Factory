@@ -49,10 +49,10 @@ function formSubmit(){
 
   SMVCursor.innerHTML = SMV;
   if (SMVNum > 6) {
-    SMVNum = 450;
+    SMVNum = 445;
   }
   else {
-    SMVNum = SMVNum * 75;
+    SMVNum = SMVNum * 74;
   }
   SMVResult = SMVSign + SMVNum + "px";
   SMVCursor.style.marginLeft = SMVResult;
