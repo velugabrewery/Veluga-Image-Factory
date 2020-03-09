@@ -8237,7 +8237,9 @@ select.form-control {
         margin-top: 35px; }
         .sake-template-1 .text-container .text-wrap .smv .cursor-wrap {
           position: relative;
+          width: 480px;
           height: 40px;
+          transform: translateX(-15px);
           z-index: 2; }
           .sake-template-1 .text-container .text-wrap .smv .cursor-wrap .cursor {
             width: 26px;

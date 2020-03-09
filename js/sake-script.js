@@ -40,4 +40,20 @@ function formSubmit(){
   // 블로그용 썸네일
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
   mainImageBlogThumb.src = inputMainImageUrl;
+
+  // SMV 그래프
+  var SMV = document.getElementById('inputSakeMeterValue').value;
+  var SMVCursor = document.getElementById('SMVCursor');
+  var SMVSign = SMV.charAt(0);
+  var SMVNum = SMV.substring(1) * 1;
+
+  SMVCursor.innerHTML = SMV;
+  if (SMVNum > 6) {
+    SMVNum = 450;
+  }
+  else {
+    SMVNum = SMVNum * 75;
+  }
+  SMVResult = SMVSign + SMVNum + "px";
+  SMVCursor.style.marginLeft = SMVResult;
 };

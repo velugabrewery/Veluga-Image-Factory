@@ -57,7 +57,9 @@
         margin-top: 35px;
         .cursor-wrap {
           position: relative;
+          width: 480px;
           height: 40px;
+          transform: translateX(-15px);
           z-index: 2;
           .cursor {
             width: 26px;
