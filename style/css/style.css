@@ -1,4 +1,49 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro710");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro720");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro730");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro740");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro750");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro760");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro770");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro780");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: "Yoon Gothic Pro 700";
+  src: local("YoonGothicPro790");
+  font-weight: 900;
+  font-style: normal; }
 *, body {
   font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', Sans-serif;
   letter-spacing: -.015em;
