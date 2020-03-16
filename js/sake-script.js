@@ -57,3 +57,6 @@ function formSubmit(){
   SMVResult = SMVSign + SMVNum + "px";
   SMVCursor.style.marginLeft = SMVResult;
 };
+
+// 값이 없는지 체크
+var inputEnglishName = "";
