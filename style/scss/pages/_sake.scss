@@ -12,6 +12,7 @@
     .text-wrap {
       width: 500px;
       .sake-name {
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         font-size: 65px;
         line-height: 70px;
@@ -45,6 +46,7 @@
           font-size: 21px;
           .info-name {
             min-width: 140px;
+            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
             font-weight: 700;
           }
           .info-data {}
@@ -69,6 +71,7 @@
             background-color: lighten($primary, 55%);
             color: $primary;
             text-align: center;
+            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
             font-weight: 600;
             font-size: 8px;
             line-height: 16px;

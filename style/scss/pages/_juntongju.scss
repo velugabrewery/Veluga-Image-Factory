@@ -11,6 +11,7 @@
       display: inline-block;
       height: 70px;
       line-height: 0.8em;
+      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
       font-weight: 800;
       font-size: 90px;
     }
@@ -51,6 +52,7 @@
         width: 25px;
         height: 126px;
         transform-origin: bottom center;
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         font-size: 26px;
         color: inherit;
@@ -83,6 +85,7 @@
       padding-left: 40px;
       .producer-name {
         font-size: 40px;
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         text-transform: uppercase;
       }
@@ -110,11 +113,13 @@
       .info-item {
         padding: 0 15px;
         border-left: 2px solid $gray-900;
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 36px;
         small {
           margin-top: 5px;
           margin-right: 8px;
+          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
           font-weight: 800;
           font-size: 23px;
         }

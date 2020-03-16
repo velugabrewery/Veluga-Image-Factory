@@ -1,51 +1,6 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro710");
-  font-weight: 100;
-  font-style: normal; }
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro720");
-  font-weight: 200;
-  font-style: normal; }
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro730");
-  font-weight: 300;
-  font-style: normal; }
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro740");
-  font-weight: 400;
-  font-style: normal; }
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro750");
-  font-weight: 500;
-  font-style: normal; }
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro760");
-  font-weight: 600;
-  font-style: normal; }
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro770");
-  font-weight: 700;
-  font-style: normal; }
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro780");
-  font-weight: 800;
-  font-style: normal; }
-@font-face {
-  font-family: "Yoon Gothic Pro 700";
-  src: local("YoonGothicPro790");
-  font-weight: 900;
-  font-style: normal; }
 *, body {
-  font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', Sans-serif;
+  font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 40', Sans-serif;
   letter-spacing: -.015em;
   word-break: keep-all;
   -webkit-font-smoothing: antialiased;
@@ -7616,6 +7571,7 @@ select.form-control {
         .beer-template-1 .header .beer-info .info-item small {
           display: inline-block;
           margin-right: 8px;
+          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
           font-weight: 700;
           font-size: 21px; }
       .beer-template-1 .header .beer-info .info-item:first-child {
@@ -7655,6 +7611,7 @@ select.form-control {
         padding-top: 15px;
         border-top: 1px solid #212729; }
         .beer-template-1 .content .text-wrap .origin span {
+          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
           font-weight: 600;
           font-size: 20px;
           transform: skewX(-10deg); }
@@ -7676,11 +7633,13 @@ select.form-control {
     .wine-template-1 .text-container .text-wrap {
       width: 500px; }
       .wine-template-1 .text-container .text-wrap .winery-name {
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 30px;
         text-transform: uppercase;
         color: #ced7da; }
       .wine-template-1 .text-container .text-wrap .wine-name {
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 65px;
         line-height: 65px;
@@ -7719,6 +7678,7 @@ select.form-control {
             width: 25px;
             height: 122px;
             transform-origin: bottom center;
+            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
             font-weight: 900;
             font-size: 26px;
             color: inherit;
@@ -7935,6 +7895,7 @@ select.form-control {
           font-size: 21px; }
           .wine-template-1 .text-container .text-wrap .wine-info .info-item .info-name {
             min-width: 140px;
+            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
             font-weight: 700; }
         .wine-template-1 .text-container .text-wrap .wine-info .info-item ~ .info-item {
           margin-top: 18px; }
@@ -7960,6 +7921,7 @@ select.form-control {
       display: inline-block;
       height: 70px;
       line-height: 0.8em;
+      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
       font-weight: 800;
       font-size: 90px; }
     .juntongju-template-1 .header .circle-text {
@@ -7995,6 +7957,7 @@ select.form-control {
         width: 25px;
         height: 126px;
         transform-origin: bottom center;
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         font-size: 26px;
         color: inherit;
@@ -8204,6 +8167,7 @@ select.form-control {
       padding-left: 40px; }
       .juntongju-template-1 .content .text-wrap .producer-name {
         font-size: 40px;
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         text-transform: uppercase; }
       .juntongju-template-1 .content .text-wrap .description {
@@ -8226,11 +8190,13 @@ select.form-control {
       .juntongju-template-1 .footer .juntongju-info .info-item {
         padding: 0 15px;
         border-left: 2px solid #212729;
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 36px; }
         .juntongju-template-1 .footer .juntongju-info .info-item small {
           margin-top: 5px;
           margin-right: 8px;
+          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
           font-weight: 800;
           font-size: 23px; }
       .juntongju-template-1 .footer .juntongju-info .info-item:first-child {
@@ -8247,6 +8213,7 @@ select.form-control {
     .sake-template-1 .text-container .text-wrap {
       width: 500px; }
       .sake-template-1 .text-container .text-wrap .sake-name {
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         font-size: 65px;
         line-height: 70px;
@@ -8275,6 +8242,7 @@ select.form-control {
           font-size: 21px; }
           .sake-template-1 .text-container .text-wrap .sake-info .info-item .info-name {
             min-width: 140px;
+            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
             font-weight: 700; }
         .sake-template-1 .text-container .text-wrap .sake-info .info-item ~ .info-item {
           margin-top: 18px; }
@@ -8294,6 +8262,7 @@ select.form-control {
             background-color: #dfe8dc;
             color: #4c6844;
             text-align: center;
+            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
             font-weight: 600;
             font-size: 8px;
             line-height: 16px;

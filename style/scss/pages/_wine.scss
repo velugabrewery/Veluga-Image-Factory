@@ -12,12 +12,14 @@
     .text-wrap {
       width: 500px;
       .winery-name {
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 30px;
         text-transform: uppercase;
         color: $gray-400;
       }
       .wine-name {
+        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 65px;
         line-height: 65px;
@@ -60,6 +62,7 @@
             width: 25px;
             height: 122px;
             transform-origin: bottom center;
+            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
             font-weight: 900;
             font-size: 26px;
             color: inherit;
@@ -84,6 +87,7 @@
           font-size: 21px;
           .info-name {
             min-width: 140px;
+            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
             font-weight: 700;
           }
           .info-data {}
