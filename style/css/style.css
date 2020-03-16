@@ -1,6 +1,42 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro710"), local("Yoon Gothic 700 10");
+  font-weight: 100; }
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro720"), local("Yoon Gothic 700 20");
+  font-weight: 200; }
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro730"), local("Yoon Gothic 700 30");
+  font-weight: 300; }
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro740"), local("Yoon Gothic 700 40");
+  font-weight: 400; }
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro750"), local("Yoon Gothic 700 50");
+  font-weight: 500; }
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro760"), local("Yoon Gothic 700 60");
+  font-weight: 600; }
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro770"), local("Yoon Gothic 700 70");
+  font-weight: 700; }
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro780"), local("Yoon Gothic 700 80");
+  font-weight: 800; }
+@font-face {
+  font-family: 'Yoon Gothic 700';
+  src: local("YoonGothicPro790"), local("Yoon Gothic 700 90");
+  font-weight: 900; }
 *, body {
-  font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 40', Sans-serif;
+  font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 40', Sans-serif;
   letter-spacing: -.015em;
   word-break: keep-all;
   -webkit-font-smoothing: antialiased;
@@ -7458,22 +7494,22 @@ select.form-control {
     width: 750px;
     padding: 0 80px; }
     .opengraph .text-wrap .drink-name {
-      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
+      font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 80';
       font-weight: 800;
-      font-size: 60px;
+      font-size: 55px;
       letter-spacing: -.03em; }
     .opengraph .text-wrap .producer-name {
       color: #ced7da;
-      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+      font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
       font-weight: 600;
-      font-size: 40px; }
+      font-size: 35px; }
     .opengraph .text-wrap .og-info {
       margin-top: 80px;
       border-top: 2px solid #dee4e6; }
       .opengraph .text-wrap .og-info .info-item {
         min-width: 180px;
         padding: 35px 20px 0 20px;
-        font-size: 27px; }
+        font-size: 25px; }
         .opengraph .text-wrap .og-info .info-item:before {
           position: absolute;
           top: -10px;
@@ -7484,7 +7520,7 @@ select.form-control {
           background-color: #dee4e6;
           content: ''; }
         .opengraph .text-wrap .og-info .info-item .info-name {
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+          font-family: 'Yoon Gothic 700', 'Yoon Gothic 700 60';
           font-weight: 600; }
         .opengraph .text-wrap .og-info .info-item .info-data {
           text-transform: capitalize; }
@@ -7520,7 +7556,7 @@ select.form-control {
         .opengraph .text-wrap table tr td small {
           display: block;
           width: 100%;
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
           font-weight: 600; }
         .opengraph .text-wrap table tr td span {
           display: inline-block;
@@ -7575,7 +7611,7 @@ select.form-control {
         .beer-template-1 .header .beer-info .info-item small {
           display: inline-block;
           margin-right: 8px;
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
           font-weight: 700;
           font-size: 21px; }
       .beer-template-1 .header .beer-info .info-item:first-child {
@@ -7601,11 +7637,12 @@ select.form-control {
       padding: 90px 70px 70px; }
       .beer-template-1 .content .text-wrap .producer-name {
         margin-top: 10px;
-        font-size: 40px;
+        font-size: 37px;
         text-transform: capitalize; }
       .beer-template-1 .content .text-wrap .description {
         margin-top: 40px;
-        font-size: 26px;
+        font-size: 23px;
+        line-height: 1.7em;
         text-align: justify;
         word-break: break-all; }
       .beer-template-1 .content .text-wrap .origin {
@@ -7615,7 +7652,7 @@ select.form-control {
         padding-top: 15px;
         border-top: 1px solid #212729; }
         .beer-template-1 .content .text-wrap .origin span {
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
           font-weight: 600;
           font-size: 20px;
           transform: skewX(-10deg); }
@@ -7637,13 +7674,13 @@ select.form-control {
     .wine-template-1 .text-container .text-wrap {
       width: 500px; }
       .wine-template-1 .text-container .text-wrap .winery-name {
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 30px;
         text-transform: uppercase;
         color: #ced7da; }
       .wine-template-1 .text-container .text-wrap .wine-name {
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 65px;
         line-height: 65px;
@@ -7682,7 +7719,7 @@ select.form-control {
             width: 25px;
             height: 122px;
             transform-origin: bottom center;
-            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
+            font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
             font-weight: 900;
             font-size: 26px;
             color: inherit;
@@ -7896,17 +7933,17 @@ select.form-control {
       .wine-template-1 .text-container .text-wrap .wine-info {
         margin-top: 40px; }
         .wine-template-1 .text-container .text-wrap .wine-info .info-item {
-          font-size: 21px; }
+          font-size: 20px; }
           .wine-template-1 .text-container .text-wrap .wine-info .info-item .info-name {
             min-width: 140px;
-            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+            font-family: 'Yoon Gothic 700', 'Yoon Gothic 700 70';
             font-weight: 700; }
         .wine-template-1 .text-container .text-wrap .wine-info .info-item ~ .info-item {
           margin-top: 18px; }
       .wine-template-1 .text-container .text-wrap .description {
         margin-top: 38px;
-        font-size: 22px;
-        line-height: 38px;
+        font-size: 21px;
+        line-height: 36px;
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.03em; }
@@ -7925,10 +7962,10 @@ select.form-control {
       display: inline-block;
       height: 70px;
       line-height: 0.8em;
-      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
+      font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 80';
       font-weight: 800;
       font-size: 90px; }
-    .juntongju-template-1 .header .circle-text {
+    .juntongju-template-1 .header .stamp {
       z-index: 2;
       position: absolute;
       top: -95px;
@@ -7936,24 +7973,24 @@ select.form-control {
       color: #ced7da;
       border-color: #ced7da;
       mix-blend-mode: multiply; }
-      .juntongju-template-1 .header .circle-text:before, .juntongju-template-1 .header .circle-text:after {
+      .juntongju-template-1 .header .stamp:before, .juntongju-template-1 .header .stamp:after {
         position: absolute;
         display: block;
         border: 4px solid;
         border-color: inherit;
         border-radius: 50%;
         content: ''; }
-      .juntongju-template-1 .header .circle-text:before {
+      .juntongju-template-1 .header .stamp:before {
         top: 16px;
         left: -104px;
         width: 220px;
         height: 220px; }
-      .juntongju-template-1 .header .circle-text:after {
+      .juntongju-template-1 .header .stamp:after {
         top: 50px;
         left: -70px;
         width: 152px;
         height: 152px; }
-      .juntongju-template-1 .header .circle-text span {
+      .juntongju-template-1 .header .stamp span {
         position: absolute;
         top: 0px;
         left: -7px;
@@ -7961,202 +7998,176 @@ select.form-control {
         width: 25px;
         height: 126px;
         transform-origin: bottom center;
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         font-size: 26px;
         color: inherit;
         text-align: center; }
-    .juntongju-template-1 .header .circle-text-yearround .char1 {
-      transform: rotate(12deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char2 {
-      transform: rotate(24deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char3 {
-      transform: rotate(36deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char4 {
-      transform: rotate(48deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char5 {
-      transform: rotate(60deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char6 {
+    .juntongju-template-1 .header .stamp-yearround .char1 {
+      transform: rotate(14.4deg); }
+    .juntongju-template-1 .header .stamp-yearround .char2 {
+      transform: rotate(28.8deg); }
+    .juntongju-template-1 .header .stamp-yearround .char3 {
+      transform: rotate(43.2deg); }
+    .juntongju-template-1 .header .stamp-yearround .char4 {
+      transform: rotate(57.6deg); }
+    .juntongju-template-1 .header .stamp-yearround .char5 {
       transform: rotate(72deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char7 {
-      transform: rotate(84deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char8 {
-      transform: rotate(96deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char9 {
-      transform: rotate(108deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char10 {
-      transform: rotate(120deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char11 {
-      transform: rotate(132deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char12 {
+    .juntongju-template-1 .header .stamp-yearround .char6 {
+      transform: rotate(86.4deg); }
+    .juntongju-template-1 .header .stamp-yearround .char7 {
+      transform: rotate(100.8deg); }
+    .juntongju-template-1 .header .stamp-yearround .char8 {
+      transform: rotate(115.2deg); }
+    .juntongju-template-1 .header .stamp-yearround .char9 {
+      transform: rotate(129.6deg); }
+    .juntongju-template-1 .header .stamp-yearround .char10 {
       transform: rotate(144deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char13 {
-      transform: rotate(156deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char14 {
-      transform: rotate(168deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char15 {
-      transform: rotate(180deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char16 {
-      transform: rotate(192deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char17 {
-      transform: rotate(204deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char18 {
+    .juntongju-template-1 .header .stamp-yearround .char11 {
+      transform: rotate(158.4deg); }
+    .juntongju-template-1 .header .stamp-yearround .char12 {
+      transform: rotate(172.8deg); }
+    .juntongju-template-1 .header .stamp-yearround .char13 {
+      transform: rotate(187.2deg); }
+    .juntongju-template-1 .header .stamp-yearround .char14 {
+      transform: rotate(201.6deg); }
+    .juntongju-template-1 .header .stamp-yearround .char15 {
       transform: rotate(216deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char19 {
-      transform: rotate(228deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char20 {
-      transform: rotate(240deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char21 {
-      transform: rotate(252deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char22 {
-      transform: rotate(264deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char23 {
-      transform: rotate(276deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char24 {
+    .juntongju-template-1 .header .stamp-yearround .char16 {
+      transform: rotate(230.4deg); }
+    .juntongju-template-1 .header .stamp-yearround .char17 {
+      transform: rotate(244.8deg); }
+    .juntongju-template-1 .header .stamp-yearround .char18 {
+      transform: rotate(259.2deg); }
+    .juntongju-template-1 .header .stamp-yearround .char19 {
+      transform: rotate(273.6deg); }
+    .juntongju-template-1 .header .stamp-yearround .char20 {
       transform: rotate(288deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char25 {
-      transform: rotate(300deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char26 {
-      transform: rotate(312deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char27 {
-      transform: rotate(324deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char28 {
-      transform: rotate(336deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char29 {
-      transform: rotate(348deg); }
-    .juntongju-template-1 .header .circle-text-yearround .char30 {
+    .juntongju-template-1 .header .stamp-yearround .char21 {
+      transform: rotate(302.4deg); }
+    .juntongju-template-1 .header .stamp-yearround .char22 {
+      transform: rotate(316.8deg); }
+    .juntongju-template-1 .header .stamp-yearround .char23 {
+      transform: rotate(331.2deg); }
+    .juntongju-template-1 .header .stamp-yearround .char24 {
+      transform: rotate(345.6deg); }
+    .juntongju-template-1 .header .stamp-yearround .char25 {
       transform: rotate(360deg); }
-    .juntongju-template-1 .header .circle-text-seasonal {
+    .juntongju-template-1 .header .stamp-seasonal {
       display: none; }
-      .juntongju-template-1 .header .circle-text-seasonal .char1 {
-        transform: rotate(11.25deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char2 {
-        transform: rotate(22.5deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char3 {
-        transform: rotate(33.75deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char4 {
-        transform: rotate(45deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char5 {
-        transform: rotate(56.25deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char6 {
-        transform: rotate(67.5deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char7 {
-        transform: rotate(78.75deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char8 {
+      .juntongju-template-1 .header .stamp-seasonal .char1 {
+        transform: rotate(12.8571428571deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char2 {
+        transform: rotate(25.7142857143deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char3 {
+        transform: rotate(38.5714285714deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char4 {
+        transform: rotate(51.4285714286deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char5 {
+        transform: rotate(64.2857142857deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char6 {
+        transform: rotate(77.1428571429deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char7 {
         transform: rotate(90deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char9 {
-        transform: rotate(101.25deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char10 {
-        transform: rotate(112.5deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char11 {
-        transform: rotate(123.75deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char12 {
-        transform: rotate(135deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char13 {
-        transform: rotate(146.25deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char14 {
-        transform: rotate(157.5deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char15 {
-        transform: rotate(168.75deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char16 {
+      .juntongju-template-1 .header .stamp-seasonal .char8 {
+        transform: rotate(102.8571428571deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char9 {
+        transform: rotate(115.7142857143deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char10 {
+        transform: rotate(128.5714285714deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char11 {
+        transform: rotate(141.4285714286deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char12 {
+        transform: rotate(154.2857142857deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char13 {
+        transform: rotate(167.1428571429deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char14 {
         transform: rotate(180deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char17 {
-        transform: rotate(191.25deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char18 {
-        transform: rotate(202.5deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char19 {
-        transform: rotate(213.75deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char20 {
-        transform: rotate(225deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char21 {
-        transform: rotate(236.25deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char22 {
-        transform: rotate(247.5deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char23 {
-        transform: rotate(258.75deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char24 {
+      .juntongju-template-1 .header .stamp-seasonal .char15 {
+        transform: rotate(192.8571428571deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char16 {
+        transform: rotate(205.7142857143deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char17 {
+        transform: rotate(218.5714285714deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char18 {
+        transform: rotate(231.4285714286deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char19 {
+        transform: rotate(244.2857142857deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char20 {
+        transform: rotate(257.1428571429deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char21 {
         transform: rotate(270deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char25 {
-        transform: rotate(281.25deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char26 {
-        transform: rotate(292.5deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char27 {
-        transform: rotate(303.75deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char28 {
-        transform: rotate(315deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char29 {
-        transform: rotate(326.25deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char30 {
-        transform: rotate(337.5deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char31 {
-        transform: rotate(348.75deg); }
-      .juntongju-template-1 .header .circle-text-seasonal .char32 {
+      .juntongju-template-1 .header .stamp-seasonal .char22 {
+        transform: rotate(282.8571428571deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char23 {
+        transform: rotate(295.7142857143deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char24 {
+        transform: rotate(308.5714285714deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char25 {
+        transform: rotate(321.4285714286deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char26 {
+        transform: rotate(334.2857142857deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char27 {
+        transform: rotate(347.1428571429deg); }
+      .juntongju-template-1 .header .stamp-seasonal .char28 {
         transform: rotate(360deg); }
-    .juntongju-template-1 .header .circle-text-limited {
+    .juntongju-template-1 .header .stamp-limited {
       display: none; }
-      .juntongju-template-1 .header .circle-text-limited .char1 {
-        transform: rotate(11.25deg); }
-      .juntongju-template-1 .header .circle-text-limited .char2 {
-        transform: rotate(22.5deg); }
-      .juntongju-template-1 .header .circle-text-limited .char3 {
-        transform: rotate(33.75deg); }
-      .juntongju-template-1 .header .circle-text-limited .char4 {
-        transform: rotate(45deg); }
-      .juntongju-template-1 .header .circle-text-limited .char5 {
-        transform: rotate(56.25deg); }
-      .juntongju-template-1 .header .circle-text-limited .char6 {
-        transform: rotate(67.5deg); }
-      .juntongju-template-1 .header .circle-text-limited .char7 {
-        transform: rotate(78.75deg); }
-      .juntongju-template-1 .header .circle-text-limited .char8 {
+      .juntongju-template-1 .header .stamp-limited .char1 {
+        transform: rotate(12.8571428571deg); }
+      .juntongju-template-1 .header .stamp-limited .char2 {
+        transform: rotate(25.7142857143deg); }
+      .juntongju-template-1 .header .stamp-limited .char3 {
+        transform: rotate(38.5714285714deg); }
+      .juntongju-template-1 .header .stamp-limited .char4 {
+        transform: rotate(51.4285714286deg); }
+      .juntongju-template-1 .header .stamp-limited .char5 {
+        transform: rotate(64.2857142857deg); }
+      .juntongju-template-1 .header .stamp-limited .char6 {
+        transform: rotate(77.1428571429deg); }
+      .juntongju-template-1 .header .stamp-limited .char7 {
         transform: rotate(90deg); }
-      .juntongju-template-1 .header .circle-text-limited .char9 {
-        transform: rotate(101.25deg); }
-      .juntongju-template-1 .header .circle-text-limited .char10 {
-        transform: rotate(112.5deg); }
-      .juntongju-template-1 .header .circle-text-limited .char11 {
-        transform: rotate(123.75deg); }
-      .juntongju-template-1 .header .circle-text-limited .char12 {
-        transform: rotate(135deg); }
-      .juntongju-template-1 .header .circle-text-limited .char13 {
-        transform: rotate(146.25deg); }
-      .juntongju-template-1 .header .circle-text-limited .char14 {
-        transform: rotate(157.5deg); }
-      .juntongju-template-1 .header .circle-text-limited .char15 {
-        transform: rotate(168.75deg); }
-      .juntongju-template-1 .header .circle-text-limited .char16 {
+      .juntongju-template-1 .header .stamp-limited .char8 {
+        transform: rotate(102.8571428571deg); }
+      .juntongju-template-1 .header .stamp-limited .char9 {
+        transform: rotate(115.7142857143deg); }
+      .juntongju-template-1 .header .stamp-limited .char10 {
+        transform: rotate(128.5714285714deg); }
+      .juntongju-template-1 .header .stamp-limited .char11 {
+        transform: rotate(141.4285714286deg); }
+      .juntongju-template-1 .header .stamp-limited .char12 {
+        transform: rotate(154.2857142857deg); }
+      .juntongju-template-1 .header .stamp-limited .char13 {
+        transform: rotate(167.1428571429deg); }
+      .juntongju-template-1 .header .stamp-limited .char14 {
         transform: rotate(180deg); }
-      .juntongju-template-1 .header .circle-text-limited .char17 {
-        transform: rotate(191.25deg); }
-      .juntongju-template-1 .header .circle-text-limited .char18 {
-        transform: rotate(202.5deg); }
-      .juntongju-template-1 .header .circle-text-limited .char19 {
-        transform: rotate(213.75deg); }
-      .juntongju-template-1 .header .circle-text-limited .char20 {
-        transform: rotate(225deg); }
-      .juntongju-template-1 .header .circle-text-limited .char21 {
-        transform: rotate(236.25deg); }
-      .juntongju-template-1 .header .circle-text-limited .char22 {
-        transform: rotate(247.5deg); }
-      .juntongju-template-1 .header .circle-text-limited .char23 {
-        transform: rotate(258.75deg); }
-      .juntongju-template-1 .header .circle-text-limited .char24 {
+      .juntongju-template-1 .header .stamp-limited .char15 {
+        transform: rotate(192.8571428571deg); }
+      .juntongju-template-1 .header .stamp-limited .char16 {
+        transform: rotate(205.7142857143deg); }
+      .juntongju-template-1 .header .stamp-limited .char17 {
+        transform: rotate(218.5714285714deg); }
+      .juntongju-template-1 .header .stamp-limited .char18 {
+        transform: rotate(231.4285714286deg); }
+      .juntongju-template-1 .header .stamp-limited .char19 {
+        transform: rotate(244.2857142857deg); }
+      .juntongju-template-1 .header .stamp-limited .char20 {
+        transform: rotate(257.1428571429deg); }
+      .juntongju-template-1 .header .stamp-limited .char21 {
         transform: rotate(270deg); }
-      .juntongju-template-1 .header .circle-text-limited .char25 {
-        transform: rotate(281.25deg); }
-      .juntongju-template-1 .header .circle-text-limited .char26 {
-        transform: rotate(292.5deg); }
-      .juntongju-template-1 .header .circle-text-limited .char27 {
-        transform: rotate(303.75deg); }
-      .juntongju-template-1 .header .circle-text-limited .char28 {
-        transform: rotate(315deg); }
-      .juntongju-template-1 .header .circle-text-limited .char29 {
-        transform: rotate(326.25deg); }
-      .juntongju-template-1 .header .circle-text-limited .char30 {
-        transform: rotate(337.5deg); }
-      .juntongju-template-1 .header .circle-text-limited .char31 {
-        transform: rotate(348.75deg); }
-      .juntongju-template-1 .header .circle-text-limited .char32 {
+      .juntongju-template-1 .header .stamp-limited .char22 {
+        transform: rotate(282.8571428571deg); }
+      .juntongju-template-1 .header .stamp-limited .char23 {
+        transform: rotate(295.7142857143deg); }
+      .juntongju-template-1 .header .stamp-limited .char24 {
+        transform: rotate(308.5714285714deg); }
+      .juntongju-template-1 .header .stamp-limited .char25 {
+        transform: rotate(321.4285714286deg); }
+      .juntongju-template-1 .header .stamp-limited .char26 {
+        transform: rotate(334.2857142857deg); }
+      .juntongju-template-1 .header .stamp-limited .char27 {
+        transform: rotate(347.1428571429deg); }
+      .juntongju-template-1 .header .stamp-limited .char28 {
         transform: rotate(360deg); }
   .juntongju-template-1 .content {
     height: 710px;
@@ -8170,13 +8181,14 @@ select.form-control {
       height: 100%;
       padding-left: 40px; }
       .juntongju-template-1 .content .text-wrap .producer-name {
-        font-size: 40px;
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
+        font-size: 35px;
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         text-transform: uppercase; }
       .juntongju-template-1 .content .text-wrap .description {
         margin-top: 20px;
-        font-size: 26px;
+        font-size: 24px;
+        line-height: 1.7em;
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.015em; }
@@ -8194,15 +8206,15 @@ select.form-control {
       .juntongju-template-1 .footer .juntongju-info .info-item {
         padding: 0 15px;
         border-left: 2px solid #212729;
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
-        font-size: 36px; }
+        font-size: 33px; }
         .juntongju-template-1 .footer .juntongju-info .info-item small {
           margin-top: 5px;
           margin-right: 8px;
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 80';
           font-weight: 800;
-          font-size: 23px; }
+          font-size: 20px; }
       .juntongju-template-1 .footer .juntongju-info .info-item:first-child {
         border-left: none; }
 
@@ -8216,37 +8228,37 @@ select.form-control {
     width: 600px; }
     .sake-template-1 .text-container .text-wrap {
       width: 500px; }
-      .sake-template-1 .text-container .text-wrap .sake-name {
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
+      .sake-template-1 .text-container .text-wrap .sake-name * {
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
         font-weight: 900;
-        font-size: 65px;
+        font-size: 60px;
         line-height: 70px;
         text-transform: uppercase; }
-        .sake-template-1 .text-container .text-wrap .sake-name .stamp {
-          z-index: 2;
-          position: absolute;
-          top: -30px;
-          right: 60px;
-          padding: 7px 8px 4px 8px;
-          border: 8px solid;
-          border-radius: 8px;
-          border-color: #ced7da;
-          color: #ced7da;
-          line-height: .96em;
-          letter-spacing: -1px;
-          mix-blend-mode: multiply;
-          transform: rotate(-10deg); }
-        .sake-template-1 .text-container .text-wrap .sake-name .stamp-seasonal {
-          display: none; }
-        .sake-template-1 .text-container .text-wrap .sake-name .stamp-limited {
-          display: none; }
+      .sake-template-1 .text-container .text-wrap .sake-name .stamp {
+        z-index: 2;
+        position: absolute;
+        top: -30px;
+        right: 60px;
+        padding: 15px 11px 7px 7px;
+        border: 8px solid;
+        border-radius: 8px;
+        border-color: #ced7da;
+        color: #ced7da;
+        line-height: .96em;
+        letter-spacing: -4px;
+        mix-blend-mode: multiply;
+        transform: rotate(-10deg); }
+      .sake-template-1 .text-container .text-wrap .sake-name .stamp-seasonal {
+        display: none; }
+      .sake-template-1 .text-container .text-wrap .sake-name .stamp-limited {
+        display: none; }
       .sake-template-1 .text-container .text-wrap .sake-info {
         margin-top: 40px; }
         .sake-template-1 .text-container .text-wrap .sake-info .info-item {
-          font-size: 21px; }
+          font-size: 20px; }
           .sake-template-1 .text-container .text-wrap .sake-info .info-item .info-name {
             min-width: 140px;
-            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+            font-family: 'Yoon Gothic 700', 'Yoon Gothic 700 70';
             font-weight: 700; }
         .sake-template-1 .text-container .text-wrap .sake-info .info-item ~ .info-item {
           margin-top: 18px; }
@@ -8266,7 +8278,7 @@ select.form-control {
             background-color: #dfe8dc;
             color: #4c6844;
             text-align: center;
-            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+            font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
             font-weight: 600;
             font-size: 8px;
             line-height: 16px;
@@ -8298,8 +8310,8 @@ select.form-control {
               content: ''; }
       .sake-template-1 .text-container .text-wrap .description {
         margin-top: 35px;
-        font-size: 22px;
-        line-height: 38px;
+        font-size: 21px;
+        line-height: 36px;
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.03em; }

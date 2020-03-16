@@ -13,16 +13,16 @@
     width: 750px;
     padding: 0 80px;
     .drink-name {
-      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
+      font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 80';
       font-weight: 800;
-      font-size: 60px;
+      font-size: 55px;
       letter-spacing: -.03em;
     }
     .producer-name {
       color: $gray-400;
-      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+      font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
       font-weight: 600;
-      font-size: 40px;
+      font-size: 35px;
     }
     .og-info {
       margin-top: 80px;
@@ -30,7 +30,7 @@
       .info-item {
         min-width: 180px;
         padding: 35px 20px 0 20px;
-        font-size: 27px;
+        font-size: 25px;
         &:before {
           position: absolute;
           top: -10px;
@@ -42,7 +42,7 @@
           content: '';
         }
         .info-name {
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+          font-family: 'Yoon Gothic 700', 'Yoon Gothic 700 60';
           font-weight: 600;
         }
         .info-data {
@@ -86,7 +86,7 @@
           small {
             display: block;
             width: 100%;
-            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+            font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
             font-weight: 600;
           }
           span {

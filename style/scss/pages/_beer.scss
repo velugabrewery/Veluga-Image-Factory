@@ -25,7 +25,7 @@
         small {
           display: inline-block;
           margin-right: 8px;
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
           font-weight: 700;
           font-size: 21px;
         }
@@ -56,12 +56,13 @@
       padding: 90px 70px 70px;
       .producer-name {
         margin-top: 10px;
-        font-size: 40px;
+        font-size: 37px;
         text-transform: capitalize;
       }
       .description {
         margin-top: 40px;
-        font-size: 26px;
+        font-size: 23px;
+        line-height: 1.7em;
         text-align: justify;
         word-break: break-all;
       }
@@ -72,7 +73,7 @@
         padding-top: 15px;
         border-top: 1px solid $gray-900;
         span {
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
           font-weight: 600;
           font-size: 20px;
           transform: skewX(-10deg);

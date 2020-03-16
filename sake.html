@@ -79,9 +79,9 @@
     <form class="remote-control position-fixed p-3 border rounded bg-white shadow">
       <span class="font-weight-semibold">[T1] 일본술 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
-        <button class="switch on btn flex-fill" type="button" onclick="fontSize('Name', -2)">-2px</button>
-        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('Name', 65)">초기화</button>
-        <button class="switch on btn flex-fill" type="button" onclick="fontSize('Name', 2)">+2px</button>
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('name', -2)">-2px</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('name', 60)">초기화</button>
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('name', 2)">+2px</button>
       </div>
       <span class="font-weight-semibold d-block mt-2">스탬프 위치</span>
       <div class="switch-wrap d-flex mt-1">
@@ -94,7 +94,7 @@
       <span class="font-weight-semibold">[OG] 일본술 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', -2)">-2px</button>
-        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('nameOG', 65)">초기화</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('nameOG', 55)">초기화</button>
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', 2)">+2px</button>
       </div>
       <button class="btn btn-outline-primary w-100 mt-2" type="button" onclick="toLongOrigin()">상세 지역이 넘 길어요ㅠ</button>
@@ -123,13 +123,13 @@
     <div class="my-5"></div>
     <div id="template1" class="sake-template-1 d-flex bg-white shadow-lg overflow-hidden">
       <div class="img-wrap position-relative d-flex align-items-center justify-content-center bg-light">
-        <img id="mainImage" class="wine-img" height="750px" src="res/common/img/sake_sample.png" alt="상품 이미지">
+        <img id="mainImage" class="sake-img" height="750px" src="res/common/img/sake_sample.png" alt="상품 이미지">
         <img class="watermark position-absolute" width="400px" src="res/common/img/watermark.png" alt="워터마크">
       </div>
       <div class="text-container d-flex w-100 align-items-center justify-content-center">
         <div class="text-wrap">
           <h1 class="sake-name position-relative mt-2">
-            <span id="name" style="font-size: 65px; line-height: 1.08em;">키쿠마사무네 준마이슈</span>
+            <span id="name" style="font-size: 60px; line-height: 1.2em;">키쿠마사무네 준마이슈</span>
             <div id="cycleY" class="stamp stamp-yearround">
               年中<br/>生産
             </div>
@@ -228,7 +228,7 @@
         <img id="mainImageOG" class="drink-img" height="520px" src="res/common/img/sake_sample.png" alt="상품 이미지">
       </div>
       <div class="text-wrap d-flex flex-column w-100 justify-content-center">
-        <h1 id="nameOG" class="drink-name" style="font-size: 65px; line-height: 1em;">키쿠마사무네 준마이슈</h1>
+        <h1 id="nameOG" class="drink-name" style="font-size: 55px; line-height: 1.2em;">키쿠마사무네 준마이슈</h1>
         <h2 id="producerNameOG" class="producer-name mt-3">키쿠마사무네주조</h2>
         <div class="og-info d-flex">
           <div class="info-item position-relative d-flex flex-column flex-fill">

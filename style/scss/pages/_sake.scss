@@ -12,23 +12,25 @@
     .text-wrap {
       width: 500px;
       .sake-name {
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
-        font-weight: 900;
-        font-size: 65px;
-        line-height: 70px;
-        text-transform: uppercase;
+        & * {
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
+          font-weight: 900;
+          font-size: 60px;
+          line-height: 70px;
+          text-transform: uppercase;
+        }
         .stamp {
           z-index: 2;
           position: absolute;
           top: -30px;
           right: 60px;      
-          padding: 7px 8px 4px 8px;
+          padding: 15px 11px 7px 7px;
           border: 8px solid;
           border-radius: 8px;
           border-color: $gray-400;
           color: $gray-400;
           line-height: .96em;
-          letter-spacing: -1px;
+          letter-spacing: -4px;
           mix-blend-mode: multiply;
           transform: rotate(-10deg);
         }
@@ -43,10 +45,10 @@
       .sake-info {
         margin-top: 40px;
         .info-item {
-          font-size: 21px;
+          font-size: 20px;
           .info-name {
             min-width: 140px;
-            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+            font-family: 'Yoon Gothic 700', 'Yoon Gothic 700 70';
             font-weight: 700;
           }
           .info-data {}
@@ -71,7 +73,7 @@
             background-color: lighten($primary, 55%);
             color: $primary;
             text-align: center;
-            font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
+            font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
             font-weight: 600;
             font-size: 8px;
             line-height: 16px;
@@ -110,8 +112,8 @@
       }
       .description {
         margin-top: 35px;
-        font-size: 22px;
-        line-height: 38px;
+        font-size: 21px;
+        line-height: 36px;
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.03em;

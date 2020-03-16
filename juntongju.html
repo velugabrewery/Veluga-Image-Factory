@@ -76,7 +76,7 @@
       <span class="font-weight-semibold">[T1] 전통주 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('name', -2)">-2px</button>
-        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('name', 90)">초기화</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('name', 80)">초기화</button>
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('name', 2)">+2px</button>
       </div>
       <span class="font-weight-semibold d-block mt-2">스탬프 위치</span>
@@ -90,7 +90,7 @@
       <span class="font-weight-semibold">[OG] 전통주 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', -2)">-2px</button>
-        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('nameOG', 65)">초기화</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('nameOG', 55)">초기화</button>
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', 2)">+2px</button>
       </div>
       <hr class="border-top-0 border-bottom-dashed">
@@ -119,8 +119,8 @@
     <div id="template1" class="juntongju-template-1 bg-white shadow-lg overflow-hidden">
       <div class="header">
         <h1 class="name position-relative mt-2">
-          <span id="name" style="font-size: 90px; line-height: 0.8em;">장수 생막걸리</span>
-          <div id="cycleY" class="circle-text circle-text-yearround">
+          <span id="name" style="font-size: 80px; line-height: 0.8em;">장수 생막걸리</span>
+          <div id="cycleY" class="stamp stamp-yearround">
             <span class="char1">연</span>
             <span class="char2">중</span>
             <span class="char3">생</span>
@@ -146,13 +146,8 @@
             <span class="char23">생</span>
             <span class="char24">산</span>
             <span class="char25"></span>
-            <span class="char26">연</span>
-            <span class="char27">중</span>
-            <span class="char28">생</span>
-            <span class="char29">산</span>
-            <span class="char30"></span>
           </div>
-          <div id="cycleS" class="circle-text circle-text-seasonal">
+          <div id="cycleS" class="stamp stamp-seasonal">
             <span class="char1">시</span>
             <span class="char2">즈</span>
             <span class="char3">널</span>
@@ -181,12 +176,8 @@
             <span class="char26">즈</span>
             <span class="char27">널</span>
             <span class="char28"></span>
-            <span class="char29">시</span>
-            <span class="char30">즈</span>
-            <span class="char31">널</span>
-            <span class="char32"></span>
           </div>
-          <div id="cycleL" class="circle-text circle-text-limited">
+          <div id="cycleL" class="stamp stamp-limited">
             <span class="char1">한</span>
             <span class="char2">정</span>
             <span class="char3">판</span>
@@ -215,10 +206,6 @@
             <span class="char26">정</span>
             <span class="char27">판</span>
             <span class="char28"></span>
-            <span class="char29">한</span>
-            <span class="char30">정</span>
-            <span class="char31">판</span>
-            <span class="char32"></span>
           </div>
         </h1>
       </div>
@@ -265,7 +252,7 @@
         <img id="mainImageOG" class="drink-img" height="520px" src="res/common/img/juntongju_sample.png" alt="상품 이미지">
       </div>
       <div class="text-wrap d-flex flex-column w-100 justify-content-center">
-        <h1 id="nameOG" class="drink-name" style="font-size: 65px; line-height: 1em;">장수 생막걸리</h1>
+        <h1 id="nameOG" class="drink-name" style="font-size: 55px; line-height: 1.2em;">장수 생막걸리</h1>
         <h2 id="producerNameOG" class="producer-name mt-3">서울탁주</h2>
         <div class="og-info d-flex">
           <div class="info-item position-relative d-flex flex-column flex-fill">

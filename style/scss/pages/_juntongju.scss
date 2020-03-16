@@ -11,11 +11,11 @@
       display: inline-block;
       height: 70px;
       line-height: 0.8em;
-      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
+      font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 80';
       font-weight: 800;
       font-size: 90px;
     }
-    .circle-text {
+    .stamp {
       z-index: 2;
       position: absolute;
       top: -95px;
@@ -52,23 +52,23 @@
         width: 25px;
         height: 126px;
         transform-origin: bottom center;
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         font-size: 26px;
         color: inherit;
         text-align: center;
       }
     }
-    .circle-text-yearround {
-      @include rotated-text(30, 360, 0);
+    .stamp-yearround {
+      @include rotated-text(25, 360, 0);
     }
-    .circle-text-seasonal {
+    .stamp-seasonal {
       display: none;
-      @include rotated-text(32, 360, 0);
+      @include rotated-text(28, 360, 0);
     }
-    .circle-text-limited {
+    .stamp-limited {
       display: none;
-      @include rotated-text(32, 360, 0);
+      @include rotated-text(28, 360, 0);
     }
   }
   .content {
@@ -84,14 +84,15 @@
       height: 100%;
       padding-left: 40px;
       .producer-name {
-        font-size: 40px;
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 90';
+        font-size: 35px;
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         text-transform: uppercase;
       }
       .description {
         margin-top: 20px;
-        font-size: 26px;
+        font-size: 24px;
+        line-height: 1.7em;
         text-align: justify;
         word-break: break-all;
         letter-spacing: -.015em;
@@ -113,15 +114,15 @@
       .info-item {
         padding: 0 15px;
         border-left: 2px solid $gray-900;
-        font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 70';
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
-        font-size: 36px;
+        font-size: 33px;
         small {
           margin-top: 5px;
           margin-right: 8px;
-          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 80';
           font-weight: 800;
-          font-size: 23px;
+          font-size: 20px;
         }
       }
       .info-item:first-child {
