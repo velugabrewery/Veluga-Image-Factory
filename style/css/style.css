@@ -7458,11 +7458,13 @@ select.form-control {
     width: 750px;
     padding: 0 80px; }
     .opengraph .text-wrap .drink-name {
+      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 80';
       font-weight: 800;
       font-size: 60px;
       letter-spacing: -.03em; }
     .opengraph .text-wrap .producer-name {
       color: #ced7da;
+      font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
       font-weight: 600;
       font-size: 40px; }
     .opengraph .text-wrap .og-info {
@@ -7482,6 +7484,7 @@ select.form-control {
           background-color: #dee4e6;
           content: ''; }
         .opengraph .text-wrap .og-info .info-item .info-name {
+          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
           font-weight: 600; }
         .opengraph .text-wrap .og-info .info-item .info-data {
           text-transform: capitalize; }
@@ -7517,6 +7520,7 @@ select.form-control {
         .opengraph .text-wrap table tr td small {
           display: block;
           width: 100%;
+          font-family: "Suisse Int'l", 'Yoon Gothic Pro 700', 'Yoon Gothic 700 60';
           font-weight: 600; }
         .opengraph .text-wrap table tr td span {
           display: inline-block;
