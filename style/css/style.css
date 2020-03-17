@@ -8208,10 +8208,11 @@ select.form-control {
         border-left: 2px solid #212729;
         font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
-        font-size: 33px; }
+        font-size: 32px; }
         .juntongju-template-1 .footer .juntongju-info .info-item span {
           font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
-          font-weight: 700; }
+          font-weight: 700;
+          white-space: nowrap; }
         .juntongju-template-1 .footer .juntongju-info .info-item small {
           margin-top: 5px;
           margin-right: 8px;

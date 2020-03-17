@@ -116,10 +116,11 @@
         border-left: 2px solid $gray-900;
         font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
-        font-size: 33px;
+        font-size: 32px;
         span {
           font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
           font-weight: 700;
+          white-space: nowrap;
         }
         small {
           margin-top: 5px;
