@@ -37,6 +37,7 @@
   font-weight: 900; }
 *, body {
   font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 40', Sans-serif;
+  font-weight: 400;
   letter-spacing: -.015em;
   word-break: keep-all;
   -webkit-font-smoothing: antialiased;
@@ -8209,6 +8210,9 @@ select.form-control {
         font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 33px; }
+        .juntongju-template-1 .footer .juntongju-info .info-item span {
+          font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
+          font-weight: 700; }
         .juntongju-template-1 .footer .juntongju-info .info-item small {
           margin-top: 5px;
           margin-right: 8px;
