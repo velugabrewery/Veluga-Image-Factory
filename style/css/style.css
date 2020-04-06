@@ -8234,12 +8234,6 @@ select.form-control {
     width: 600px; }
     .sake-template-1 .text-container .text-wrap {
       width: 500px; }
-      .sake-template-1 .text-container .text-wrap .sake-name * {
-        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 1.2em;
-        text-transform: uppercase; }
       .sake-template-1 .text-container .text-wrap .sake-name .stamp {
         z-index: 2;
         position: absolute;
