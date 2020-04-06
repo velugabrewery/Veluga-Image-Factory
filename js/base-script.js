@@ -42,7 +42,7 @@ window.onload = function() {
     var getml = text.substring(text.length-2, text.length)
     console.log(getml)
     if (key == 'sake_meter_value' && Number(val) > 0) {
-      val = '+' + val
+      text = '+' + val
     }
     if (getml == "mL") {
       document.getElementsByName(key)[0].value = text.toLowerCase()
