@@ -7452,6 +7452,8 @@ select.form-control {
 
 .form {
   width: 500px; }
+  .form #inputDescription {
+    height: 300px; }
 
 .remote-control {
   z-index: 999;
