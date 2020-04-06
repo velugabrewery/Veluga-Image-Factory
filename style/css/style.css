@@ -8248,7 +8248,7 @@ select.form-control {
         border-radius: 8px;
         border-color: #ced7da;
         color: #ced7da;
-        line-height: .96em;
+        line-height: .96em !important;
         letter-spacing: -4px;
         mix-blend-mode: multiply;
         transform: rotate(-10deg); }
