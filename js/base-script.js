@@ -41,7 +41,7 @@ window.onload = function() {
     var text = decodeURIComponent(val)
     var getml = text.substring(text.length-2, text.length)
     console.log(getml)
-    if (key == 'sake_meter_value' && int(val) > 0) {
+    if (key == 'sake_meter_value' && Number(val) > 0) {
       val = '+' + val
     }
     if (getml == "mL") {
