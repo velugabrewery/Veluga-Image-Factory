@@ -43,9 +43,6 @@ function formSubmit(){
 
   // SMV 그래프
   var SMV = document.getElementById('inputSakeMeterValue').value;
-  if(SMV > 0) {
-    SMV = "+" + SMV;
-  }
   var SMVCursor = document.getElementById('SMVCursor');
   var SMVSign = SMV.charAt(0);
   var SMVNum = SMV.substring(1) * 1;
