@@ -8234,26 +8234,32 @@ select.form-control {
     width: 600px; }
     .sake-template-1 .text-container .text-wrap {
       width: 500px; }
-      .sake-template-1 .text-container .text-wrap .sake-name .stamp {
-        z-index: 2;
-        position: absolute;
-        top: -30px;
-        right: 60px;
-        padding: 15px 11px 7px 7px;
-        border: 8px solid;
-        border-radius: 8px;
-        border-color: #ced7da;
-        color: #ced7da;
-        line-height: .96em !important;
-        font-family: 'Yoon Gothic 700', 'Yoon Gothic 700 90' !important;
-        letter-spacing: -4px;
-        mix-blend-mode: multiply;
-        transform: rotate(-10deg);
-        opacity: 0.8; }
-      .sake-template-1 .text-container .text-wrap .sake-name .stamp-seasonal {
-        display: none; }
-      .sake-template-1 .text-container .text-wrap .sake-name .stamp-limited {
-        display: none; }
+      .sake-template-1 .text-container .text-wrap .sake-name {
+        font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 1.2em;
+        text-transform: uppercase; }
+        .sake-template-1 .text-container .text-wrap .sake-name .stamp {
+          z-index: 2;
+          position: absolute;
+          top: -30px;
+          right: 60px;
+          padding: 15px 11px 7px 7px;
+          border: 8px solid;
+          border-radius: 8px;
+          border-color: #ced7da;
+          color: #ced7da;
+          line-height: .96em !important;
+          font-family: 'Yoon Gothic 700', 'Yoon Gothic 700 90' !important;
+          letter-spacing: -4px;
+          mix-blend-mode: multiply;
+          transform: rotate(-10deg);
+          opacity: 0.8; }
+        .sake-template-1 .text-container .text-wrap .sake-name .stamp-seasonal {
+          display: none; }
+        .sake-template-1 .text-container .text-wrap .sake-name .stamp-limited {
+          display: none; }
       .sake-template-1 .text-container .text-wrap .sake-info {
         margin-top: 40px; }
         .sake-template-1 .text-container .text-wrap .sake-info .info-item {
