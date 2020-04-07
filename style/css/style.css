@@ -7609,7 +7609,8 @@ select.form-control {
       list-style: none; }
       .beer-template-1 .header .beer-info .info-item {
         font-size: 35px;
-        transform: skewX(-10deg); }
+        transform: skewX(-10deg);
+        white-space: nowrap; }
         .beer-template-1 .header .beer-info .info-item small {
           display: inline-block;
           margin-right: 8px;
