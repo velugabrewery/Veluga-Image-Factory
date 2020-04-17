@@ -80,9 +80,8 @@ window.onload = function() {
 
 // 이미지 생성
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-let options = { "cacheBust":true };
 function makeTem1(){
-  domtoimage.toJpeg(document.getElementById('template1'), options, { width: 1000 })
+  domtoimage.toJpeg(document.getElementById('template1'), { width: 1000 })
     .then(function (dataUrl) {
       var link = document.createElement('a');
       if (inputEnglishName == "") {
@@ -96,7 +95,7 @@ function makeTem1(){
     }); 
 } 
 function makeOG(){
-  domtoimage.toJpeg(document.getElementById('opengraph'), options)
+  domtoimage.toJpeg(document.getElementById('opengraph'))
     .then(function (dataUrl) {
       var link = document.createElement('a');
       if (inputEnglishName == "") {
@@ -115,7 +114,7 @@ function makeImage(){
 }
 
 function makeBlogThumb(){
-  domtoimage.toJpeg(document.getElementById('blogThumbnail'), options)
+  domtoimage.toJpeg(document.getElementById('blogThumbnail'))
     .then(function (dataUrl) {
       var link = document.createElement('a');
       if (inputEnglishName == "") {
