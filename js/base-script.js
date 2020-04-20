@@ -32,11 +32,11 @@ window.onload = function() {
     let keyValue = params[i].split('=')
     let key = keyValue[0]
     let val = keyValue[1]
-    if (val == "None") {
-      val = "-"
-    }
-    else if (val == "None" && privateValue == "") {
+    if (val == "None" && privateValue == "") {
       val = "비공개"
+    }
+    else if (val == "None") {
+      val = "-"
     }
     console.log(key)
     console.log(val)
