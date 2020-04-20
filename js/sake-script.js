@@ -74,20 +74,20 @@ function formSubmit(){
   SMVCursor.style.marginLeft = SMVResult;
 
   // Acidity 그래프 값 삽입
-  var acidity = document.getElementById('inputAcidity').value;
+  var acidityValue = document.getElementById('inputAcidity').value;
   var acidityCursor = document.getElementById('acidityCursor');
 
-  acidityCursor.innerHTML = acidity;
-  if (acidity <= 0.7) {
-    acidity = 0;
+  acidityCursor.innerHTML = acidityValue;
+  if (acidityValue <= 0.7) {
+    acidityValue = 0;
   }
-  else if (acidity >= 2) {
-    acidity = 445;
+  else if (acidityValue >= 2) {
+    acidityValue = 445;
   }
   else {
-    acidity = (acidity - 0.7) * 10 * 34;
+    acidityValue = (acidityValue - 0.7) * 10 * 34;
   }
-  acidityResult = acidity + "px";
+  acidityResult = acidityValue + "px";
   acidityCursor.style.marginLeft = acidityResult;
 };
 
