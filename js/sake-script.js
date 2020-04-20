@@ -56,9 +56,22 @@ function formSubmit(){
   }
   SMVResult = SMVSign + SMVNum + "px";
   SMVCursor.style.marginLeft = SMVResult;
+
+  if (inputSakeMeterValue.value == "비공개" && inputAcidity.value == "비공개") {
+    aciditySpace.style.display = "none";
+    acidity.style.display = "none";
+    sakeGraph.style.display = "none";
+  }
 };
 
 // 값이 없는지 체크
 var inputEnglishName = "";
 
+// 값 비공개 여부 체크
 var privateValue = "";
+
+if (inputSakeMeterValue.value == "비공개" && inputAcidity.value == "비공개") {
+  aciditySpace.style.display = "none";
+  acidity.style.display = "none";
+  sakeGraph.style.display = "none";
+}
