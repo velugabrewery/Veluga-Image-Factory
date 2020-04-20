@@ -81,7 +81,7 @@ window.onload = function() {
 // 이미지 생성
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 function makeTem1(){
-  domtoimage.toJpeg(document.getElementById('template1'), { width: 1000 })
+  domtoimage.toJpeg(document.getElementById('template1'), { width: 1000, cacheBust: true })
     .then(function (dataUrl) {
       var link = document.createElement('a');
       if (inputEnglishName == "") {
@@ -95,7 +95,7 @@ function makeTem1(){
     }); 
 } 
 function makeOG(){
-  domtoimage.toJpeg(document.getElementById('opengraph'))
+  domtoimage.toJpeg(document.getElementById('opengraph')), { cacheBust: true }
     .then(function (dataUrl) {
       var link = document.createElement('a');
       if (inputEnglishName == "") {
@@ -114,7 +114,7 @@ function makeImage(){
 }
 
 function makeBlogThumb(){
-  domtoimage.toJpeg(document.getElementById('blogThumbnail'))
+  domtoimage.toJpeg(document.getElementById('blogThumbnail')), { cacheBust: true }
     .then(function (dataUrl) {
       var link = document.createElement('a');
       if (inputEnglishName == "") {
