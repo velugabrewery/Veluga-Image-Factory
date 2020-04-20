@@ -64,18 +64,16 @@ var inputEnglishName = "";
 // 값 비공개 여부 체크
 var privateValue = "";
 
-window.onload = function() {
-  if (inputSakeMeterValue.value == "비공개" && inputAcidity.value == "비공개") {
-    aciditySpace.style.display = "none";
-    acidity.style.display = "none";
-    sakeGraph.style.display = "none";
-  }
-  else if (inputSakeMeterValue.value == "비공개") {
-    sakeGraphSMV.style.display = "none";
-    sakeGraphSpace.style.display = "none";
-  }
-  else if (inputAcidity.value == "비공개") {
-    sakeGraphAcidity.style.display = "none";
-  }
-  else {}
+if (inputSakeMeterValue.value == "비공개" && inputAcidity.value == "비공개") {
+  aciditySpace.style.display = "none";
+  acidity.style.display = "none";
+  sakeGraph.style.display = "none";
 }
+else if (inputSakeMeterValue.value == "비공개") {
+  sakeGraphSMV.style.display = "none";
+  sakeGraphSpace.style.display = "none";
+}
+else if (inputAcidity.value == "비공개") {
+  sakeGraphAcidity.style.display = "none";
+}
+else {}
