@@ -8273,6 +8273,10 @@ select.form-control {
           margin-top: 18px; }
       .sake-template-1 .text-container .text-wrap .sakegraph {
         margin-top: 35px; }
+        .sake-template-1 .text-container .text-wrap .sakegraph .sakegraph-smv {
+          padding-bottom: 6px; }
+        .sake-template-1 .text-container .text-wrap .sakegraph .sakegraph-acidity {
+          padding-top: 6px; }
         .sake-template-1 .text-container .text-wrap .sakegraph .cursor-wrap {
           position: absolute;
           width: 480px;

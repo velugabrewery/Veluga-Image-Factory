@@ -41,6 +41,7 @@ function formSubmit(){
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
   mainImageBlogThumb.src = inputMainImageUrl;
 
+  // 사케 그래프 display 여부
   if (inputSakeMeterValue.value == "비공개" && inputAcidity.value == "비공개") {
     aciditySpace.style.display = "none";
     acidity.style.display = "none";
@@ -52,10 +53,11 @@ function formSubmit(){
   }
   else if (inputAcidity.value == "비공개") {
     sakeGraphAcidity.style.display = "none";
+    sakeGraphSpace.style.display = "none";
   }
   else {}
 
-  // SMV 그래프
+  // SMV 그래프 값 삽입
   var SMV = document.getElementById('inputSakeMeterValue').value;
   var SMVCursor = document.getElementById('SMVCursor');
   var SMVSign = SMV.charAt(0);
@@ -70,6 +72,23 @@ function formSubmit(){
   }
   SMVResult = SMVSign + SMVNum + "px";
   SMVCursor.style.marginLeft = SMVResult;
+
+  // Acidity 그래프 값 삽입
+  var acidity = document.getElementById('inputAcidity').value;
+  var acidityCursor = document.getElementById('acidityCursor');
+
+  acidityCursor.innerHTML = acidity;
+  if (acidity <= 0.7) {
+    acidity = 0;
+  }
+  else if (acidity >= 2) {
+    acidity = 445;
+  }
+  else {
+    acidity = (acidity - 0.7) * 10 * 34;
+  }
+  acidityResult = acidity + "px";
+  acidityCursor.style.marginLeft = acidityResult;
 };
 
 // 값이 없는지 체크

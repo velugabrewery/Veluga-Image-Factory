@@ -59,6 +59,12 @@
       }
       .sakegraph {
         margin-top: 35px;
+        .sakegraph-smv {
+          padding-bottom: 6px;
+        }
+        .sakegraph-acidity {
+          padding-top: 6px;
+        }
         .cursor-wrap {
           position: absolute;
           width: 480px;
