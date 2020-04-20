@@ -7597,13 +7597,13 @@ select.form-control {
     .beer-template-1 .header .beer-name {
       display: inline-block;
       margin-top: 15px;
-      margin-bottom: 0;
+      margin-bottom: 0.25em;
       height: 70px;
       line-height: .8em;
       font-size: 90px;
       text-transform: capitalize; }
     .beer-template-1 .header .beer-info {
-      margin-top: 20px;
+      margin-top: 0;
       margin-bottom: 0;
       padding-left: 0;
       list-style: none; }
