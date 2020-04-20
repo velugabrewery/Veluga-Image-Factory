@@ -60,3 +60,5 @@ function formSubmit(){
 
 // 값이 없는지 체크
 var inputEnglishName = "";
+
+var privateValue = "";

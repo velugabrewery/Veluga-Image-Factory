@@ -35,6 +35,9 @@ window.onload = function() {
     if (val == "None") {
       val = "-"
     }
+    eles if (privateValue == "") {
+      val = "비공개"
+    }
     console.log(key)
     console.log(val)
     console.log(decodeURIComponent(val))
