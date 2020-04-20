@@ -71,8 +71,9 @@
           transform: translateX(-15px);
           z-index: 2;
           .cursor {
-            width: 26px;
+            min-width: 26px;
             height: 18px;
+            padding: 0 2px;
             border-radius: 4px;
             border: 1px solid lighten($primary, 15%);
             background-color: lighten($primary, 55%);

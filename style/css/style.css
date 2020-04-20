@@ -8283,8 +8283,9 @@ select.form-control {
           transform: translateX(-15px);
           z-index: 2; }
           .sake-template-1 .text-container .text-wrap .sakegraph .cursor-wrap .cursor {
-            width: 26px;
+            min-width: 26px;
             height: 18px;
+            padding: 0 2px;
             border-radius: 4px;
             border: 1px solid #6e9662;
             background-color: #dfe8dc;
