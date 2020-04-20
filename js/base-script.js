@@ -35,7 +35,7 @@ window.onload = function() {
     if (val == "None") {
       val = "-"
     }
-    else if (privateValue == "") {
+    else if (val == "None" && privateValue == "") {
       val = "비공개"
     }
     console.log(key)
