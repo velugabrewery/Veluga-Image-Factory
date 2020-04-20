@@ -41,6 +41,20 @@ function formSubmit(){
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
   mainImageBlogThumb.src = inputMainImageUrl;
 
+  if (inputSakeMeterValue.value == "비공개" && inputAcidity.value == "비공개") {
+    aciditySpace.style.display = "none";
+    acidity.style.display = "none";
+    sakeGraph.style.display = "none";
+  }
+  else if (inputSakeMeterValue.value == "비공개") {
+    sakeGraphSMV.style.display = "none";
+    sakeGraphSpace.style.display = "none";
+  }
+  else if (inputAcidity.value == "비공개") {
+    sakeGraphAcidity.style.display = "none";
+  }
+  else {}
+
   // SMV 그래프
   var SMV = document.getElementById('inputSakeMeterValue').value;
   var SMVCursor = document.getElementById('SMVCursor');
@@ -63,19 +77,3 @@ var inputEnglishName = "";
 
 // 값 비공개 여부 체크
 var privateValue = "";
-
-function() {
-  if (inputSakeMeterValue.value == "비공개" && inputAcidity.value == "비공개") {
-    aciditySpace.style.display = "none";
-    acidity.style.display = "none";
-    sakeGraph.style.display = "none";
-  }
-  else if (inputSakeMeterValue.value == "비공개") {
-    sakeGraphSMV.style.display = "none";
-    sakeGraphSpace.style.display = "none";
-  }
-  else if (inputAcidity.value == "비공개") {
-    sakeGraphAcidity.style.display = "none";
-  }
-  else {}
-};
