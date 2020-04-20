@@ -48,11 +48,11 @@ function formSubmit(){
   var SMVNum = SMV.substring(1) * 1;
 
   SMVCursor.innerHTML = SMV;
-  if (SMVNum > 6) {
+  if (SMVNum > 10) {
     SMVNum = 445;
   }
   else {
-    SMVNum = SMVNum * 74;
+    SMVNum = SMVNum * 44;
   }
   SMVResult = SMVSign + SMVNum + "px";
   SMVCursor.style.marginLeft = SMVResult;
@@ -74,4 +74,11 @@ if (inputSakeMeterValue.value == "비공개" && inputAcidity.value == "비공개
   aciditySpace.style.display = "none";
   acidity.style.display = "none";
   sakeGraph.style.display = "none";
+}
+else if (inputSakeMeterValue.value == "비공개") {
+  sakeGraphSMV.style.display = "none";
+  sakeGraphSpace.style.display = "none";
+}
+else if (inputAcidity.value == "비공개") {
+  sakeGraphAcidity.style.display = "none";
 }

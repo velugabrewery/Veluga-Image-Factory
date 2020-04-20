@@ -57,12 +57,11 @@
           margin-top: 18px;
         }
       }
-      .smv {
+      .sakegraph {
         margin-top: 35px;
         .cursor-wrap {
-          position: relative;
+          position: absolute;
           width: 480px;
-          height: 40px;
           transform: translateX(-15px);
           z-index: 2;
           .cursor {
@@ -77,14 +76,20 @@
             font-weight: 600;
             font-size: 8px;
             line-height: 16px;
-            transform: translateX(5px);
+          }
+          #SMVCursor {
+            transform: translateX(5px) translateY(-2px);
+          }
+          #acidityCursor {
+            transform: translateX(9px) translateY(-2px);
           }
         }
-        .smv-item-wrap {
+        .sakegraph-item-wrap {
           position: relative;
+          height: 14px;
           &:before {
             position: absolute;
-            top: -20px;
+            top: 7px;
             left: 0;
             display: block;
             width: 100%;
@@ -92,17 +97,17 @@
             background-color: $gray-400;
             content: '';
           }
-          .smv-item {
+          .sakegraph-item {
             position: relative;
             width: 14px;
             text-align: center;
             &:before {
               position: absolute;
-              top: -33px;
+              top: 0;
               left: 50%;
               display: block;
               width: 2px;
-              height: 26px;
+              height: 14px;
               border-right: 1px solid $gray-400;
               transform: translateX(-50%);
               content: '';
@@ -111,7 +116,7 @@
         }
       }
       .description {
-        margin-top: 35px;
+        margin-top: 30px;
         font-size: 21px;
         line-height: 36px;
         text-align: justify;

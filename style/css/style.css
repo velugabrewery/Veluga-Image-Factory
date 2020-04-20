@@ -8271,15 +8271,14 @@ select.form-control {
             font-weight: 700; }
         .sake-template-1 .text-container .text-wrap .sake-info .info-item ~ .info-item {
           margin-top: 18px; }
-      .sake-template-1 .text-container .text-wrap .smv {
+      .sake-template-1 .text-container .text-wrap .sakegraph {
         margin-top: 35px; }
-        .sake-template-1 .text-container .text-wrap .smv .cursor-wrap {
-          position: relative;
+        .sake-template-1 .text-container .text-wrap .sakegraph .cursor-wrap {
+          position: absolute;
           width: 480px;
-          height: 40px;
           transform: translateX(-15px);
           z-index: 2; }
-          .sake-template-1 .text-container .text-wrap .smv .cursor-wrap .cursor {
+          .sake-template-1 .text-container .text-wrap .sakegraph .cursor-wrap .cursor {
             width: 26px;
             height: 18px;
             border-radius: 4px;
@@ -8290,35 +8289,39 @@ select.form-control {
             font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 60';
             font-weight: 600;
             font-size: 8px;
-            line-height: 16px;
-            transform: translateX(5px); }
-        .sake-template-1 .text-container .text-wrap .smv .smv-item-wrap {
-          position: relative; }
-          .sake-template-1 .text-container .text-wrap .smv .smv-item-wrap:before {
+            line-height: 16px; }
+          .sake-template-1 .text-container .text-wrap .sakegraph .cursor-wrap #SMVCursor {
+            transform: translateX(5px) translateY(-2px); }
+          .sake-template-1 .text-container .text-wrap .sakegraph .cursor-wrap #acidityCursor {
+            transform: translateX(9px) translateY(-2px); }
+        .sake-template-1 .text-container .text-wrap .sakegraph .sakegraph-item-wrap {
+          position: relative;
+          height: 14px; }
+          .sake-template-1 .text-container .text-wrap .sakegraph .sakegraph-item-wrap:before {
             position: absolute;
-            top: -20px;
+            top: 7px;
             left: 0;
             display: block;
             width: 100%;
             height: 1px;
             background-color: #ced7da;
             content: ''; }
-          .sake-template-1 .text-container .text-wrap .smv .smv-item-wrap .smv-item {
+          .sake-template-1 .text-container .text-wrap .sakegraph .sakegraph-item-wrap .sakegraph-item {
             position: relative;
             width: 14px;
             text-align: center; }
-            .sake-template-1 .text-container .text-wrap .smv .smv-item-wrap .smv-item:before {
+            .sake-template-1 .text-container .text-wrap .sakegraph .sakegraph-item-wrap .sakegraph-item:before {
               position: absolute;
-              top: -33px;
+              top: 0;
               left: 50%;
               display: block;
               width: 2px;
-              height: 26px;
+              height: 14px;
               border-right: 1px solid #ced7da;
               transform: translateX(-50%);
               content: ''; }
       .sake-template-1 .text-container .text-wrap .description {
-        margin-top: 35px;
+        margin-top: 30px;
         font-size: 21px;
         line-height: 36px;
         text-align: justify;
