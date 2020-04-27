@@ -41,3 +41,6 @@ function formSubmit(){
 
 // 값이 없는지 체크
 var inputEnglishName = "";
+
+// 값 비공개 여부 체크
+var privateValue = "ㄴㄴ";
