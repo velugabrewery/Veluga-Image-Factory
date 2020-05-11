@@ -41,3 +41,6 @@ function formSubmit(){
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
   mainImageBlogThumb.src = inputMainImageUrl;
 };
+
+// 값 비공개 여부 체크
+var privateValue = "ㄴㄴ";
