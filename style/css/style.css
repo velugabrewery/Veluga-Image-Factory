@@ -7683,6 +7683,7 @@ select.form-control {
         text-transform: uppercase;
         color: #ced7da; }
       .wine-template-1 .text-container .text-wrap .wine-name {
+        display: inline-block;
         font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 65px;
@@ -7691,8 +7692,8 @@ select.form-control {
         .wine-template-1 .text-container .text-wrap .wine-name .stamp {
           z-index: 2;
           position: absolute;
-          top: -95px;
-          right: 40px;
+          top: -90px;
+          right: 15px;
           font-family: "Suisse Int'l";
           color: #ced7da;
           border-color: #ced7da;

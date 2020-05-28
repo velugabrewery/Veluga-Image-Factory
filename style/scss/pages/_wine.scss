@@ -19,6 +19,7 @@
         color: $gray-400;
       }
       .wine-name {
+        display: inline-block;
         font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 70';
         font-weight: 700;
         font-size: 65px;
@@ -27,8 +28,8 @@
         .stamp {
           z-index: 2;
           position: absolute;
-          top: -95px;
-          right: 40px;
+          top: -90px;
+          right: 15px;
           font-family: "Suisse Int'l";
           color: $gray-400;
           border-color: $gray-400;
