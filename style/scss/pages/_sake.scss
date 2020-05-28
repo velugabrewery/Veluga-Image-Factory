@@ -12,6 +12,7 @@
     .text-wrap {
       width: 500px;
       .sake-name {
+        display: inline-block;
         font-family: "Suisse Int'l", 'Yoon Gothic 700', 'Yoon Gothic 700 90';
         font-weight: 900;
         font-size: 60px;
@@ -20,8 +21,8 @@
         .stamp {
           z-index: 2;
           position: absolute;
-          top: -30px;
-          right: 60px;
+          top: -45px;
+          right: -80px;
           padding: 7px 11px 9px 7px;
           border: 8px solid;
           border-radius: 8px;
