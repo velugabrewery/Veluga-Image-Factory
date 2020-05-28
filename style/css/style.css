@@ -8244,8 +8244,8 @@ select.form-control {
         .sake-template-1 .text-container .text-wrap .sake-name .stamp {
           z-index: 2;
           position: absolute;
-          top: -50px;
-          right: -90px;
+          top: -30px;
+          right: 60px;
           padding: 7px 11px 9px 7px;
           border: 8px solid;
           border-radius: 8px;
