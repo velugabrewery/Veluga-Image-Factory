@@ -213,8 +213,16 @@ function fontSize(name, num){
 
 // 스탬프 이동
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-var stampTop = -95;
-var stampRight = 30;
+if (document.getElementsByClassName('stamp').length > 0) {
+  var stampTop = document.getElementsByClassName('stamp')[0].style.top;
+  stampTop = stampTop.slice(0,-2) * 1;
+  var stampRight = document.getElementsByClassName('stamp')[0].style.right;
+  stampRight = stampRight.slice(0,-2) * 1;
+}
+else {
+  var stampTop = 0;
+  var stampRight = 0;
+}
 
 function moveStamp(direction, num){
   var direction = direction;
@@ -226,13 +234,19 @@ function moveStamp(direction, num){
   }
 
   var rArrLength = resultArr.length;
+
+  if(direction == 'top') {
+    stampTop += num;
+  }
+  else if(direction == 'right') {
+    stampRight += num;
+  }
+  
   for(var i=0; i<rArrLength; i++){
     if(direction == 'top') {
-      stampTop += num;
       resultArr[i].style.top = stampTop + 'px';
     }
     else if(direction == 'right') {
-      stampRight += num;
       resultArr[i].style.right = stampRight + 'px';
     }
   }
