@@ -7671,6 +7671,8 @@ select.form-control {
   .wine-template-1 .img-wrap {
     max-width: 400px;
     min-width: 400px; }
+    .wine-template-1 .img-wrap .wine-img {
+      min-width: 750px; }
   .wine-template-1 .text-container {
     width: 600px; }
     .wine-template-1 .text-container .text-wrap {
@@ -8231,6 +8233,8 @@ select.form-control {
   .sake-template-1 .img-wrap {
     max-width: 400px;
     min-width: 400px; }
+    .sake-template-1 .img-wrap .sake-img {
+      min-width: 750px; }
   .sake-template-1 .text-container {
     width: 600px; }
     .sake-template-1 .text-container .text-wrap {

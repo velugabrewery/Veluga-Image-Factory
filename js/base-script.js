@@ -314,9 +314,11 @@ function autoTooLongOrigin(){
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 function resetImageSize(target, num){
   document.getElementById(target).height = num;
+  document.getElementById(target).style.minWidth = num + "px";
 }
 
 function imageSize(target, num){
   var el = document.getElementById(target);
   el.height += num;
+  el.style.minWidth = el.height + "px";
 }
