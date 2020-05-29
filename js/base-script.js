@@ -309,3 +309,14 @@ function autoTooLongOrigin(){
     tooLongOrigin();
   } 
 }
+
+// 이미지 변경
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+function resetImageSize(target, num){
+  document.getElementById(target).height = num;
+}
+
+function imageSize(target, num){
+  var el = document.getElementById(target);
+  el.height += num;
+}
