@@ -40,6 +40,8 @@ function formSubmit(){
   // 블로그용 썸네일
   var mainImageBlogThumb = document.getElementById('mainImageBlogThumb');
   mainImageBlogThumb.src = inputMainImageUrl;
+
+  autoTooLongOrigin()
 };
 
 // 값 비공개 여부 체크

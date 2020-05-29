@@ -89,6 +89,8 @@ function formSubmit(){
   }
   acidityResult = acidityValue + "px";
   acidityCursor.style.marginLeft = acidityResult;
+
+  autoTooLongOrigin()
 };
 
 // 값이 없는지 체크
