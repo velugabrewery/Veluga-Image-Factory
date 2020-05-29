@@ -86,12 +86,24 @@
         <button class="switch btn w-100" type="button" onclick="moveStamp('right', 15)">←</button>
         <button class="switch btn w-100" type="button" onclick="moveStamp('right', -15)">→</button>
       </div>
+      <span class="font-weight-semibold d-block mt-2">전통주 이미지 크기</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch on btn flex-fill" type="button" onclick="imageSize('mainImage', -10)">-10px</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetImageSize('mainImage', 530)">초기화</button>
+        <button class="switch on btn flex-fill" type="button" onclick="imageSize('mainImage', 10)">+10px</button>
+      </div>
       <hr class="border-top-0 border-bottom-dashed">
       <span class="font-weight-semibold">[OG] 전통주 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', -2)">-2px</button>
         <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('nameOG', 55)">초기화</button>
         <button class="switch on btn flex-fill" type="button" onclick="fontSize('nameOG', 2)">+2px</button>
+      </div>
+      <span class="font-weight-semibold d-block mt-2">전통주 이미지 크기</span>
+      <div class="switch-wrap d-flex mt-1">
+        <button class="switch on btn flex-fill" type="button" onclick="imageSize('mainImageOG', -10)">-10px</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetImageSize('mainImageOG', 520)">초기화</button>
+        <button class="switch on btn flex-fill" type="button" onclick="imageSize('mainImageOG', 10)">+10px</button>
       </div>
       <hr class="border-top-0 border-bottom-dashed">
       <input style="display: none;" name="production_cycle_type">
