@@ -1,6 +1,12 @@
 // 데이터 입력
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 function formSubmit(){
+  // Subtype 없을 때, Type을 대신 삽입
+  if (document.getElementById('inputSubtype').value == "") {
+    document.getElementById('inputSubtype').value = document.getElementById('inputType').value;
+    document.getElementById('inputEnglishSubtype').value = document.getElementById('inputEnglishType').value;
+  }
+
   // 템플릿 1
   // 메인 이미지 URL을 받아서 삽입
   var mainImage = document.getElementById('mainImage');
