@@ -135,6 +135,29 @@ function makeBlogImage(){
   makeBlogThumb();
 }
 
+function makeTem1Short(){
+  domtoimage.toJpeg(document.getElementById('template1'), { width: 1000 })
+    .then(function (dataUrl) {
+      var link = document.createElement('a');
+      link.download = 'Tem1.jpeg';
+      link.href = dataUrl;
+      link.click();
+    }); 
+} 
+function makeOGShort(){
+  domtoimage.toJpeg(document.getElementById('opengraph'))
+    .then(function (dataUrl) {
+      var link = document.createElement('a');
+      link.download = 'OG.jpeg';
+      link.href = dataUrl;
+      link.click();
+    });
+}
+function makeImageShort(){
+  makeTem1Short();
+  makeOGShort();
+}
+
 // 리모컨
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 function changeCycle(cycle) {
