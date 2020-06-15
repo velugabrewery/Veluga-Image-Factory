@@ -1,6 +1,39 @@
 /* component 대응 */
 // _badge.scss
 //
+.badge {
+  padding: .35rem .4rem .38rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: .75rem;
+}
+.badge.badge-primary,
+.badge.badge-success {
+  color: darken($primary, 5%);
+  border-color: lighten($primary, 50%);
+  background-color: lighten($primary, 58%);
+}
+.badge.badge-blue {
+  color: darken($blue, 20%);
+  border-color: lighten($blue, 27%);
+  background-color: lighten($blue, 32%);
+}
+.badge.badge-danger {
+  color: darken($danger, 10%);
+  border-color: lighten($danger, 15%);
+  background-color: lighten($danger, 20%);
+}
+.badge.badge-info {
+  color: darken($info, 25%);
+  border-color: lighten($info, 15%);
+  background-color: lighten($info, 27%);
+}
+.badge.badge-warning {
+  color: darken($warning, 43%);
+  border-color: darken($warning, 7%);
+  background-color: lighten($warning, 17%);
+}
+
 .badge-pill {
   font-weight: $font-weight-light;
 }
@@ -28,6 +61,40 @@
     background-color: transparent;
   }
 }
+
+.btn-danger {
+  color: darken($danger, 35%);
+  border-color: lighten($danger, 15%);
+  background-color: lighten($danger, 20%);
+  &:hover {
+    color: darken($danger, 35%);
+    border-color: lighten($danger, 5%);
+    background-color: lighten($danger, 13%);
+  }
+}
+.btn-warning {
+  color: darken($warning, 50%);
+  border-color: darken($warning, 7%);
+  background-color: lighten($warning, 17%);
+  &:hover {
+    color: darken($warning, 50%);
+    border-color: darken($warning, 17%);
+    background-color: lighten($warning, 7%);
+  }
+}
+.btn-info {
+  color: darken($info, 50%);
+  border-color: lighten($info, 10%);
+  background-color: lighten($info, 25%);
+  &:hover {
+    color: darken($info, 50%);
+    border-color: lighten($info, 3%);
+    background-color: lighten($info, 15%);
+  }
+}
+
+
+
 .btn-outline-primary { border-color: $border-color; }
 .btn-outline-dark { border-color: $border-color; }
 .btn-lg {
@@ -174,6 +241,14 @@ select.form-control {
   content: "파일 찾기";
 }
 // prepend, append 혼합형 커스텀
+.input-group {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
 .input-group.input-group-focus {
   // form-control 좌우 패딩 제거
   & > .form-control:not(:first-child) {
@@ -307,34 +382,29 @@ select.form-control {
   }
 }
 .list-group-item {
+  .btn,
   .badge {
-    padding: 0.3125rem 0.4rem;
-    border: 1px solid $border-color;
-    font-weight: 600;
+    padding: .3125rem .55rem;
+    font-weight: 500;
     font-size: .75rem;
+    line-height: 18px;
   }
-  .badge.badge-blue {
-    border-color: lighten($blue, 27%);
-    background-color: lighten($blue, 32%);
-    color: darken($blue, 20%);
+  .btn.btn-outline-primary {
+    color: $primary;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
   }
-  .badge.badge-danger {
-    border-color: lighten($danger, 27%);
-    background-color: lighten($danger, 32%);
-    color: darken($danger, 5%);
-  }
-  .badge.badge-primary {
+  .btn.btn-primary {
+    color: darken($primary, 5%);
     border-color: lighten($primary, 50%);
     background-color: lighten($primary, 55%);
-    color: darken($primary, 5%);
   }
   .pre-order-info {
     border-top: 1px solid $gray-200;
     border-bottom: 1px solid $gray-200;
     color: $gray-700;
-  }
-  .text-muted {
-    color: $gray-600 !important;
   }
   a {
     color: $blue;
@@ -359,4 +429,3 @@ select.form-control {
     background-color: lighten($primary, 55%);
   }
 }
-
