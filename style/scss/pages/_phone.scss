@@ -1,0 +1,18 @@
+.html-phone {
+  .phone-container {
+    transform: scale(0.5);
+    transform-origin: top;
+    .phone {
+      width: 680px;
+      height: 1270px;
+      border: 2px solid $border-color;
+      border-radius: 100px;
+      .screen {
+        width: 620px;
+        height: 1080px;
+        border: 2px solid $border-color;
+        border-radius: 16px;
+      }
+    }
+  }
+}

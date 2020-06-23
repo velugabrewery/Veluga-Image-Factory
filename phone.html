@@ -12,7 +12,56 @@
     <meta property="og:url" content="https://seongj1n.github.io/template/phone">
     <link rel="stylesheet" type="text/css" href="style/css/style.css">
   </head>
-  <body class="d-flex flex-column align-items-center justify-content-center">
-    <script src="js/dom-to-image.js"></script>
+  <body class="html-phone d-flex flex-column align-items-center justify-content-center">
+    <form class="form p-5 shadow-lg">
+      <input type="file">
+      <button class="w-100 btn btn-primary" type="button" onclick="makePng()">ㄲㄱ</button>
+    </form>
+    <div class="my-5"></div>
+    <div class="phone-container">
+      <div id="phone" class="phone d-flex align-items-center justify-content-center bg-white">
+        <div id="screen" class="screen overflow-hidden">
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="js/dom-to-image.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    var upload = document.getElementsByTagName('input')[0],
+        screen = document.getElementById('screen');
+
+    upload.onchange = function (e) {
+      e.preventDefault();
+
+      var file = upload.files[0],
+          reader = new FileReader();
+      reader.onload = function (event) {
+        var img = new Image();
+        img.src = event.target.result;
+        img.id = 'img';
+        // note: no onload required since we've got the dataurl...I think! :)
+        img.width = 619;
+        screen.innerHTML = '';
+        screen.appendChild(img);
+
+        $('#img').draggable({ axis: "y" });
+      };
+      reader.readAsDataURL(file);
+
+      return false;
+    };
+
+
+    function makePng(){
+      domtoimage.toPng(document.getElementById('phone'), { width: 680, height: 1270 })
+        .then(function (dataUrl) {
+          var link = document.createElement('a');
+          link.download = 'phone-1.png';
+          link.href = dataUrl;
+          link.click();
+        });
+    } 
+  </script>
 </html>
