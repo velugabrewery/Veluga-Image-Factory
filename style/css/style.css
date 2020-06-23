@@ -8401,6 +8401,9 @@ select.form-control {
           margin: 8px 0;
           border: none; }
 
+.html-phone .remote-control {
+  bottom: 50%;
+  transform: scale(1); }
 .html-phone .phone-container {
   transform: scale(0.5);
   transform-origin: top; }
