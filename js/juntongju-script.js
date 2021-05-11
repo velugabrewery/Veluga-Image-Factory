@@ -5,6 +5,8 @@ function formSubmit(){
   // 메인 이미지 URL을 받아서 삽입
   var mainImage = document.getElementById('mainImage');
   var inputMainImageUrl = document.getElementById('inputMainImageUrl').value;
+  inputMainImageUrl += ((/\?/).test(inputMainImageUrl) ? "&" : "?") + (new Date()).getTime();
+
   mainImage.src = inputMainImageUrl;
   // 전통주 설명
   var inputDescription = document.getElementById('inputDescription').value;
