@@ -13,7 +13,7 @@ function formSubmit(){
   inputDescription = inputDescription.replace(/\n\n/g, '<hr><hr>').replace(/\n/g, '<br>');
   document.getElementById('description').innerHTML = inputDescription;
 
-  var arrTem1 = ['inputEnglishName', 'inputProducerEnglishName', 'inputOrigin', 'inputOriginDetail', 'inputBase', 'inputSubtype', 'inputAbv', 'inputProductPackage1', 'inputProductVolume1', 'inputProductPackage2', 'inputProductVolume2', 'inputProductPackage3', 'inputProductVolume3'];
+  var arrTem1 = ['inputName', 'inputProducerName', 'inputOrigin', 'inputOriginDetail', 'inputBase', 'inputSubtype', 'inputAbv', 'inputProductPackage1', 'inputProductVolume1', 'inputProductPackage2', 'inputProductVolume2', 'inputProductPackage3', 'inputProductVolume3'];
   arrTem1.forEach(item => {
     var itemValue = document.getElementById(item).value;
     var subStringItem = item.substring(5);

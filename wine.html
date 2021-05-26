@@ -82,9 +82,9 @@
     <form class="remote-control position-fixed p-3 border rounded bg-white shadow">
       <span class="font-weight-semibold">[T1] 와인 이름 크기</span>
       <div class="switch-wrap d-flex mt-1">
-        <button class="switch on btn flex-fill" type="button" onclick="fontSize('englishName', -2)">-2px</button>
-        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('englishName', 70)">초기화</button>
-        <button class="switch on btn flex-fill" type="button" onclick="fontSize('englishName', 2)">+2px</button>
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('name', -2)">-2px</button>
+        <button class="switch btn flex-fill w-100" type="button" onclick="resetFontSize('name', 60)">초기화</button>
+        <button class="switch on btn flex-fill" type="button" onclick="fontSize('name', 2)">+2px</button>
       </div>
       <span class="font-weight-semibold d-block mt-2">스탬프 위치</span>
       <div class="switch-wrap d-flex mt-1">
@@ -144,9 +144,9 @@
       </div>
       <div class="text-container d-flex w-100 align-items-center justify-content-center">
         <div class="text-wrap">
-          <h5 id="producerEnglishName" class="winery-name condensed">Pannon Tokaji</h5>
+          <h5 id="producerName" class="winery-name">Pannon Tokaji</h5>
           <h1 class="wine-name position-relative mt-2">
-              <span id="englishName" class="condensed" style="font-size: 70px; line-height: 1.1em;">Tokaji Muscat Lunel 2016</span>
+              <span id="name" class="" style="font-size: 60px; line-height: 1.1em;">Tokaji Muscat Lunel 2016</span>
               <div id="cycleY" class="stamp stamp-yearround" style="top: -90px; right: 15px;">
                 <span class="char1">Y</span>
                 <span class="char2">E</span>
