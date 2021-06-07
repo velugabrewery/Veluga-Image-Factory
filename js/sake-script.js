@@ -35,6 +35,16 @@ function formSubmit(){
     document.getElementById(subStringItem).innerHTML = itemValue;
   });
 
+  // 상세 원산지 숨김 처리
+  if (document.getElementById('inputOriginDetail').value === '') {
+    document.getElementById('originDetail').style.display = 'none';
+    document.getElementById('originDetailOG').style.display = 'none';
+  }
+  else {
+    document.getElementById('originDetail').style.display = 'inline-block';
+    document.getElementById('originDetailOG').style.display = 'inline-block';
+  }
+
   // 상세 지역 명이 너무 길 때, 사용하려고 만든 거
   document.getElementById('origin2OG').innerHTML = document.getElementById('inputOrigin').value;
   document.getElementById('originDetail2OG').innerHTML = document.getElementById('inputOriginDetail').value;

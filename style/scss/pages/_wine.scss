@@ -91,6 +91,9 @@
       }
       .wine-info {
         margin-top: 40px;
+        #originDetail:before {
+          content: ', ';
+        }
         .info-item {
           font-size: 20px;
           .info-name {

@@ -47,6 +47,9 @@
         }
         .info-data {
           text-transform: capitalize;
+          #originDetailOG:before,  {
+            content: ', ';
+          }
         }
       }
       .info-item:last-child {

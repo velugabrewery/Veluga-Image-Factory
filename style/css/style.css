@@ -9650,6 +9650,9 @@ select.form-control {
 .opengraph .text-wrap .og-info .info-item .info-data {
   text-transform: capitalize;
 }
+.opengraph .text-wrap .og-info .info-item .info-data #originDetailOG:before {
+  content: ", ";
+}
 .opengraph .text-wrap .og-info .info-item:last-child {
   max-width: 150px;
   min-width: 150px;
@@ -10210,6 +10213,9 @@ select.form-control {
 .wine-template-1 .text-container .text-wrap .wine-info {
   margin-top: 40px;
 }
+.wine-template-1 .text-container .text-wrap .wine-info #originDetail:before {
+  content: ", ";
+}
 .wine-template-1 .text-container .text-wrap .wine-info .info-item {
   font-size: 20px;
 }
@@ -10661,6 +10667,9 @@ select.form-control {
 }
 .sake-template-1 .text-container .text-wrap .sake-info .info-item {
   font-size: 20px;
+}
+.sake-template-1 .text-container .text-wrap .sake-info .info-item #originDetail:before {
+  content: ", ";
 }
 .sake-template-1 .text-container .text-wrap .sake-info .info-item .info-name {
   min-width: 140px;

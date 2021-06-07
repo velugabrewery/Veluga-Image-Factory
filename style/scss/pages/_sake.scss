@@ -50,6 +50,9 @@
         margin-top: 40px;
         .info-item {
           font-size: 20px;
+          #originDetail:before {
+            content: ', ';
+          }
           .info-name {
             min-width: 140px;
             font-family: 'Yoon Gothic 700', 'Yoon Gothic 700 70';
