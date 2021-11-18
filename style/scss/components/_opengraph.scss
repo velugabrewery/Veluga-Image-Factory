@@ -116,4 +116,9 @@
       }
     }
   }
+  &.juntongju {
+    #originDetailOG:before,  {
+      content: none !important;
+    }
+  }
 }

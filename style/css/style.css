@@ -9715,6 +9715,9 @@ select.form-control {
   background-color: #dee4e6;
   content: "";
 }
+.opengraph.juntongju #originDetailOG:before {
+  content: none !important;
+}
 
 .blog-thumbnail {
   z-index: 3;
